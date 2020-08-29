@@ -176,3 +176,40 @@ ggsave("Figures/Total_Biomass_2016_2017.jpeg", total.biomass.1617)
 ############## put it together ##########3
 
 bothyears <- rbind(weights16, weights17)
+
+
+## resident species 
+unique(bothyears$Species)
+
+res.both <- bothyears %>% 
+  filter(Species %in% c("Carex", "Calamagrostis","Typha"))
+
+
+resident.bothyears <- ggplot(res.both, aes(x = Species, y = Total, shape = Competition, colour = Competition)) +
+  geom_point(position = position_dodge(0.6), size = 2) +
+  theme_classic() +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Total Biomass (g)") +
+  scale_colour_manual(values = c("#a6cee3", "#1f78b4"))
+
+resident.bothyears
+
+
+# just phragmites 
+
+phrag.both <- bothyears %>% 
+  filter(Species %in% c("Phragmites"))
+
+phrag.bothyears <- ggplot(phrag.both, aes(x = Neighbours, y = Total, shape = Competition, colour = Competition)) +
+  geom_point(position = position_dodge(0.6), size = 2) +
+  theme_classic() +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Total Biomass (g)") +
+  scale_colour_manual(values = c("#b2182b", "#ef8a62"))
+
+phrag.bothyears
+
+ggarrange(resident.bothyears, phrag.bothyears,
+          legend = "bottom")
