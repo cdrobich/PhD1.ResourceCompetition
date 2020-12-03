@@ -37,8 +37,7 @@ weight2016 <- ggplot(weights16, aes(x = spp_n, y = Total, shape = Species, colou
   theme_classic() +
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = " ",
-       y = "Total Biomass (g)") +
-  scale_colour_manual(values = c("#a6cee3", "#1f78b4", "#b2df8a", "#33a02c"))
+       y = "Total Biomass (g)") 
 
 weight2016
 
@@ -176,7 +175,7 @@ ggsave("Figures/Total_Biomass_2016_2017.jpeg", total.biomass.1617)
 ############## put it together ##########3
 
 bothyears <- rbind(weights16, weights17)
-
+bothyears$Year <- as.factor(bothyears$Year)
 
 ## resident species 
 unique(bothyears$Species)
@@ -201,7 +200,7 @@ resident.bothyears
 phrag.both <- bothyears %>% 
   filter(Species %in% c("Phragmites"))
 
-phrag.bothyears <- ggplot(phrag.both, aes(x = Neighbours, y = Total, shape = Competition, colour = Competition)) +
+phrag.bothyears <- ggplot(phrag.both, aes(x = Neighbours, y = Total, shape = Competition, colour = Year)) +
   geom_point(position = position_dodge(0.6), size = 2) +
   theme_classic() +
   theme(panel.border = element_rect(fill = NA)) +
