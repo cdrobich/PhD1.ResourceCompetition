@@ -32,7 +32,7 @@ Pair,Site,Phytometer,Competition,Year,Incident
 4,CAP4CU,Carex,no,2017,71
 4,CAP4,Carex,yes,2017,12
 5,CAP5CU,Carex,no,2017,17
-5,CAP5,Carex,yes,2017,197
+5,CAP5,Carex,yes,2017,100
 6,CAP6CU,Carex,no,2017,28
 6,CAP6,Carex,yes,2017,29
 7,CAP7CU,Carex,no,2017,34
@@ -89,7 +89,7 @@ Pair,Site,Phytometer,Competition,Year,Incident
 26,CAP6,Carex,yes,2016,35
 27,CAP7,Carex,yes,2016,37
 28,CAP8,Carex,yes,2016,8
-29,CAP9,Carex,yes,2016,113
+29,CAP9,Carex,yes,2016,100
 30,CAP10CU,Carex,no,2016,78
 31,CAP11CU,Carex,no,2016,94
 32,CAP12CU,Carex,no,2016,61
