@@ -114,25 +114,6 @@ check_normality(phrag16.t)
 
 
 
-
-light16 %>% 
-  group_by(Phytometer, Treatment) %>% 
-  summarise(average = mean(Incident),
-            std = sd(Incident),
-            sample = length(Incident),
-            st.err = std/sqrt(sample))
-
-
-#  Phytometer    Treatment      average   std sample st.err
-#1 Calamagrostis competition       57.5 27.8      12   8.02
-#2 Calamagrostis no_competition    74   17.8      10   5.64
-#3 Carex         competition       50.2 34.2      12   9.87
-#4 Carex         no_competition    65.2 22.1      11   6.66
-#5 Phragmites    competition       82.6 29.5      18   6.95
-#6 Phragmites    no_competition    92.4  5.52     16   1.38
-#7 Typha         competition       88.2 13.0       6   5.31
-#8 Typha         no_competition    94.7  5.65      6   2.30
-
 ######## Incident Light in 2017 ############
 
 carex17 <- light17 %>% filter(Phytometer == "Carex")
@@ -273,26 +254,7 @@ lights16 <- ggplot(light16, aes(x = Phytometer, y = Incident)) +
 
 
 
-lights17 <- ggplot(light17, aes(x = Phytometer, y = Incident)) + 
-  geom_jitter(
-    aes(shape = Treatment, color = Treatment), 
-    position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.6),
-    size = 4) +
-  theme_classic() +
-  stat_summary(
-    aes(shape = Treatment),
-    fun.data = "mean_se", fun.args = list(mult = 1),
-    geom = "pointrange", size = 1,
-    position = position_dodge(0.6)
-  ) +
-  labs(x = " ",
-       y = expression(paste("Percent Incident Light"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
-  scale_color_manual(values = c("#9ebcda","#8856a7")) +
-  theme(panel.border = element_rect(fill = NA)) +
-  theme(text = element_text(size = 16),
-        axis.text.x = element_text(size = 14),
-        axis.text.y = element_text(size = 15)) +
-  ylim(0, 100)
+
 
 
 panel <- ggarrange(lights16, lights17,
@@ -304,3 +266,238 @@ panel <- ggarrange(lights16, lights17,
 panel
 
 ggsave("Figures/light_figure.jpeg")
+
+
+########## Paired T.Tests with Year as Random ##########
+
+library(lme4)
+
+##### Resident Species ############
+
+light.res.pair <- read.csv("Data/light_resident.csv")
+light.res.pair$Year <- as.factor(light.res.pair$Year)
+
+light.res.pair <- light.res.pair %>% 
+  unite("compyear", Competition:Year, remove = FALSE)
+
+
+
+carex.light <- light.res.pair %>% filter(Phytometer == "Carex")
+cala.light <- light.res.pair %>% filter(Phytometer == "Calamagrostis")
+typha.light <- light.res.pair %>% filter(Phytometer == "Typha")
+
+
+test.carex <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = carex.light)
+summary(test.carex)
+
+library(MuMIn)
+
+#### the marginal and conditional r2 for model 1 ####
+
+r.squaredGLMM(test.carex)
+
+# examine the residuals 
+plot(test.carex)
+qqnorm(resid(test.carex))
+qqline(resid(test.carex))
+
+## check out model 1 coefficients
+
+coef(test.carex)
+
+### paired t test 
+colnames(carex.light)
+
+carex.16 <- carex.light %>% filter(Year == 2016)
+carex.17 <- carex.light %>% filter(Year == 2017)
+
+
+carex.pair.test <- t.test(Incident ~ Competition, paired = TRUE, data = carex.light)
+
+#Paired t-test
+
+# data:  Incident by Competition
+# t = 1.04, df = 22, p-value = 0.3097
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#  -8.472095 25.515573
+# sample estimates:
+#  mean of the differences 
+# 8.521739 
+
+
+
+carex.pair.test1 <- t.test(Incident ~ Competition, paired = TRUE, data = carex.16)
+
+#Paired t-test
+
+#data:  Incident by Competition
+#t = 1.8581, df = 10, p-value = 0.09281
+#alternative hypothesis: true difference in means is not equal to 0
+#95 percent confidence interval:
+#  -3.965109 43.783291
+#sample estimates:
+#  mean of the differences 
+# 19.90909
+
+carex.pair.test2 <- t.test(Incident ~ Competition, paired = TRUE, data = carex.17)
+
+#Paired t-test
+
+#data:  Incident by Competition
+#t = -0.16141, df = 11, p-value = 0.8747
+#alternative hypothesis: true difference in means is not equal to 0
+#95 percent confidence interval:
+#  -28.05256  24.21923
+#sample estimates:
+#  mean of the differences 
+# -1.916667 
+
+cala.pair.test <- t.test(Incident ~ Competition, paired = TRUE, data = cala.light)
+
+#Paired t-test
+
+# data:  Incident by Competition
+# t = 3.1414, df = 21, p-value = 0.004929
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#  9.003233 44.269495
+# sample estimates:
+#  mean of the differences 
+# 26.63636
+
+cala.16 <- cala.light %>% filter(Year == 2016)
+cala.17 <- cala.light %>% filter(Year == 2017)
+
+cala.pair.test1 <- t.test(Incident ~ Competition, paired = TRUE, data = cala.16)
+
+#Paired t-test
+
+# data:  Incident by Competition
+# t = 2.4794, df = 9, p-value = 0.03503
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#  1.673557 36.526443
+# sample estimates:
+#  mean of the differences 
+#   19.1
+
+
+cala.pair.test2 <- t.test(Incident ~ Competition, paired = TRUE, data = cala.17)
+
+#Paired t-test
+
+# data:  Incident by Competition
+#  = 2.3087, df = 11, p-value = 0.04139
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#  1.535861 64.297472
+# sample estimates:
+#  mean of the differences 
+#  32.91667 
+
+
+typha.pair.test <- t.test(Incident ~ Competition, paired = TRUE, data = typha.light)
+
+#Paired t-test
+
+#data:  Incident by Competition
+#t = 2.5635, df = 11, p-value = 0.02636
+#alternative hypothesis: true difference in means is not equal to 0
+#95 percent confidence interval:
+#  2.085639 27.414361
+#sample estimates:
+#  mean of the differences 
+#14.75 
+
+typh.16 <- typha.light %>% filter(Year == 2016)
+typh.17 <- typha.light %>% filter(Year == 2017)
+
+typha.pair.test1 <- t.test(Incident ~ Competition, paired = TRUE, data = typh.16)
+
+#Paired t-test
+
+#data:  Incident by Competition
+#t = 1.9495, df = 5, p-value = 0.1087
+#alternative hypothesis: true difference in means is not equal to 0
+#95 percent confidence interval:
+#  -2.070748 15.070748
+#sample estimates:
+#  mean of the differences 
+#  6.5 
+
+
+typha.pair.test2 <- t.test(Incident ~ Competition, paired = TRUE, data = typh.17)
+
+#Paired t-test
+
+#data:  Incident by Competition
+#t = 2.22, df = 5, p-value = 0.07712
+#alternative hypothesis: true difference in means is not equal to 0
+#95 percent confidence interval:
+#  -3.631691 49.631691
+#sample estimates:
+#  mean of the differences 
+#23 
+
+
+
+light.res.pair %>% 
+  group_by(Phytometer, Competition) %>% 
+  summarise(average = mean(Incident),
+            std = sd(Incident),
+            sample = length(Incident),
+            st.err = std/sqrt(sample))
+
+
+# Phytometer    Competition   average std   sample  st.err
+#1 Calamagrostis no             67   30.5      22   6.51
+#2 Calamagrostis yes            40.4 31.6      22   6.74
+#3 Carex         no             50.0 26.2      23   5.47
+#4 Carex         yes            41.4 32.5      23   6.78
+#5 Typha         no             90    7.40     12   2.14
+#6 Typha         yes            75.2 24.4      12   7.03
+
+
+
+lights.res.plot <- ggplot(light.res.pair, aes(x = Phytometer, y = Incident)) + 
+  geom_jitter(
+    aes(shape = Competition, color = Competition), 
+    position = position_jitterdodge(jitter.width = 0.1, dodge.width = 0.9),
+    size = 4) +
+  theme_classic() +
+  stat_summary(
+    aes(shape = Competition),
+    fun.data = "mean_se", fun.args = list(mult = 1),
+    geom = "pointrange", size = 1,
+    position = position_dodge(0.6)
+  ) +
+  labs(x = " ",
+       y = expression(paste("Percent Incident Light"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 15)) +
+  scale_color_manual(values = c("#9ebcda","#8856a7")) +
+  ylim(0, 100)
+
+lights.res.plot
+
+ggsave("Figures/IncidentLightResidents.jpeg")
+
+######### Phragmites Paired T.Test #############
+
+phrag.light.pair <- read.csv("Data/Light_phrag.csv")
+
+light.res.pair$Year <- as.factor(light.res.pair$Year)
+
+phrag.light.pair <- phrag.light.pair %>% 
+  unite("compyear", Competition:Year, remove = FALSE)
+
+
+
+p.carex.light <- phrag.light.pair %>% filter(Neighbour == "Carex")
+p.cala.light <- phrag.light.pair %>% filter(Neighbour == "Calamagrostis")
+p.typha.light <- phrag.light.pair %>% filter(Neighbour == "Typha")
+
+ 

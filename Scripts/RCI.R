@@ -6,6 +6,8 @@ RCI.res <- read.csv("Data/RCI_residents.csv")
 str(RCI.res) 
 RCI.res$Year <- as.factor(RCI.res$Year)
 
+##### Resident species ##############
+
 RCI.plot <- ggplot(RCI.res, aes(x = Phytometer, y = RCI)) + 
   geom_jitter(
     aes(shape = Year, color = Year), 
@@ -30,3 +32,43 @@ RCI.plot <- ggplot(RCI.res, aes(x = Phytometer, y = RCI)) +
              size = 1.5) +
   geom_hline(yintercept = 0, linetype = "dashed",
              size = 1)
+
+ggsave("Figures/RCI_residents.jpeg")
+
+###### Phragmites ###############
+
+RCI.phrag <- read.csv("Data/RCI.phrag.csv")
+str(RCI.phrag) 
+RCI.phrag$Year <- as.factor(RCI.phrag$Year)
+
+RCI.phrag <- RCI.phrag %>% 
+  unite("spp_n", Phytometer,Neighbours, remove = FALSE)
+
+
+RCI.plot2 <- ggplot(RCI.phrag, aes(x = spp_n, y = RCI)) + 
+  geom_jitter(
+    aes(shape = Year, color = Year), 
+    position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.6),
+    size = 4) +
+  theme_classic() +
+  stat_summary(
+    aes(shape = Year),
+    fun.data = "mean_se", fun.args = list(mult = 1),
+    geom = "pointrange", size = 1,
+    position = position_dodge(0.6)
+  ) +
+  labs(x = " ",
+       y = expression(paste("Relative Competition Index (RCI)"))) + 
+  scale_color_manual(values = c("#9ebcda","#8856a7")) +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 15)) +
+  ylim(-5, 5) +
+  geom_hline(yintercept = 1, linetype = "dashed",
+             size = 1.5) +
+  geom_hline(yintercept = 0, linetype = "dashed",
+             size = 1)
+
+ggsave("Figures/RCI_phragmites.jpeg")
+
