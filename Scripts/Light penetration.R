@@ -442,7 +442,7 @@ typha.pair.test2 <- t.test(Incident ~ Competition, paired = TRUE, data = typh.17
 
 
 
-light.res.pair %>% 
+sum <- light.res.pair %>% 
   group_by(Phytometer, Competition) %>% 
   summarise(average = mean(Incident),
             std = sd(Incident),
@@ -460,18 +460,15 @@ light.res.pair %>%
 
 
 
-lights.res.plot <- ggplot(light.res.pair, aes(x = Phytometer, y = Incident)) + 
-  geom_jitter(
-    aes(shape = Competition, color = Competition), 
-    position = position_jitterdodge(jitter.width = 0.1, dodge.width = 0.9),
-    size = 4) +
+lights.res.plot <- ggplot(sum, aes(x = Phytometer, y = average, 
+                                   color = Competition, shape = Competition)) + 
+  geom_point(position = position_dodge(0.6),
+             size = 5) +
+  geom_errorbar(aes(ymin = average - st.err, ymax = average + st.err),
+                width = 0.3, position = position_dodge(0.6),
+                color = "black",
+                size = 1) +
   theme_classic() +
-  stat_summary(
-    aes(shape = Competition),
-    fun.data = "mean_se", fun.args = list(mult = 1),
-    geom = "pointrange", size = 1,
-    position = position_dodge(0.6)
-  ) +
   labs(x = " ",
        y = expression(paste("Percent Incident Light"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
   theme(panel.border = element_rect(fill = NA)) +
@@ -489,15 +486,94 @@ ggsave("Figures/IncidentLightResidents.jpeg")
 
 phrag.light.pair <- read.csv("Data/Light_phrag.csv")
 
-light.res.pair$Year <- as.factor(light.res.pair$Year)
+phrag.light.pair$Year <- as.factor(phrag.light.pair$Year)
 
 phrag.light.pair <- phrag.light.pair %>% 
   unite("compyear", Competition:Year, remove = FALSE)
 
-
+phrag.light.pair <- rename(phrag.light.pair, Phytometer = phytometer)
 
 p.carex.light <- phrag.light.pair %>% filter(Neighbour == "Carex")
 p.cala.light <- phrag.light.pair %>% filter(Neighbour == "Calamagrostis")
 p.typha.light <- phrag.light.pair %>% filter(Neighbour == "Typha")
 
- 
+
+colnames(phrag.light.pair)
+
+##### Figure ######
+
+sumphrag <- phrag.light.pair %>% 
+  group_by(Phytometer, Competition) %>% 
+  summarise(average = mean(Incident),
+            std = sd(Incident),
+            sample = length(Incident),
+            st.err = std/sqrt(sample))
+
+
+#spp_n                    Competition average   std sample st.err
+#1 Phragmites_Calamagrostis no             91.6  7.80     11   2.35
+#2 Phragmites_Calamagrostis yes            75.5 29.7      11   8.96
+#3 Phragmites_Carex         no             90.6  6.62     11   2.00
+#4 Phragmites_Carex         yes            81.3 27.0      11   8.13
+#5 Phragmites_Typha         no             94.4  5.89     10   1.86
+#6 Phragmites_Typha         yes            93.4  6.11     10   1.93
+
+
+
+lights.phrag.plot <- ggplot(sumphrag, aes(x = spp_n, y = average, 
+                                   color = Competition, shape = Competition)) + 
+  geom_point(position = position_dodge(0.6),
+             size = 5) +
+  geom_errorbar(aes(ymin = average - st.err, ymax = average + st.err),
+                width = 0.3, position = position_dodge(0.6),
+                color = "black",
+                size = 1) +
+  theme_classic() +
+  labs(x = " ",
+       y = expression(paste("Percent Incident Light"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 15)) +
+  scale_color_manual(values = c("#9ebcda","#8856a7")) +
+  ylim(0, 100)
+
+lights.phrag.plot
+
+ggsave("Figures/IncidentLightResidents.jpeg")
+
+
+paired.light <- full_join(sumphrag, sum)
+
+paired.light <- paired.light %>% 
+  mutate(Phytometer = fct_relevel(Phytometer,
+                                  "Carex",
+                                  "Calamagrostis",
+                                  "Typha",
+                                  "Phragmites_Carex",
+                                  "Phragmites_Calamagrostis",
+                                  "Phragmites_Typha"))
+
+### Plot ####
+
+all.light <- ggplot(paired.light, aes(x = Phytometer, y = average, 
+                                          color = Competition, shape = Competition)) + 
+  geom_point(position = position_dodge(0.6),
+             size = 5) +
+  geom_errorbar(aes(ymin = average - st.err, ymax = average + st.err),
+                width = 0.3, position = position_dodge(0.6),
+                color = "black",
+                size = 1) +
+  theme_classic() +
+  labs(x = " ",
+       y = expression(
+         paste("Percent Incident Light"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 15)) +
+  scale_color_manual(values = c("#9ebcda","#8856a7")) +
+  ylim(0, 100) +
+  theme(axis.text.x = element_text(angle = 40, hjust = 1))
+
+ggsave("Figures/Incident_light_all.jpeg", all.light)
