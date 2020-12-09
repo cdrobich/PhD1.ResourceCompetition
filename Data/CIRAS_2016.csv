@@ -1,4 +1,4 @@
-Site,Year,Species,Phytometer,Neighbour,Treatment,Light intensity,Carbon Assimilation,WUE
+Site,Year,Species,Phytometer,Neighbour,Treatment,light,carbon,WUE
 PTY1,2016,Phragmites,Phragmites_Typha,Typha,Competition,1500,17.7,3.06
 PTY1,2016,Phragmites,Phragmites_Typha,Typha,Competition,1000,15.6,2.77
 PTY1,2016,Phragmites,Phragmites_Typha,Typha,Competition,500,11.6,2.16
