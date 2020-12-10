@@ -441,7 +441,6 @@ typha.pair.test2 <- t.test(Incident ~ Competition, paired = TRUE, data = typh.17
 #23 
 
 
-
 sum <- light.res.pair %>% 
   group_by(Phytometer, Competition) %>% 
   summarise(average = mean(Incident),
@@ -577,3 +576,26 @@ all.light <- ggplot(paired.light, aes(x = Phytometer, y = average,
   theme(axis.text.x = element_text(angle = 40, hjust = 1))
 
 ggsave("Figures/Incident_light_all.jpeg", all.light)
+
+
+
+
+light <- full_join(phrag.light.pair, light.res.pair)
+
+
+light.den <- ggplot(light, aes(x = Incident, fill = as.factor(Competition))) +
+  geom_density(alpha = 0.6, size = 1) +
+  facet_wrap("Phytometer") + 
+  scale_fill_manual(values = c("#fee08b", "black")) +
+  theme_classic(base_size = 14) +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")")),
+       y = "Density") +
+  xlim(0, 150) +
+  labs(fill = "Competition") +
+  theme(legend.position = c(0.85, 0.9))
+
+light.den
+
+ggsave("Figures/Light_densityplot.TIFF", light.den,
+       dpi = 300)

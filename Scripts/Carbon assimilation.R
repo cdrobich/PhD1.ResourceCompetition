@@ -63,7 +63,7 @@ phr.ciras <- ggplot(ciras.phrag, aes(x = light, y = avg,
                       group = neigh_trt)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
-  geom_point(colour = "#54278f", size = 5) +
+  geom_point(colour = "#737373", size = 5) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
@@ -98,7 +98,7 @@ res.ciras <- ggplot(ciras.res, aes(x = light, y = avg,
                         group = phy_trt)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
-  geom_point(colour = "#006d2c", size = 5) +
+  geom_point(colour = "#00441b", size = 5) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
@@ -113,7 +113,6 @@ res.ciras <- ggplot(ciras.res, aes(x = light, y = avg,
   scale_x_continuous(breaks=c(0, 50, 100, 200, 500, 1000, 1500)) +
   theme(legend.position = c(0.75, 0.2)) 
   
-
 res.ciras
 
 ggsave("Figures/res_CIRAS.TIFF", res.ciras,
@@ -124,7 +123,9 @@ ggsave("Figures/res_CIRAS.TIFF", res.ciras,
 panel <- ggarrange(res.ciras, phr.ciras,
                    labels = "AUTO",
                    hjust = c(-6.5, -6.5),
-                   vjust = 2)
+                   vjust = 2,
+                   ncol = 1,
+                   nrow = 2)
 
 panel
 
