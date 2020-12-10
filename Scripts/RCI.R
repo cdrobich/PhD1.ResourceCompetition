@@ -157,10 +157,37 @@ sum.phrag <- RCI.phrag %>%
             N = length(RCI),
             SE = (std/(sqrt(N))))
 
-# Phytometer               average   std     N    SE
+#  Phytometer               average   std     N    SE
 #1 Phragmites_Calamagrostis  -0.223 0.698    10 0.221
 #2 Phragmites_Carex          -0.329 1.57      9 0.523
 #3 Phragmites_Typha          -0.233 0.566    12 0.163
+
+write.csv(sum.phrag, "Data/phrag.RCI.sum.csv")
+
+RCI.plot.phr <- ggplot(sum.phrag, aes(x = Phytometer, y = average)) + 
+  geom_errorbar(aes(ymin = average - SE, ymax = average + SE),
+                width = 0.3, position = position_dodge(0.6),
+                color = "black",
+                size = 1) +
+  geom_point(position = position_dodge(0.6),
+             size = 5,
+             colour = "#d94801") +
+  theme_classic() +
+  labs(x = " ",
+       y = expression(paste("Relative Competition Index (RCI)"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 15)) +
+  geom_hline(yintercept = 0, linetype = "dashed",
+             size = 1) +
+  coord_flip() +
+  theme(axis.text.y = element_text(angle = 30))
+
+RCI.plot.phr
+
+
+
 
 
 sum.res <- RCI.res %>% 
@@ -174,6 +201,30 @@ sum.res <- RCI.res %>%
 #1 Calamagrostis -0.651   2.53     21 0.552 
 #2 Carex          0.156   0.277    16 0.0692
 #3 Typha         -0.00193 0.573    12 0.165 
+
+RCI.plot.res <- ggplot(sum.res, aes(x = Phytometer, y = average)) + 
+    geom_errorbar(aes(ymin = average - SE, ymax = average + SE),
+                width = 0.3, position = position_dodge(0.6),
+                color = "black",
+                size = 1) +
+  geom_point(position = position_dodge(0.6),
+             size = 5,
+             colour = "#006d2c") +
+  theme_classic() +
+  labs(x = " ",
+       y = expression(paste("Relative Competition Index (RCI)"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 15)) +
+  geom_hline(yintercept = 0, linetype = "dashed",
+             size = 1) +
+  coord_flip() +
+  theme(axis.text.y = element_text(angle = 30))
+
+RCI.plot.res
+
+
 
 
 
