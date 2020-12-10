@@ -246,7 +246,7 @@ ggsave("Figures/RCI_panel.TIFF", panel.RCI,
        dpi = 300)
 
 ######## RCI Density Plots ##########
-
+RCI.res <- read.csv("Data/RCI_residents.csv")
 RCI.res
 
 rci.res.den <- ggplot(RCI.res, aes(x = RCI, fill = as.factor(Phytometer))) +
@@ -259,7 +259,7 @@ rci.res.den <- ggplot(RCI.res, aes(x = RCI, fill = as.factor(Phytometer))) +
        y = "Density") +
   theme(legend.position = "none") +
   xlim(-5, 2) +
-  geom_vline(xintercept = 1, linetype="dotted", 
+  geom_vline(xintercept = 0, linetype="dotted", 
              color = "black", size=1)
 
 rci.res.den 
@@ -268,11 +268,13 @@ ggsave("Figures/RCI_density.TIFF", rci.res.den,
        dpi= 300)
 
 
+
+
+RCI.phrag <- read.csv("Data/RCI.phrag.csv")
+RCI.phrag
+
 RCI.phrag <- RCI.phrag %>% 
   unite("Species", Phytometer,Neighbours, remove = FALSE)
-
-
-RCI.phrag
 
 rci.phr.den <- ggplot(RCI.phrag, aes(x = RCI, fill = as.factor(Phytometer))) +
   geom_density(alpha = 0.5, size = 1) +
@@ -284,7 +286,7 @@ rci.phr.den <- ggplot(RCI.phrag, aes(x = RCI, fill = as.factor(Phytometer))) +
        y = "Density") +
   theme(legend.position = "none") +
   xlim(-5, 2) +
-  geom_vline(xintercept = 1, linetype="dotted", 
+  geom_vline(xintercept = 0, linetype="dotted", 
              color = "black", size=1)
 
 rci.phr.den 
@@ -374,4 +376,5 @@ Light.Biomass <- ggarrange(light.den, density,
 Light.Biomass
 
 ggsave("Figures/Light_Biomass.TIFF", Light.Biomass,
+       height = 8.38, width = 13.7, units = "in",
        dpi = 300)
