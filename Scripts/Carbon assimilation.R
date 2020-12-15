@@ -134,3 +134,67 @@ ggsave("Figures/pane_CIRAS.TIFF", panel,
        width = 25, height = 6.74, units = "in",
        dpi = 300)
 # size 17.8 x 6.74 in
+
+
+######## Comparison at 1500 ########
+
+light1500 <- ciras %>% filter(light == "1500")
+
+target <- c("Calamagrostis", "Carex", "Typha")
+
+light1500.res <- light1500 %>% filter(Species %in% target)
+colnames(light1500.res)
+
+
+sum.1500 <- light1500.res %>% 
+  group_by(Species, Treatment) %>% 
+  summarise(median = median(carbon))
+
+
+
+res1500 <- ggplot(light1500.res, aes(x = carbon, fill = as.factor(Treatment))) +
+  geom_density(alpha = 0.6, size = 1) +
+  facet_wrap("Species") + 
+  scale_fill_manual(values = c("black", "grey")) +
+  theme_classic(base_size = 14) +
+  theme(plot.title = element_text(size = 14, face = "bold"),
+        legend.title=element_text(size=9), 
+        legend.text=element_text(size=9)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Density") +
+  xlim(0, 40) +
+  labs(fill = "Competition") +
+  theme(legend.position = c(0.85, 0.8)) 
+
+res1500
+
+
+
+
+light1500.phrag <- light1500 %>% filter(Species == "Phragmites")
+
+phrag1500 <- ggplot(light1500.phrag, aes(x = carbon, fill = as.factor(Treatment))) +
+  geom_density(alpha = 0.6, size = 1) +
+  facet_wrap("Phytometer") + 
+  scale_fill_manual(values = c("black", "grey")) +
+  theme_classic(base_size = 14) +
+  theme(plot.title = element_text(size = 14, face = "bold"),
+        legend.title=element_text(size=9), 
+        legend.text=element_text(size=9)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2], "umol  ",  s^-1, " ", m^-2, sep=")")),
+       y = "Density") +
+  xlim(0, 40) +
+  labs(fill = "Competition") +
+  theme(legend.position = "none") 
+
+phrag1500
+
+carbon.1500 <- ggarrange(res1500, phrag1500,
+          nrow = 2)
+
+
+ggsave("Figures/Carbon Assimilation 1500 panel.JPEG", carbon.1500)
+
+
