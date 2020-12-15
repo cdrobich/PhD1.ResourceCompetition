@@ -381,22 +381,95 @@ ggsave("Figures/Light_Biomass.TIFF", Light.Biomass,
 
 ####### Height ###########
 
-height <- read.csv("Data/Height_long_2017.csv")
-height <- na.omit(height)
-height$height <- as.numeric(height$height)
+height6 <- read.csv("Data/Height_long_2016.csv")
+height6$height <- as.numeric(height6$height)
 
-date <- height$date
+date6 <- height6$date
+dates <- dmy(date6)
+
+height6$dates <- dates
+height6
+
+height7 <- read.csv("Data/Height_long_2017.csv")
+
+height7 <- na.omit(height7)
+str(height7)
+
+height7$height <- as.numeric(height7$height)
+
+date <- height7$date
 dates <- dmy(date)
 
-height$dates <- dates
+height7$dates <- dates
+
+height7
+
+heights <- full_join(height6, height7)
+
+heights <- heights %>% #rename the factors
+  mutate(Species = fct_recode(Species,
+                              "Calamagrostis" = "Calamagrositis"))
 
 
-str(height)
-
-height <- height %>% 
+heights <- heights %>% 
   unite("spp_trt", Species, Competition, remove = FALSE)
 
-height.sum <- height %>% group_by(spp_trt, dates) %>% 
+heights <- heights %>% 
+  separate(dates, c(NA,"Month", NA), remove = FALSE) 
+
+unique(heights$Species)
+
+
+height.sum.month <- heights %>% group_by(spp_trt, Month) %>% 
+  summarise(avg = mean(height),
+            sd = sd(height),
+            N = length(height),
+            str = (sd/(sqrt(N))))
+
+
+
+height.sum.month <- height.sum.month %>% 
+  separate(spp_trt, c("Species", NA), remove = FALSE) %>% 
+  separate(spp_trt, c(NA, "Competition"), remove = FALSE) 
+
+
+height.sum.month <- height.sum.month %>% #rename the factors
+  mutate(Month = fct_recode(Month,
+                              "May" = "05",
+                            "June" = "06",
+                            "July" = "07"))
+
+
+
+plot.month <- ggplot(height.sum.month, aes(x = Month, y = avg,
+                                shape = Species,
+                                group = spp_trt,
+                                color = Competition)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str), width = 0.1) +
+  geom_line(color = "black") +
+  geom_point(size = 5) + 
+  #scale_x_date(date_labels = "%d-%b-%y",
+    #           date_breaks = "1 week") +
+  theme_classic() +
+  labs(y = "Height (cm)",
+       x = "") + 
+  scale_color_manual(values = c("grey","black")) +
+  scale_shape_manual(values = c(15, 16, 17, 18)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 14)) +
+  labs(shape = "Phytometer") +
+  ylim(50, 250) 
+
+plot.month
+
+ggsave("Figures/Height_2016_2017.JPEG", plot.month)
+
+
+
+
+height.sum <- heights %>% group_by(spp_trt, dates) %>% 
   summarise(avg = mean(height),
             sd = sd(height),
             N = length(height),
@@ -405,11 +478,16 @@ height.sum <- height %>% group_by(spp_trt, dates) %>%
 
 height.sum <- height.sum %>% 
   separate(spp_trt, c("Species", NA), remove = FALSE) %>% 
-  separate(spp_trt, c(NA, "Competition"), remove = FALSE)
+  separate(spp_trt, c(NA, "Competition"), remove = FALSE) %>% 
+  separate(dates, c("Year", NA, NA), remove = FALSE)
+
+colnames(height.sum)
 
 
+height.16 <- height.sum %>% filter(Year == "2016")
+height.17 <- height.sum %>% filter(Year == "2017")
 
-plot <- ggplot(height.sum, aes(x = dates, y = avg,
+plot16 <- ggplot(height.16, aes(x = dates, y = avg,
                            shape = Species,
                            group = spp_trt,
                            color = Competition)) +
@@ -428,10 +506,39 @@ plot <- ggplot(height.sum, aes(x = dates, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 14)) +
   labs(shape = "Phytometer & Treatment") +
-  ylim(0, 300) +
-  transition_reveal(dates)
+  ylim(20, 300) 
 
-plot
-
+plot16
 
 
+plot17 <- ggplot(height.17, aes(x = dates, y = avg,
+                                shape = Species,
+                                group = spp_trt,
+                                color = Competition)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str), width = 0.7) +
+  geom_line(color = "black") +
+  geom_point(size = 5) + 
+  scale_x_date(date_labels = "%d-%b-%y",
+               date_breaks = "1 week") +
+  theme_classic() +
+  labs(y = "Height (cm)",
+       x = "") + 
+  scale_color_manual(values = c("grey","black")) +
+  scale_shape_manual(values = c(15, 16, 17, 18)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 14)) +
+  labs(shape = "Phytometer & Treatment") +
+  ylim(20, 300) 
+
+plot17
+
+
+
+panel<- ggarrange(plot16, plot17,
+          common.legend = TRUE,
+          legend = "bottom",
+          labels = "AUTO")
+
+ggsave("Figures/Height_panel.JPEG", panel)

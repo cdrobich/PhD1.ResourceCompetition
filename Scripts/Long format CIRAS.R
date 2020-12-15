@@ -28,9 +28,8 @@ write.csv(ciras.17, "Data/CIRAS_long_2017.csv")
 
 ###### Height 2016 ###########
 
-
 height6 <- read.csv("Data/height_2016.csv")
-height6
+height6 <- na.omit(height6)
 
 str(height6)
 
@@ -43,29 +42,15 @@ height_long6 <- height_long %>% arrange(height_long, Site.ID)
 
 height_long6 <- height_long6 %>% #rename the factors
   mutate(date = fct_recode(date,
-                           "100517" = "X10.May.17",
-                           "270517" = "X27.May.17",
-                           "070617" = "X07.Jun.17",
-                           "160617" = "X16.Jun.17",
-                           "280617" = "X28.Jun.17"))
+                           "180516" = "X18.May.16",
+                           "030616" = "X03.Jun.16",
+                           "120616" = "X12.Jun.16",
+                           "220616" = "X22.Jun.16",
+                           "020716" = "X02.Jul.16",
+                           "120716" = "X12.Jul.16"))
 
 
-write.csv(height_long6, "Data/Height_long_2017.csv")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+write.csv(height_long6, "Data/Height_long_2016.csv")
 
 
 
