@@ -135,6 +135,69 @@ ggsave("Figures/pane_CIRAS.TIFF", panel,
        dpi = 300)
 # size 17.8 x 6.74 in
 
+### facet wrap #####
+str(ciras.res)
+
+plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
+                                    group = phy_trt,
+                                    shape = Treatment,
+                                    colour = Treatment)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
+  geom_line() +
+  facet_wrap("Phytometer") +
+  geom_point(size = 5) +
+  theme_classic() +
+  labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
+       x = "") + 
+  scale_colour_manual(values = c("black", "grey")) +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 16)) +
+  ylim(-5, 30) +
+  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500))
+
+plot.res
+
+
+ciras.phrag <- ciras.phrag %>% 
+  unite("phy_trt", Phytometer, Neighbour, remove = FALSE)
+
+ciras.phrag <- ciras.phrag  %>% 
+  separate(neigh_trt, c(NA,"Treatment"), remove = FALSE) 
+
+colnames(ciras.phrag)
+
+
+plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
+                         group = neigh_trt,
+                         shape = Treatment,
+                         colour = Treatment)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
+  geom_line() +
+  facet_wrap("phy_trt") +
+  geom_point(size = 5) +
+  scale_colour_manual(values = c("black", "grey")) +
+  theme_classic() +
+  labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
+       x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 16)) +
+  ylim(-5, 30) +
+  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500))
+
+plot.phr
+
+
+carbon.assim.panel <- ggarrange(plot.res, plot.phr,
+          common.legend = TRUE,
+          legend = "bottom",
+          nrow = 2)
+
+ggsave("Figures/Carbon_facet.jpeg", carbon.assim.panel)
+
 
 ######## Comparison at 1500 ########
 
@@ -197,4 +260,11 @@ carbon.1500 <- ggarrange(res1500, phrag1500,
 
 ggsave("Figures/Carbon Assimilation 1500 panel.JPEG", carbon.1500)
 
+
+all.panel <- ggarrange(carbon.assim.panel, carbon.1500,
+          labels = "AUTO")
+
+
+
+ggsave("Figures/All_Carbon_Assimilation.JPEG", all.panel)
 

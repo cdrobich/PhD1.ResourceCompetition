@@ -488,55 +488,55 @@ height.16 <- height.sum %>% filter(Year == "2016")
 height.17 <- height.sum %>% filter(Year == "2017")
 
 plot16 <- ggplot(height.16, aes(x = dates, y = avg,
-                           shape = Species,
+                           shape = Competition,
                            group = spp_trt,
-                           color = Competition)) +
+                           colour = Competition)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str), width = 0.7) +
   geom_line(color = "black") +
   geom_point(size = 5) + 
+  facet_wrap("Species") +
   scale_x_date(date_labels = "%d-%b-%y",
-                    date_breaks = "1 week") +
+                    date_breaks = "2 week") +
   theme_classic() +
   labs(y = "Height (cm)",
        x = "") + 
   scale_color_manual(values = c("grey","black")) +
-  scale_shape_manual(values = c(15, 16, 17, 18)) +
+  #scale_shape_manual(values = c(15, 16, 17, 18)) +
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 14),
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 14)) +
-  labs(shape = "Phytometer & Treatment") +
-  ylim(20, 300) 
+  labs(shape = "Competition") 
 
 plot16
 
 
 plot17 <- ggplot(height.17, aes(x = dates, y = avg,
-                                shape = Species,
+                                shape = Competition,
                                 group = spp_trt,
-                                color = Competition)) +
+                                colour = Competition)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str), width = 0.7) +
   geom_line(color = "black") +
   geom_point(size = 5) + 
+  facet_wrap("Species") +
   scale_x_date(date_labels = "%d-%b-%y",
-               date_breaks = "1 week") +
+               date_breaks = "2 week") +
   theme_classic() +
   labs(y = "Height (cm)",
        x = "") + 
   scale_color_manual(values = c("grey","black")) +
-  scale_shape_manual(values = c(15, 16, 17, 18)) +
+  #scale_shape_manual(values = c(15, 16, 17, 18)) +
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 14),
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 14)) +
-  labs(shape = "Phytometer & Treatment") +
-  ylim(20, 300) 
+  labs(shape = "Treatment") 
 
 plot17
 
 
 
-panel<- ggarrange(plot16, plot17,
+panel <- ggarrange(plot16, plot17,
           common.legend = TRUE,
           legend = "bottom",
           labels = "AUTO")
