@@ -378,3 +378,60 @@ Light.Biomass
 ggsave("Figures/Light_Biomass.TIFF", Light.Biomass,
        height = 8.38, width = 13.7, units = "in",
        dpi = 300)
+
+####### Height ###########
+
+height <- read.csv("Data/Height_long_2017.csv")
+height <- na.omit(height)
+height$height <- as.numeric(height$height)
+
+date <- height$date
+dates <- dmy(date)
+
+height$dates <- dates
+
+
+str(height)
+
+height <- height %>% 
+  unite("spp_trt", Species, Competition, remove = FALSE)
+
+height.sum <- height %>% group_by(spp_trt, dates) %>% 
+  summarise(avg = mean(height),
+            sd = sd(height),
+            N = length(height),
+            str = (sd/(sqrt(N))))
+
+
+height.sum <- height.sum %>% 
+  separate(spp_trt, c("Species", NA), remove = FALSE) %>% 
+  separate(spp_trt, c(NA, "Competition"), remove = FALSE)
+
+
+
+plot <- ggplot(height.sum, aes(x = dates, y = avg,
+                           shape = Species,
+                           group = spp_trt,
+                           color = Competition)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str), width = 0.7) +
+  geom_line(color = "black") +
+  geom_point(size = 5) + 
+  scale_x_date(date_labels = "%d-%b-%y",
+                    date_breaks = "1 week") +
+  theme_classic() +
+  labs(y = "Height (cm)",
+       x = "") + 
+  scale_color_manual(values = c("grey","black")) +
+  scale_shape_manual(values = c(15, 16, 17, 18)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 14)) +
+  labs(shape = "Phytometer & Treatment") +
+  ylim(0, 300) +
+  transition_reveal(dates)
+
+plot
+
+
+

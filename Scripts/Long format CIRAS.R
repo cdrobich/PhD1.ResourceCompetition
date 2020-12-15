@@ -25,3 +25,27 @@ ciras.17 <- ciras.17 %>% #rename the factors
 
 
 write.csv(ciras.17, "Data/CIRAS_long_2017.csv")
+
+
+### Height 2017 ######
+
+height <- read.csv("Data/Height_2017.csv")
+height
+
+colnames(height)
+
+height_long <- gather(height, date, height, X10.May.17:X28.Jun.17)
+height_long <- height_long %>% arrange(height_long, Site.ID)
+
+
+
+height_long <- height_long %>% #rename the factors
+  mutate(date = fct_recode(date,
+                           "100517" = "X10.May.17",
+                            "270517" = "X27.May.17",
+                            "070617" = "X07.Jun.17",
+                            "160617" = "X16.Jun.17",
+                            "280617" = "X28.Jun.17"))
+
+
+write.csv(height_long, "Data/Height_long_2017.csv")
