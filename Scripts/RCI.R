@@ -301,6 +301,10 @@ weights16 <- read.csv("Data/weights_2016.csv")
 weights17 <- read.csv("Data/weights_2017.csv")
 
 weights <- full_join(weights16, weights17)
+
+
+weights <- na.omit(weights)
+
 weights <- weights %>% 
   unite("spp_trt", Species, Competition, remove = FALSE)
 
@@ -312,10 +316,17 @@ weight.res <- weights %>% filter(Species %in% target)
 res.den <- ggdensity(weight.res, x = "Total", fill = "spp_trt", combine = TRUE)
 res.den
 
+
+weights %>% 
+  group_by(Species, Competition) %>% 
+  mutate(mean = mean(Total),
+         median = median(Total)) -> weights
+
+
 density <- ggplot(weights, aes(x = Total, fill = as.factor(Competition))) +
   geom_density(alpha = 0.5, size = 1) +
   facet_wrap("Species") + 
-  scale_fill_manual(values = c("black", "white")) +
+  scale_fill_manual(values = c("grey", "black")) +
   theme_classic(base_size = 16) +
   theme(plot.title = element_text(size = 14, face = "bold"),
         legend.title=element_text(size=9), 
@@ -324,7 +335,12 @@ density <- ggplot(weights, aes(x = Total, fill = as.factor(Competition))) +
   labs(x = "Total Biomass (g)",
        y = "Density") +
   labs(fill = "Competition") +
-  theme(legend.position = c(0.85, 0.8))
+  theme(legend.position = c(0.85, 0.8)) +
+  geom_vline(aes(xintercept = mean, colour = Competition),
+             size = 1,
+             show.legend = FALSE) +
+  scale_colour_manual(values = c("grey", "black"))
+
   
 density
 
@@ -343,6 +359,12 @@ light <- light %>% #rename the factors
                                 "No" = "no",
                                 "Yes" = "yes"))
 
+light %>% 
+  group_by(Phytometer, Competition) %>% 
+  mutate(mean = mean(Incident),
+         median = median(Incident)) -> light
+
+
 
 light.den <- ggplot(light, aes(x = Incident, fill = as.factor(Competition))) +
   geom_density(alpha = 0.6, size = 1) +
@@ -357,7 +379,12 @@ light.den <- ggplot(light, aes(x = Incident, fill = as.factor(Competition))) +
        y = "Density") +
   xlim(0, 150) +
   labs(fill = "Competition") +
-  theme(legend.position = c(0.85, 0.8))
+  theme(legend.position = c(0.85, 0.8)) +
+  geom_vline(aes(xintercept = mean,
+                 colour = Competition),
+             size = 1,
+             show.legend = FALSE) +
+  scale_colour_manual(values = c("#fee08b", "black")) 
 
 light.den
 

@@ -155,7 +155,8 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 16)) +
   ylim(-5, 30) +
-  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500))
+  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
+  theme(legend.position = )
 
 plot.res
 
@@ -186,14 +187,13 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 16)) +
   ylim(-5, 30) +
-  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500))
+  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
+  theme(legend.position = c(0.9, 0.2))
 
 plot.phr
 
 
 carbon.assim.panel <- ggarrange(plot.res, plot.phr,
-          common.legend = TRUE,
-          legend = "bottom",
           nrow = 2)
 
 ggsave("Figures/Carbon_facet.jpeg", carbon.assim.panel)
@@ -213,7 +213,10 @@ sum.1500 <- light1500.res %>%
   group_by(Species, Treatment) %>% 
   summarise(median = median(carbon))
 
-
+light1500.res %>% 
+  group_by(Species, Treatment) %>% 
+  mutate(Cmean = mean(carbon),
+         Cmedian = median(carbon)) -> light1500.res
 
 res1500 <- ggplot(light1500.res, aes(x = carbon, fill = as.factor(Treatment))) +
   geom_density(alpha = 0.6, size = 1) +
@@ -228,7 +231,13 @@ res1500 <- ggplot(light1500.res, aes(x = carbon, fill = as.factor(Treatment))) +
        y = "Density") +
   xlim(0, 40) +
   labs(fill = "Competition") +
-  theme(legend.position = c(0.85, 0.8)) 
+  theme(legend.position = c(0.85, 0.8)) +
+  geom_vline(aes(xintercept = Cmean,
+                 colour = Treatment),
+             size = 1,
+             show.legend = FALSE) +
+  scale_colour_manual(values = c("black", "grey")) +
+  theme(legend.position = "none")
 
 res1500
 
@@ -236,6 +245,12 @@ res1500
 
 
 light1500.phrag <- light1500 %>% filter(Species == "Phragmites")
+
+light1500.phrag %>% 
+  group_by(Neighbour, Treatment) %>% 
+  mutate(Cmean = mean(carbon),
+         Cmedian = median(carbon)) -> light1500.phrag
+
 
 phrag1500 <- ggplot(light1500.phrag, aes(x = carbon, fill = as.factor(Treatment))) +
   geom_density(alpha = 0.6, size = 1) +
@@ -250,7 +265,13 @@ phrag1500 <- ggplot(light1500.phrag, aes(x = carbon, fill = as.factor(Treatment)
        y = "Density") +
   xlim(0, 40) +
   labs(fill = "Competition") +
-  theme(legend.position = "none") 
+  theme(legend.position = "none") +
+  geom_vline(aes(xintercept = Cmean,
+                 colour = Treatment),
+             size = 1,
+             show.legend = FALSE) +
+  scale_colour_manual(values = c("black", "grey")) +
+  theme(legend.position = c(0.7, 0.85))
 
 phrag1500
 

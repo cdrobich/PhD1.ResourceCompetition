@@ -110,7 +110,7 @@ Isotopes %>%
 nut.den <- ggplot(Isotopes, aes(x = N, fill = as.factor(Treatment))) +
   geom_density(alpha = 0.6, size = 1) +
     facet_wrap("Species") + 
-  scale_fill_manual(values = c("#8c96c6", "white")) +
+  scale_fill_manual(values = c("#fb6a4a", "white")) +
   theme_classic(base_size = 14) +
   theme(plot.title = element_text(size = 14, face = "bold"),
         legend.title=element_text(size=9), 
@@ -122,7 +122,7 @@ nut.den <- ggplot(Isotopes, aes(x = N, fill = as.factor(Treatment))) +
   labs(fill = "Competition") +
   geom_vline(aes(xintercept = Nmean, colour = Treatment),
              size = 1) +
-  scale_colour_manual(values = c("#8c96c6", "grey")) +
+  scale_colour_manual(values = c("#fb6a4a", "#737373")) +
   theme(legend.position = "none") 
 
 nut.den
@@ -131,7 +131,7 @@ nut.den
 nut.cden <- ggplot(Isotopes, aes(x = C, fill = as.factor(Treatment))) +
   geom_density(alpha = 0.6, size = 1) +
   facet_wrap("Species") + 
-  scale_fill_manual(values = c("#8c96c6", "white")) +
+  scale_fill_manual(values = c("#fb6a4a", "white")) +
   theme_classic(base_size = 14) +
   theme(plot.title = element_text(size = 14, face = "bold"),
         legend.title=element_text(size=9), 
@@ -145,7 +145,7 @@ nut.cden <- ggplot(Isotopes, aes(x = C, fill = as.factor(Treatment))) +
                  colour = Treatment),
              size = 1,
              show.legend = FALSE) +
-  scale_colour_manual(values = c("#8c96c6", "grey")) +
+  scale_colour_manual(values = c("#fb6a4a", "#737373")) +
   theme(legend.position = c(0.85, 0.8))
 
 nut.cden
