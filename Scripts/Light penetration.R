@@ -287,14 +287,47 @@ cala.light <- light.res.pair %>% filter(Phytometer == "Calamagrostis")
 typha.light <- light.res.pair %>% filter(Phytometer == "Typha")
 
 
-test.carex <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = carex.light)
-summary(test.carex)
+
 
 library(MuMIn)
 
-#### the marginal and conditional r2 for model 1 ####
+# Carex
 
-r.squaredGLMM(test.carex)
+test.carex <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = carex.light)
+summary(test.carex)
+
+#Linear mixed model fit by REML ['lmerMod']
+#Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
+#Data: carex.light
+
+#REML criterion at convergence: 426.9
+
+#Scaled residuals: 
+#  Min      1Q  Median      3Q     Max 
+#-1.3936 -0.6833 -0.2722  0.7527  2.2935 
+
+#Random effects:
+#  Groups   Name        Variance Std.Dev.
+#Pair     (Intercept)  59.1     7.688  
+#Year     (Intercept) 129.2    11.367  
+#Residual             746.3    27.319  
+#Number of obs: 46, groups:  Pair, 23; Year, 2
+
+#Fixed effects:
+#  Estimate Std. Error t value
+#(Intercept)      50.264      9.983   5.035
+#Competitionyes   -8.522      8.056  -1.058
+
+#Correlation of Fixed Effects:
+#  (Intr)
+#Competitnys -0.403
+
+
+r.squaredGLMM(test.carex) # he marginal and conditional r2 for model 1
+
+#       R2m       R2c
+#[1,] 0.01946985 0.2170353
+
 
 # examine the residuals 
 plot(test.carex)
@@ -305,7 +338,82 @@ qqline(resid(test.carex))
 
 coef(test.carex)
 
-### paired t test 
+## Calamagrostis
+
+test.cala <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = cala.light)
+summary(test.cala)
+
+#Linear mixed model fit by REML ['lmerMod']
+#Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
+#Data: cala.light
+
+#REML criterion at convergence: 411.8
+
+#Scaled residuals: 
+#  Min      1Q  Median      3Q     Max 
+# -1.9141 -0.6920 -0.1274  0.7652  2.1376 
+
+#Random effects:
+#  Groups   Name        Variance Std.Dev.
+#Pair     (Intercept)  73.27    8.56   
+#Year     (Intercept) 150.81   12.28   
+#Residual             814.55   28.54   
+#Number of obs: 44, groups:  Pair, 22; Year, 2
+
+#Fixed effects:
+#              Estimate Std. Error  t value
+#(Intercept)      67.694     10.766   6.288
+#Competitionyes  -26.636      8.605  -3.095
+
+#Correlation of Fixed Effects:
+#  (Intr)
+#Competitnys -0.400
+
+r.squaredGLMM(test.cala) 
+
+#       R2m       R2c
+#[1,] 0.148753 0.3324101
+
+
+
+## Typha
+
+test.typha <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = typha.light)
+summary(test.typha)
+
+
+#Linear mixed model fit by REML ['lmerMod']
+#Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
+#Data: typha.light
+
+#REML criterion at convergence: 190.4
+
+#Scaled residuals: 
+#  Min       1Q   Median       3Q      Max 
+#-2.59889 -0.44558 -0.01338  0.48103  1.43819 
+
+#Random effects:
+#  Groups   Name        Variance Std.Dev.
+#Pair     (Intercept)  54.88    7.408  
+#Year     (Intercept) 128.89   11.353  
+#Residual             198.65   14.094  
+#Number of obs: 24, groups:  Pair, 12; Year, 2
+
+#Fixed effects:
+#  Estimate Std. Error t value
+# (Intercept)      90.000      9.250   9.729
+# Competitionyes  -14.750      5.754  -2.563
+
+#Correlation of Fixed Effects:
+#  (Intr)
+#Competitnys -0.311
+
+r.squaredGLMM(test.typha) 
+
+#       R2m       R2c
+#[1,] 0.1292334 0.5476748
+
+### paired t test ########
 colnames(carex.light)
 
 carex.16 <- carex.light %>% filter(Year == 2016)

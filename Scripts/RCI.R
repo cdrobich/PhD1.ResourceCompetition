@@ -26,6 +26,18 @@ sum <- RCI.res %>%
 #5 Typha         2016   0.188   0.383     6  0.156 
 #6 Typha         2017  -0.192   0.699     6  0.285 
 
+sum.res <- RCI.res %>% 
+  group_by(Phytometer) %>% 
+  summarise(average = mean(RCI),
+            std = sd(RCI),
+            N = length(RCI),
+            SE = (std/(sqrt(N))))
+
+#Phytometer     average   std     N     SE
+# Calamagrostis -0.651   2.53     21 0.552 
+# Carex          0.156   0.277    16 0.0692
+# Typha         -0.00193 0.573    12 0.165 
+
 
 ##### Resident species ##############
 
@@ -75,6 +87,20 @@ ph.sum <- RCI.phrag %>%
 #4 Phragmites_Carex         2017   0.104  0.728     4 0.364
 #5 Phragmites_Typha         2016  -0.0544 0.373     5 0.167
 #6 Phragmites_Typha         2017  -0.361  0.670     7 0.253
+
+
+sum.phr <- RCI.phrag %>% 
+  group_by(Phytometer) %>% 
+  summarise(average = mean(RCI),
+            std = sd(RCI),
+            N = length(RCI),
+            SE = (std/(sqrt(N))))
+
+#Phytometer               average   std     N    SE
+#<chr>                      <dbl> <dbl> <int> <dbl>
+#1 Phragmites_Calamagrostis  -0.223 0.698    10 0.221
+#2 Phragmites_Carex          -0.329 1.57      9 0.523
+#3 Phragmites_Typha          -0.233 0.566    12 0.163
 
 ##### Resident species ##############
 
