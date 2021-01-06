@@ -103,7 +103,7 @@ round(over.cred[, , , 1])  # display alpha = .95 niche region
 #, , Species B = Calamagrostis
 
 #Species A
-#Calamagrostis Carex Phragmites Typha
+#           Calamagrostis Carex Phragmites Typha
 #2.5%             NA     0          0     0
 #97.5%            NA    10          2     1
 
@@ -117,14 +117,14 @@ round(over.cred[, , , 1])  # display alpha = .95 niche region
 #, , Species B = Phragmites
 
 #Species A
-#Calamagrostis Carex Phragmites Typha
+#           Calamagrostis Carex Phragmites Typha
 #2.5%              0    44         NA    25
 #97.5%            45    93         NA    84
 
 #, , Species B = Typha
 
 #Species A
-#Calamagrostis Carex Phragmites Typha
+#           Calamagrostis Carex Phragmites Typha
 #2.5%              0     6         17    NA
 #97.5%            46    74         77    NA
 
