@@ -7,7 +7,7 @@ weights16
 
 
 weights16 <- weights16 %>% 
-  unite("spp_n", Species:Neighbour, remove = FALSE)
+  unite("spp_n", Species:Neighbours, remove = FALSE)
 
 weights16 <- rename(weights16, Competition = Treatment) # rename "treatment" to competition
 weights16 <- rename(weights16, Neighbours = Neighbour)
@@ -174,14 +174,30 @@ ggsave("Figures/Total_Biomass_2016_2017.jpeg", total.biomass.1617)
 
 ############## put it together ##########3
 
-bothyears <- rbind(weights16, weights17)
+bothyears <- full_join(weights16, weights17)
 bothyears$Year <- as.factor(bothyears$Year)
+
 
 ## resident species 
 unique(bothyears$Species)
 
 res.both <- bothyears %>% 
   filter(Species %in% c("Carex", "Calamagrostis","Typha"))
+
+res.both %>% group_by(Species, Competition) %>% 
+  summarise(Total.avg = mean(Total, na.rm = TRUE),
+            Total.sd = sd(Total, na.rm = TRUE),
+            n = n(),
+            str = Total.sd/sqrt(n))
+
+# Groups:   Species [3]
+#Species       Competition Total.avg Total.sd     n   str
+# 1 Calamagrostis No               2.24    2.54    22 0.541
+#2 Calamagrostis Yes              1.47    0.755    22 0.161
+#3 Carex         No               2.19    0.921    17 0.223
+#4 Carex         Yes              2.00    1.26     17 0.305
+#5 Typha         No              38.8     8.25     12 2.38 
+#6 Typha         Yes             36.3    12.5      12 3.60 
 
 
 resident.bothyears <- ggplot(res.both, aes(x = Species, y = Total, shape = Competition, colour = Competition)) +
@@ -199,6 +215,22 @@ resident.bothyears
 
 phrag.both <- bothyears %>% 
   filter(Species %in% c("Phragmites"))
+
+phrag.both %>% group_by(spp_n, Competition) %>% 
+  summarise(Total.avg = mean(Total, na.rm = TRUE),
+            Total.sd = sd(Total, na.rm = TRUE),
+            n = n(),
+            str = Total.sd/sqrt(n))
+
+
+#spp_n                    Competition   Total.avg  Total.sd   n    str
+#1 Phragmites_Calamagrostis No               25.7    14.5     10  4.59
+#2 Phragmites_Calamagrostis Yes              27.8    15.7     10  4.96
+#3 Phragmites_Carex         No               16.7     6.58     9  2.19
+#4 Phragmites_Carex         Yes              15.2     9.57     9  3.19
+#5 Phragmites_Typha         No               21.1    11.2     15  2.89
+#6 Phragmites_Typha         Yes              19.6     8.98    15  2.32
+
 
 phrag.bothyears <- ggplot(phrag.both, aes(x = Neighbours, y = Total, shape = Competition, colour = Year)) +
   geom_point(position = position_dodge(0.6), size = 2) +

@@ -22,7 +22,7 @@ str(ciras.17)
 
 
 ciras <- full_join(ciras.16, ciras.17)
-ciras <- ciras[,1:10]
+ciras <- ciras %>% select(Site:carbon)
 
 
 sum <- ciras %>% group_by(spp_trt, light) %>% 
@@ -206,12 +206,22 @@ light1500 <- ciras %>% filter(light == "1500")
 target <- c("Calamagrostis", "Carex", "Typha")
 
 light1500.res <- light1500 %>% filter(Species %in% target)
+
 colnames(light1500.res)
 
 
 sum.1500 <- light1500.res %>% 
   group_by(Species, Treatment) %>% 
-  summarise(median = median(carbon))
+  summarise(median = median(carbon),
+            mean = mean(carbon),
+            C.sd = sd(carbon),
+            N = length(),
+            sterr = (C.sd/sqrt(N)))
+
+
+
+
+
 
 light1500.res %>% 
   group_by(Species, Treatment) %>% 
