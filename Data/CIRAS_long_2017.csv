@@ -1,638 +1,631 @@
-"","X","Site","Year","Species","Phytometer","Neighbour","Treatment","Date","light","carbon"
-"1",1,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1500",10.1
-"2",2,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1000",9.7
-"3",3,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","500",8.4
-"4",4,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","200",4.3
-"5",5,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","100",1.2
-"6",6,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","50",-0.3
-"7",7,"CAP1",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","0",-1.1
-"8",8,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1500",12.4
-"9",9,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1000",12.1
-"10",10,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","500",9.5
-"11",11,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","200",5.6
-"12",12,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","100",2.7
-"13",13,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","50",0.6
-"14",14,"CAP10",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","0",-0.5
-"15",15,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","1500",14
-"16",16,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","1000",13
-"17",17,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","500",10.1
-"18",18,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","200",6
-"19",19,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","100",2
-"20",20,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","50",0.2
-"21",21,"CAP10CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","0",-1.1
-"22",22,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1500",12.2
-"23",23,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1000",11.2
-"24",24,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","500",9.1
-"25",25,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","200",5.2
-"26",26,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","100",2
-"27",27,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","50",0.2
-"28",28,"CAP11",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","0",-0.8
-"29",29,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1500",8.1
-"30",30,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1000",7.3
-"31",31,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","500",6
-"32",32,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","200",3.8
-"33",33,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","100",1.9
-"34",34,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","50",0.4
-"35",35,"CAP12",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","0",-0.6
-"36",36,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","1500",14.7
-"37",37,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","1000",13.8
-"38",38,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","500",10.8
-"39",39,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","200",5.9
-"40",40,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","100",2.6
-"41",41,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","50",0.6
-"42",42,"CAP12CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","0",-0.5
-"43",43,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",14.5
-"44",44,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",13.3
-"45",45,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",9.6
-"46",46,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",4.5
-"47",47,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",0.9
-"48",48,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",-0.8
-"49",49,"CAP1CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-2.1
-"50",50,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1500",10.3
-"51",51,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1000",9.5
-"52",52,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","500",7.2
-"53",53,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","200",3.7
-"54",54,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","100",1.1
-"55",55,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","50",-0.4
-"56",56,"CAP2",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","0",-1.5
-"57",57,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",12
-"58",58,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",11.6
-"59",59,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",9.4
-"60",60,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",4.1
-"61",61,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",0.8
-"62",62,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",-0.6
-"63",63,"CAP2CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-1.7
-"64",64,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1500",9.5
-"65",65,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1000",8.4
-"66",66,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","500",7
-"67",67,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","200",4.2
-"68",68,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","100",1.3
-"69",69,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","50",0
-"70",70,"CAP3",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","0",-0.9
-"71",71,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",10.9
-"72",72,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",10.1
-"73",73,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",7.9
-"74",74,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",4.9
-"75",75,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",1.3
-"76",76,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",-0.3
-"77",77,"CAP3CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-1.3
-"78",78,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1500",15
-"79",79,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1000",14.2
-"80",80,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","500",11.3
-"81",81,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","200",6
-"82",82,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","100",2.3
-"83",83,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","50",0.3
-"84",84,"CAP4",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","0",-0.9
-"85",85,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",15.3
-"86",86,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",13.2
-"87",87,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",9.7
-"88",88,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",4.4
-"89",89,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",1
-"90",90,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",-0.5
-"91",91,"CAP4CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-1.5
-"92",92,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1500",13.8
-"93",93,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","1000",13
-"94",94,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","500",10.6
-"95",95,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","200",5.4
-"96",96,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","100",2.3
-"97",97,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","50",0.4
-"98",98,"CAP5",2017,"Carex","Carex_Phragmites","Phragmites","Competition","09-Jul-17","0",-0.8
-"99",99,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",17
-"100",100,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",16.5
-"101",101,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",11.5
-"102",102,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",5.1
-"103",103,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",1.5
-"104",104,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",-0.3
-"105",105,"CAP5CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-1.3
-"106",106,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1500",11.9
-"107",107,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1000",11.5
-"108",108,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","500",10.2
-"109",109,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","200",5.9
-"110",110,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","100",3.1
-"111",111,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","50",1.2
-"112",112,"CAP6",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","0",0
-"113",113,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",13.7
-"114",114,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",12.2
-"115",115,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",9.4
-"116",116,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",4.8
-"117",117,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",1.4
-"118",118,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",0
-"119",119,"CAP6CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-1
-"120",120,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1500",13.8
-"121",121,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","1000",12.7
-"122",122,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","500",9.5
-"123",123,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","200",4.3
-"124",124,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","100",0.9
-"125",125,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","50",-0.8
-"126",126,"CAP7CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","09-Jul-17","0",-0.6
-"127",127,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1500",13.6
-"128",128,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","1000",13.1
-"129",129,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","500",10.3
-"130",130,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","200",5.8
-"131",131,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","100",2.5
-"132",132,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","50",0.9
-"133",133,"CAP9",2017,"Carex","Carex_Phragmites","Phragmites","Competition","11-Jul-17","0",-0.2
-"134",134,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","1500",24.9
-"135",135,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","1000",17.1
-"136",136,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","500",12.5
-"137",137,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","200",5.7
-"138",138,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","100",1.8
-"139",139,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","50",-0.1
-"140",140,"CAP9CU",2017,"Carex","Carex_Phragmites","Phragmites","No competition","11-Jul-17","0",-1.2
-"141",141,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1500",5.5
-"142",142,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1000",5.5
-"143",143,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","500",5
-"144",144,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","200",2.8
-"145",145,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","100",1.5
-"146",146,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","50",0.8
-"147",147,"CCP1",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","0",0.4
-"148",148,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",9.4
-"149",149,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",8.8
-"150",150,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",7.2
-"151",151,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",3.2
-"152",152,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",1.1
-"153",153,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",0
-"154",154,"CCP10",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.9
-"155",155,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",10.9
-"156",156,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",10.7
-"157",157,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",9.8
-"158",158,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",5.4
-"159",159,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",2.6
-"160",160,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",1.7
-"161",161,"CCP10CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-0.5
-"162",162,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",9.1
-"163",163,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",8.5
-"164",164,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",7.5
-"165",165,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",4
-"166",166,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",1.8
-"167",167,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",0.5
-"168",168,"CCP11",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.6
-"169",169,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",12.9
-"170",170,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",12.4
-"171",171,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",10.4
-"172",172,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",5.7
-"173",173,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",2.7
-"174",174,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",1
-"175",175,"CCP11CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-0.3
-"176",176,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","1500",5.1
-"177",177,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","1000",4.5
-"178",178,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","500",3.8
-"179",179,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","200",2.8
-"180",180,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","100",1.3
-"181",181,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","50",-0.1
-"182",182,"CCP12",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","09-Jul-17","0",-0.9
-"183",183,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","1500",14.3
-"184",184,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","1000",13.5
-"185",185,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","500",11
-"186",186,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","200",6.1
-"187",187,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","100",2.7
-"188",188,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","50",1.2
-"189",189,"CCP12CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","09-Jul-17","0",0
-"190",190,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1500",14.5
-"191",191,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1000",13
-"192",192,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","500",10.8
-"193",193,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","200",6.6
-"194",194,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","100",3.6
-"195",195,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","50",1.6
-"196",196,"CCP1CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","0",0.2
-"197",197,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1500",9.8
-"198",198,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1000",9
-"199",199,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","500",7.6
-"200",200,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","200",4.4
-"201",201,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","100",1.9
-"202",202,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","50",0.6
-"203",203,"CCP2",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","0",-0.1
-"204",204,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1500",18.4
-"205",205,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1000",16.8
-"206",206,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","500",13.1
-"207",207,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","200",5.7
-"208",208,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","100",3.5
-"209",209,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","50",1.5
-"210",210,"CCP2CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","0",-0.1
-"211",211,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1500",12.5
-"212",212,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1000",11.6
-"213",213,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","500",10
-"214",214,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","200",5.7
-"215",215,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","100",2.8
-"216",216,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","50",1.3
-"217",217,"CCP3",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","0",0
-"218",218,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1500",15.6
-"219",219,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1000",14.4
-"220",220,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","500",11.6
-"221",221,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","200",5.9
-"222",222,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","100",3
-"223",223,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","50",1.2
-"224",224,"CCP3CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","0",-0.2
-"225",225,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1500",11.6
-"226",226,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","1000",10.1
-"227",227,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","500",8.9
-"228",228,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","200",5.6
-"229",229,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","100",2.7
-"230",230,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","50",1
-"231",231,"CCP4",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","04-Jul-17","0",-0.2
-"232",232,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1500",14.8
-"233",233,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","1000",13.7
-"234",234,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","500",11.6
-"235",235,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","200",6.3
-"236",236,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","100",3.1
-"237",237,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","50",1.6
-"238",238,"CCP4CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","04-Jul-17","0",0
-"239",239,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",11.4
-"240",240,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",10.8
-"241",241,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",9
-"242",242,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",5.5
-"243",243,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",2.4
-"244",244,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",1.1
-"245",245,"CCP5",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.6
-"246",246,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",5.5
-"247",247,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",5.4
-"248",248,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",5.6
-"249",249,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",4.2
-"250",250,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",2
-"251",251,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",0.5
-"252",252,"CCP5CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-0.5
-"253",253,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",7.8
-"254",254,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",7.8
-"255",255,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",7.4
-"256",256,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",5.1
-"257",257,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",2.6
-"258",258,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",1.2
-"259",259,"CCP6",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.1
-"260",260,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",16.5
-"261",261,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",15.6
-"262",262,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",12.1
-"263",263,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",5.9
-"264",264,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",2.7
-"265",265,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",0.9
-"266",266,"CCP6CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-0.4
-"267",267,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",8.1
-"268",268,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",7.3
-"269",269,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",5.6
-"270",270,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",4
-"271",271,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",1.9
-"272",272,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",0.6
-"273",273,"CCP7",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.3
-"274",274,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",15.7
-"275",275,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",14.8
-"276",276,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",12.2
-"277",277,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",6.5
-"278",278,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",3.7
-"279",279,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",0.7
-"280",280,"CCP7CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-0.9
-"281",281,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",5.5
-"282",282,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",5.4
-"283",283,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",5.1
-"284",284,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",3.8
-"285",285,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",2.3
-"286",286,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",0.7
-"287",287,"CCP8",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.1
-"288",288,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",16.2
-"289",289,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",14.1
-"290",290,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",8.9
-"291",291,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",4.3
-"292",292,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",2.2
-"293",293,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",0.1
-"294",294,"CCP8CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-1.1
-"295",295,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1500",10.7
-"296",296,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","1000",9.5
-"297",297,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","500",7.9
-"298",298,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","200",4.8
-"299",299,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","100",2.7
-"300",300,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","50",0.7
-"301",301,"CCP9",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","Competition","06-Jul-17","0",-0.4
-"302",302,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1500",13.7
-"303",303,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","1000",13.3
-"304",304,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","500",11.4
-"305",305,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","200",5.7
-"306",306,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","100",2.2
-"307",307,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","50",0.3
-"308",308,"CCP9CU",2017,"Calamagrostis","Calamagrostis_Phragmites","Phragmites","No competition","06-Jul-17","0",-0.9
-"309",309,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","1500",18.9
-"310",310,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","1000",17.2
-"311",311,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","500",12.8
-"312",312,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","200",4.9
-"313",313,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","100",1.1
-"314",314,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","50",-0.8
-"315",315,"PCA1",2017,"Phragmites","Phragmites_Carex","Carex","Competition","09-Jul-17","0",-2
-"316",316,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","1500",14.7
-"317",317,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","1000",13
-"318",318,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","500",9.8
-"319",319,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","200",3.9
-"320",320,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","100",0.7
-"321",321,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","50",-1.3
-"322",322,"PCA1CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","09-Jul-17","0",-2.3
-"323",323,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","1500",13
-"324",324,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","1000",12.5
-"325",325,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","500",10.3
-"326",326,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","200",5.2
-"327",327,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","100",1.6
-"328",328,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","50",-0.1
-"329",329,"PCA2",2017,"Phragmites","Phragmites_Carex","Carex","Competition","11-Jul-17","0",-1.3
-"330",330,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1500",18.1
-"331",331,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1000",15.5
-"332",332,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","500",12.2
-"333",333,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","200",6.1
-"334",334,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","100",2.1
-"335",335,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","50",0.3
-"336",336,"PCA3CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","0",-0.7
-"337",337,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","1500",19.9
-"338",338,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","1000",18.2
-"339",339,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","500",14.1
-"340",340,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","200",7
-"341",341,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","100",2.9
-"342",342,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","50",1.1
-"343",343,"PCA4",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","0",-0.2
-"344",344,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1500",25.9
-"345",345,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1000",22.7
-"346",346,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","500",15.7
-"347",347,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","200",6.7
-"348",348,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","100",3.1
-"349",349,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","50",1
-"350",350,"PCA4CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","0",-0.6
-"351",351,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","1500",21
-"352",352,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","1000",19
-"353",353,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","500",14.4
-"354",354,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","200",6.7
-"355",355,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","100",2.6
-"356",356,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","50",0.6
-"357",357,"PCA5",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","0",-0.8
-"358",358,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1500",15.6
-"359",359,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1000",14.4
-"360",360,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","500",11
-"361",361,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","200",5.5
-"362",362,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","100",1.7
-"363",363,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","50",0
-"364",364,"PCA5CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","0",-1.2
-"365",365,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","1500",22.3
-"366",366,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","1000",19.6
-"367",367,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","500",15.3
-"368",368,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","200",8.3
-"369",369,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","100",4
-"370",370,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","50",2.8
-"371",371,"PCA6",2017,"Phragmites","Phragmites_Carex","Carex","Competition","10-Jul-17","0",1.7
-"372",372,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1500",23.1
-"373",373,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","1000",24.3
-"374",374,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","500",14.3
-"375",375,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","200",6.1
-"376",376,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","100",1.7
-"377",377,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","50",0
-"378",378,"PCA6CU",2017,"Phragmites","Phragmites_Carex","Carex","No competition","10-Jul-17","0",-1.6
-"379",379,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","1500",26.3
-"380",380,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","1000",23.4
-"381",381,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","500",16.2
-"382",382,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","200",7.5
-"383",383,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","100",2.7
-"384",384,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","50",1
-"385",385,"PCC1",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","0",-1.5
-"386",386,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","1500",16.3
-"387",387,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","1000",15.7
-"388",388,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","500",11.1
-"389",389,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","200",4.8
-"390",390,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","100",1.3
-"391",391,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","50",-0.6
-"392",392,"PCC1CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","0",-1.9
-"393",393,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","1500",17.7
-"394",394,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","1000",15.2
-"395",395,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","500",11.7
-"396",396,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","200",5.6
-"397",397,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","100",1.9
-"398",398,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","50",0.7
-"399",399,"PCC2",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","0",-0.7
-"400",400,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","1500",16
-"401",401,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","1000",13.9
-"402",402,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","500",10.2
-"403",403,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","200",5.1
-"404",404,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","100",2.2
-"405",405,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","50",0.4
-"406",406,"PCC2CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","0",-0.4
-"407",407,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","1500",19.2
-"408",408,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","1000",17.3
-"409",409,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","500",12.7
-"410",410,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","200",6.3
-"411",411,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","100",2.3
-"412",412,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","50",0.4
-"413",413,"PCC3",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","04-Jul-17","0",-0.4
-"414",414,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","1500",15.4
-"415",415,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","1000",13.1
-"416",416,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","500",10.9
-"417",417,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","200",6.1
-"418",418,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","100",2.9
-"419",419,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","50",1.1
-"420",420,"PCC3CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","04-Jul-17","0",-0.2
-"421",421,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","1500",21.2
-"422",422,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","1000",18
-"423",423,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","500",12.9
-"424",424,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","200",6.2
-"425",425,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","100",1.5
-"426",426,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","50",-0.1
-"427",427,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","06-Jul-17","0",-0.4
-"428",428,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","1500",16.9
-"429",429,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","1000",13.9
-"430",430,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","500",10.3
-"431",431,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","200",3.7
-"432",432,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","100",0
-"433",433,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","50",-1.5
-"434",434,"PCC4CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","09-Jul-17","0",-3
-"435",435,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","1500",17.6
-"436",436,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","1000",16.2
-"437",437,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","500",13.1
-"438",438,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","200",6.4
-"439",439,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","100",2.9
-"440",440,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","50",0.3
-"441",441,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","0",-0.7
-"442",442,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","1500",13.9
-"443",443,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","1000",12.7
-"444",444,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","500",9.8
-"445",445,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","200",5.1
-"446",446,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","100",0.6
-"447",447,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","50",0.1
-"448",448,"PCC5",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","0",-1
-"449",449,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","1500",17.7
-"450",450,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","1000",15.8
-"451",451,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","500",12.1
-"452",452,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","200",4.7
-"453",453,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","100",1.5
-"454",454,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","50",-0.3
-"455",455,"PCC5CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","0",-1.9
-"456",456,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","1500",24.7
-"457",457,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","1000",21.7
-"458",458,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","500",14.9
-"459",459,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","200",5.8
-"460",460,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","100",1.5
-"461",461,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","50",-0.7
-"462",462,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","10-Jul-17","0",-1.9
-"463",463,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","1500",5.7
-"464",464,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","1000",6.2
-"465",465,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","500",6.2
-"466",466,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","200",5.2
-"467",467,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","100",3.3
-"468",468,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","50",1.5
-"469",469,"PCC6",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","Competition","11-Jul-17","0",-1
-"470",470,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","1500",19.2
-"471",471,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","1000",17.3
-"472",472,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","500",13.2
-"473",473,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","200",6.1
-"474",474,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","100",2.5
-"475",475,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","50",0.4
-"476",476,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","10-Jul-17","0",-0.9
-"477",477,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","1500",15.7
-"478",478,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","1000",14.1
-"479",479,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","500",10.8
-"480",480,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","200",5.4
-"481",481,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","100",2.1
-"482",482,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","50",0.7
-"483",483,"PCC6CU",2017,"Phragmites","Phragmites_Calamagrostis","Calamagrostis","No competition","11-Jul-17","0",-0.2
-"484",484,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1500",12.2
-"485",485,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1000",12.1
-"486",486,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","500",10.9
-"487",487,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","200",7.1
-"488",488,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","100",3.9
-"489",489,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","50",2.7
-"490",490,"PTY1",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","0",0.6
-"491",491,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1500",16.1
-"492",492,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1000",15
-"493",493,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","500",11.9
-"494",494,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","200",5.9
-"495",495,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","100",2.2
-"496",496,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","50",0.4
-"497",497,"PTY1CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","0",-0.8
-"498",498,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1500",24
-"499",499,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1000",21.4
-"500",500,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","500",16.7
-"501",501,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","200",9.1
-"502",502,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","100",3.8
-"503",503,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","50",1.7
-"504",504,"PTY2",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","0",0.9
-"505",505,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1500",23.1
-"506",506,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1000",19.8
-"507",507,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","500",14.2
-"508",508,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","200",5.8
-"509",509,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","100",2.2
-"510",510,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","50",0.4
-"511",511,"PTY2CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","0",-1
-"512",512,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1500",21.9
-"513",513,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1000",19.9
-"514",514,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","500",14.4
-"515",515,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","200",8.2
-"516",516,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","100",3.5
-"517",517,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","50",1.4
-"518",518,"PTY3",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","0",0
-"519",519,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1500",22
-"520",520,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1000",19.5
-"521",521,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","500",13.7
-"522",522,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","200",6.5
-"523",523,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","100",2.3
-"524",524,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","50",0.2
-"525",525,"PTY4",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","0",-1.1
-"526",526,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1500",28.7
-"527",527,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1000",25.8
-"528",528,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","500",21.6
-"529",529,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","200",9
-"530",530,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","100",6.2
-"531",531,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","50",2.1
-"532",532,"PTY4CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","0",0.8
-"533",533,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1500",21.9
-"534",534,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1000",18.6
-"535",535,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","500",13.4
-"536",536,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","200",6.8
-"537",537,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","100",3.1
-"538",538,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","50",1
-"539",539,"PTY5",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","0",-0.2
-"540",540,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1500",23.1
-"541",541,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","1000",20.4
-"542",542,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","500",14.6
-"543",543,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","200",6.1
-"544",544,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","100",2
-"545",545,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","50",0
-"546",546,"PTY6",2017,"Phragmites","Phragmites_Typha","Typha","Competition","14-Jul-17","0",-1.3
-"547",547,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1500",26
-"548",548,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","1000",23.1
-"549",549,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","500",16.6
-"550",550,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","200",7.8
-"551",551,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","100",3.1
-"552",552,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","50",0.7
-"553",553,"PTY6CU",2017,"Phragmites","Phragmites_Typha","Typha","No competition","14-Jul-17","0",-1.1
-"554",554,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1500",7.8
-"555",555,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1000",8.4
-"556",556,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","500",6.3
-"557",557,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","200",4
-"558",558,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","100",1.1
-"559",559,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","50",-0.5
-"560",560,"TYP1",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","0",-2.4
-"561",561,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1500",6.7
-"562",562,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1000",5.7
-"563",563,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","500",3.9
-"564",564,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","200",1.9
-"565",565,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","100",0.3
-"566",566,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","50",-1.1
-"567",567,"TYP1CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","0",-2.7
-"568",568,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1500",13.3
-"569",569,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1000",14.7
-"570",570,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","500",12.1
-"571",571,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","200",5.7
-"572",572,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","100",1.8
-"573",573,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","50",-0.1
-"574",574,"TYP2",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","0",-1.6
-"575",575,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1500",18.9
-"576",576,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1000",19
-"577",577,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","500",14.6
-"578",578,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","200",4.6
-"579",579,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","100",1.8
-"580",580,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","50",-0.7
-"581",581,"TYP2CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","0",-1.9
-"582",582,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1500",17.7
-"583",583,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1000",16.2
-"584",584,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","500",13.1
-"585",585,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","200",6
-"586",586,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","100",2.1
-"587",587,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","50",-0.3
-"588",588,"TYP3",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","0",-1.5
-"589",589,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1500",20.7
-"590",590,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1000",20.7
-"591",591,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","500",14.9
-"592",592,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","200",6.7
-"593",593,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","100",2.4
-"594",594,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","50",0.6
-"595",595,"TYP3CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","0",-0.4
-"596",596,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1500",21.3
-"597",597,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","1000",20.5
-"598",598,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","500",15.6
-"599",599,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","200",6.7
-"600",600,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","100",2.4
-"601",601,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","50",0
-"602",602,"TYP4",2017,"Typha","Typha_Phragmites","Phragmites","Competition","12-Jul-17","0",-1.4
-"603",603,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1500",23.8
-"604",604,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","1000",22
-"605",605,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","500",16.4
-"606",606,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","200",6.3
-"607",607,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","100",1.5
-"608",608,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","50",-0.1
-"609",609,"TYP4CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","12-Jul-17","0",-1.2
-"610",610,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","1500",22.6
-"611",611,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","1000",21.5
-"612",612,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","500",16.4
-"613",613,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","200",7
-"614",614,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","100",2.6
-"615",615,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","50",0.2
-"616",616,"TYP5",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","0",-1.2
-"617",617,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","1500",21.3
-"618",618,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","1000",18.4
-"619",619,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","500",13.4
-"620",620,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","200",6.5
-"621",621,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","100",2.4
-"622",622,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","50",0.1
-"623",623,"TYP5CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","0",-1.4
-"624",624,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","1500",22.3
-"625",625,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","1000",22.8
-"626",626,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","500",17.2
-"627",627,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","200",7.8
-"628",628,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","100",3.5
-"629",629,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","50",2.1
-"630",630,"TYP6",2017,"Typha","Typha_Phragmites","Phragmites","Competition","14-Jul-17","0",0.8
-"631",631,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","1500",24
-"632",632,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","1000",22.2
-"633",633,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","500",17
-"634",634,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","200",7.1
-"635",635,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","100",2.7
-"636",636,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","50",0.2
-"637",637,"TYP6CU",2017,"Typha","Typha_Phragmites","Phragmites","No competition","14-Jul-17","0",-1.4
+,Site,Year,Species,Phytometer,Neighbour,Treatment,Date,light,carbon,WUE
+1,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1500,10.1,
+2,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1000,9.7,
+3,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,500,8.4,
+4,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,200,4.3,
+5,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,100,1.2,
+6,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,50,-0.3,
+7,CAP1,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,0,-1.1,
+8,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1500,12.4,
+9,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1000,12.1,
+10,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,500,9.5,
+11,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,200,5.6,
+12,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,100,2.7,
+13,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,50,0.6,
+14,CAP10,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,0,-0.5,
+15,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,1500,14,
+16,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,1000,13,
+17,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,500,10.1,
+18,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,200,6,
+19,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,100,2,
+20,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,50,0.2,
+21,CAP10CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,0,-1.1,
+22,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1500,12.2,
+23,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1000,11.2,
+24,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,500,9.1,
+25,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,200,5.2,
+26,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,100,2,
+27,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,50,0.2,
+28,CAP11,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,0,-0.8,
+29,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1500,8.1,
+30,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1000,7.3,
+31,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,500,6,
+32,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,200,3.8,
+33,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,100,1.9,
+34,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,50,0.4,
+35,CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,0,-0.6,
+36,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,1500,14.7,
+37,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,1000,13.8,
+38,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,500,10.8,
+39,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,200,5.9,
+40,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,100,2.6,
+41,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,50,0.6,
+42,CAP12CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,0,-0.5,
+43,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,14.5,
+44,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,13.3,
+45,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,9.6,
+46,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,4.5,
+47,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,0.9,
+48,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,-0.8,
+49,CAP1CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-2.1,
+50,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1500,10.3,
+51,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1000,9.5,
+52,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,500,7.2,
+53,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,200,3.7,
+54,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,100,1.1,
+55,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,50,-0.4,
+56,CAP2,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,0,-1.5,
+57,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,12,
+58,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,11.6,
+59,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,9.4,
+60,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,4.1,
+61,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,0.8,
+62,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,-0.6,
+63,CAP2CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-1.7,
+64,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1500,9.5,
+65,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1000,8.4,
+66,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,500,7,
+67,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,200,4.2,
+68,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,100,1.3,
+69,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,50,0,
+70,CAP3,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,0,-0.9,
+71,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,10.9,
+72,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,10.1,
+73,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,7.9,
+74,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,4.9,
+75,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,1.3,
+76,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,-0.3,
+77,CAP3CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-1.3,
+78,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1500,15,
+79,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1000,14.2,
+80,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,500,11.3,
+81,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,200,6,
+82,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,100,2.3,
+83,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,50,0.3,
+84,CAP4,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,0,-0.9,
+85,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,15.3,
+86,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,13.2,
+87,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,9.7,
+88,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,4.4,
+89,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,1,
+90,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,-0.5,
+91,CAP4CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-1.5,
+92,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1500,13.8,
+93,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,1000,13,
+94,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,500,10.6,
+95,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,200,5.4,
+96,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,100,2.3,
+97,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,50,0.4,
+98,CAP5,2017,Carex,Carex_Phragmites,Phragmites,Competition,09-Jul-17,0,-0.8,
+99,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,17,
+100,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,16.5,
+101,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,11.5,
+102,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,5.1,
+103,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,1.5,
+104,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,-0.3,
+105,CAP5CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-1.3,
+106,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1500,11.9,
+107,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1000,11.5,
+108,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,500,10.2,
+109,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,200,5.9,
+110,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,100,3.1,
+111,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,50,1.2,
+112,CAP6,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,0,0,
+113,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,13.7,
+114,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,12.2,
+115,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,9.4,
+116,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,4.8,
+117,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,1.4,
+118,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,0,
+119,CAP6CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-1,
+120,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1500,13.8,
+121,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,1000,12.7,
+122,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,500,9.5,
+123,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,200,4.3,
+124,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,100,0.9,
+125,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,50,-0.8,
+126,CAP7CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,09-Jul-17,0,-0.6,
+127,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1500,13.6,
+128,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,1000,13.1,
+129,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,500,10.3,
+130,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,200,5.8,
+131,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,100,2.5,
+132,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,50,0.9,
+133,CAP9,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,0,-0.2,
+134,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,1500,24.9,
+135,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,1000,17.1,
+136,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,500,12.5,
+137,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,200,5.7,
+138,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,100,1.8,
+139,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,50,-0.1,
+140,CAP9CU,2017,Carex,Carex_Phragmites,Phragmites,No competition,11-Jul-17,0,-1.2,
+141,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1500,5.5,
+142,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1000,5.5,
+143,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,500,5,
+144,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,200,2.8,
+145,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,100,1.5,
+146,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,50,0.8,
+147,CCP1,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,0,0.4,
+148,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,9.4,
+149,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,8.8,
+150,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,7.2,
+151,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,3.2,
+152,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,1.1,
+153,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,0,
+154,CCP10,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.9,
+155,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,10.9,
+156,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,10.7,
+157,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,9.8,
+158,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,5.4,
+159,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,2.6,
+160,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,1.7,
+161,CCP10CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-0.5,
+162,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,9.1,
+163,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,8.5,
+164,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,7.5,
+165,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,4,
+166,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,1.8,
+167,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,0.5,
+168,CCP11,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.6,
+169,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,12.9,
+170,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,12.4,
+171,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,10.4,
+172,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,5.7,
+173,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,2.7,
+174,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,1,
+175,CCP11CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-0.3,
+176,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,1500,5.1,
+177,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,1000,4.5,
+178,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,500,3.8,
+179,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,200,2.8,
+180,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,100,1.3,
+181,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,50,-0.1,
+182,CCP12,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,09-Jul-17,0,-0.9,
+183,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,1500,14.3,
+184,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,1000,13.5,
+185,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,500,11,
+186,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,200,6.1,
+187,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,100,2.7,
+188,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,50,1.2,
+189,CCP12CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,09-Jul-17,0,0,
+190,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1500,14.5,
+191,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1000,13,
+192,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,500,10.8,
+193,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,200,6.6,
+194,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,100,3.6,
+195,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,50,1.6,
+196,CCP1CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,0,0.2,
+197,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1500,9.8,
+198,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1000,9,
+199,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,500,7.6,
+200,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,200,4.4,
+201,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,100,1.9,
+202,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,50,0.6,
+203,CCP2,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,0,-0.1,
+204,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1500,18.4,
+205,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1000,16.8,
+206,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,500,13.1,
+207,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,200,5.7,
+208,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,100,3.5,
+209,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,50,1.5,
+210,CCP2CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,0,-0.1,
+211,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1500,12.5,
+212,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1000,11.6,
+213,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,500,10,
+214,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,200,5.7,
+215,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,100,2.8,
+216,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,50,1.3,
+217,CCP3,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,0,0,
+218,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1500,15.6,
+219,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1000,14.4,
+220,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,500,11.6,
+221,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,200,5.9,
+222,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,100,3,
+223,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,50,1.2,
+224,CCP3CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,0,-0.2,
+225,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1500,11.6,
+226,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,1000,10.1,
+227,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,500,8.9,
+228,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,200,5.6,
+229,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,100,2.7,
+230,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,50,1,
+231,CCP4,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,04-Jul-17,0,-0.2,
+232,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1500,14.8,
+233,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,1000,13.7,
+234,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,500,11.6,
+235,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,200,6.3,
+236,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,100,3.1,
+237,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,50,1.6,
+238,CCP4CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,04-Jul-17,0,0,
+239,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,11.4,
+240,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,10.8,
+241,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,9,
+242,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,5.5,
+243,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,2.4,
+244,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,1.1,
+245,CCP5,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.6,
+246,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,5.5,
+247,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,5.4,
+248,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,5.6,
+249,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,4.2,
+250,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,2,
+251,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,0.5,
+252,CCP5CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-0.5,
+253,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,7.8,
+254,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,7.8,
+255,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,7.4,
+256,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,5.1,
+257,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,2.6,
+258,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,1.2,
+259,CCP6,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.1,
+260,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,16.5,
+261,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,15.6,
+262,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,12.1,
+263,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,5.9,
+264,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,2.7,
+265,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,0.9,
+266,CCP6CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-0.4,
+267,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,8.1,
+268,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,7.3,
+269,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,5.6,
+270,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,4,
+271,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,1.9,
+272,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,0.6,
+273,CCP7,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.3,
+274,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,15.7,
+275,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,14.8,
+276,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,12.2,
+277,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,6.5,
+278,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,3.7,
+279,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,0.7,
+280,CCP7CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-0.9,
+281,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,5.5,
+282,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,5.4,
+283,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,5.1,
+284,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,3.8,
+285,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,2.3,
+286,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,0.7,
+287,CCP8,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.1,
+288,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,16.2,
+289,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,14.1,
+290,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,8.9,
+291,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,4.3,
+292,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,2.2,
+293,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,0.1,
+294,CCP8CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-1.1,
+295,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1500,10.7,
+296,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,1000,9.5,
+297,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,500,7.9,
+298,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,200,4.8,
+299,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,100,2.7,
+300,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,50,0.7,
+301,CCP9,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,Competition,06-Jul-17,0,-0.4,
+302,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1500,13.7,
+303,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,1000,13.3,
+304,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,500,11.4,
+305,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,200,5.7,
+306,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,100,2.2,
+307,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,50,0.3,
+308,CCP9CU,2017,Calamagrostis,Calamagrostis_Phragmites,Phragmites,No competition,06-Jul-17,0,-0.9,
+309,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,1500,18.9,
+310,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,1000,17.2,
+311,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,500,12.8,
+312,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,200,4.9,
+313,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,100,1.1,
+314,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,50,-0.8,
+315,PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,0,-2,
+316,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,1500,14.7,
+317,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,1000,13,
+318,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,500,9.8,
+319,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,200,3.9,
+320,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,100,0.7,
+321,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,50,-1.3,
+322,PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,0,-2.3,
+323,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,1500,13,
+324,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,1000,12.5,
+325,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,500,10.3,
+326,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,200,5.2,
+327,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,100,1.6,
+328,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,50,-0.1,
+329,PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,0,-1.3,
+330,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1500,19.7,
+331,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1000,17.8,
+332,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,500,13.5,
+333,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,200,5.7,
+334,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,100,1.9,
+335,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,50,0,
+336,PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,0,-1.4,
+337,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1500,16.4,
+338,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1000,15,
+339,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,500,11.5,
+340,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,200,5.1,
+341,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,100,1.8,
+342,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,50,-0.2,
+343,PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,0,-1.2,
+344,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1500,18.1,
+345,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1000,15.5,
+346,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,500,12.2,
+347,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,200,6.1,
+348,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,100,2.1,
+349,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,50,0.3,
+350,PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,0,-0.7,
+351,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1500,19.9,
+352,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1000,18.2,
+353,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,500,14.1,
+354,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,200,7,
+355,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,100,2.9,
+356,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,50,1.1,
+357,PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,0,-0.2,
+358,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1500,25.9,
+359,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1000,22.7,
+360,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,500,15.7,
+361,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,200,6.7,
+362,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,100,3.1,
+363,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,50,1,
+364,PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,0,-0.6,
+365,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1500,21,
+366,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1000,19,
+367,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,500,14.4,
+368,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,200,6.7,
+369,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,100,2.6,
+370,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,50,0.6,
+371,PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,0,-0.8,
+372,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1500,15.6,
+373,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1000,14.4,
+374,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,500,11,
+375,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,200,5.5,
+376,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,100,1.7,
+377,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,50,0,
+378,PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,0,-1.2,
+379,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1500,22.3,
+380,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,1000,19.6,
+381,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,500,15.3,
+382,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,200,8.3,
+383,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,100,4,
+384,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,50,2.8,
+385,PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,0,1.7,
+386,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1500,23.1,
+387,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,1000,24.3,
+388,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,500,14.3,
+389,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,200,6.1,
+390,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,100,1.7,
+391,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,50,0,
+392,PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,0,-1.6,
+393,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,1500,26.3,
+394,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,1000,23.4,
+395,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,500,16.2,
+396,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,200,7.5,
+397,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,100,2.7,
+398,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,50,1,
+399,PCC1,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,0,-1.5,
+400,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,1500,16.3,
+401,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,1000,15.7,
+402,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,500,11.1,
+403,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,200,4.8,
+404,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,100,1.3,
+405,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,50,-0.6,
+406,PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,0,-1.9,
+407,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,1500,17.7,
+408,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,1000,15.2,
+409,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,500,11.7,
+410,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,200,5.6,
+411,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,100,1.9,
+412,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,50,0.7,
+413,PCC2,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,0,-0.7,
+414,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,1500,16,
+415,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,1000,13.9,
+416,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,500,10.2,
+417,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,200,5.1,
+418,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,100,2.2,
+419,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,50,0.4,
+420,PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,0,-0.4,
+421,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,1500,19.2,
+422,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,1000,17.3,
+423,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,500,12.7,
+424,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,200,6.3,
+425,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,100,2.3,
+426,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,50,0.4,
+427,PCC3,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,04-Jul-17,0,-0.4,
+428,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,1500,15.4,
+429,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,1000,13.1,
+430,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,500,10.9,
+431,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,200,6.1,
+432,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,100,2.9,
+433,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,50,1.1,
+434,PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,0,-0.2,
+435,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,1500,21.2,
+436,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,1000,18,
+437,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,500,12.9,
+438,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,200,6.2,
+439,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,100,1.5,
+440,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,50,-0.1,
+441,PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,0,-0.4,
+442,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,1500,16.9,
+443,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,1000,13.9,
+444,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,500,10.3,
+445,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,200,3.7,
+446,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,100,0,
+447,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,50,-1.5,
+448,PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,0,-3,
+449,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,1500,15.75,
+450,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,1000,14.45,
+451,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,500,11.45,
+452,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,200,5.75,
+453,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,100,1.75,
+454,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,50,0.2,
+455,PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,0,-0.85,
+456,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,1500,17.7,
+457,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,1000,15.8,
+458,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,500,12.1,
+459,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,200,4.7,
+460,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,100,1.5,
+461,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,50,-0.3,
+462,PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,0,-1.9,
+463,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,1500,15.2,
+464,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,1000,13.95,
+465,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,500,10.55,
+466,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,200,5.5,
+467,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,100,2.4,
+468,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,50,0.4,
+469,PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,0,-1.45,
+470,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,1500,17.45,
+471,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,1000,15.7,
+472,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,500,12,
+473,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,200,5.75,
+474,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,100,2.3,
+475,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,50,0.55,
+476,PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,0,-0.55,
+477,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1500,12.2,
+478,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1000,12.1,
+479,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,500,10.9,
+480,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,200,7.1,
+481,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,100,3.9,
+482,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,50,2.7,
+483,PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,0,0.6,
+484,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1500,16.1,
+485,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1000,15,
+486,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,500,11.9,
+487,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,200,5.9,
+488,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,100,2.2,
+489,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,50,0.4,
+490,PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,0,-0.8,
+491,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1500,24,
+492,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1000,21.4,
+493,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,500,16.7,
+494,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,200,9.1,
+495,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,100,3.8,
+496,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,50,1.7,
+497,PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,0,0.9,
+498,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1500,23.1,
+499,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1000,19.8,
+500,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,500,14.2,
+501,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,200,5.8,
+502,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,100,2.2,
+503,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,50,0.4,
+504,PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,0,-1,
+505,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1500,21.9,
+506,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1000,19.9,
+507,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,500,14.4,
+508,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,200,8.2,
+509,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,100,3.5,
+510,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,50,1.4,
+511,PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,0,0,
+512,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1500,22,
+513,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1000,19.5,
+514,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,500,13.7,
+515,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,200,6.5,
+516,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,100,2.3,
+517,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,50,0.2,
+518,PTY4,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,0,-1.1,
+519,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1500,28.7,
+520,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1000,25.8,
+521,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,500,21.6,
+522,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,200,9,
+523,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,100,6.2,
+524,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,50,2.1,
+525,PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,0,0.8,
+526,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1500,21.9,
+527,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1000,18.6,
+528,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,500,13.4,
+529,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,200,6.8,
+530,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,100,3.1,
+531,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,50,1,
+532,PTY5,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,0,-0.2,
+533,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1500,23.1,
+534,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,1000,20.4,
+535,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,500,14.6,
+536,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,200,6.1,
+537,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,100,2,
+538,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,50,0,
+539,PTY6,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,0,-1.3,
+540,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1500,26,
+541,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,1000,23.1,
+542,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,500,16.6,
+543,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,200,7.8,
+544,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,100,3.1,
+545,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,50,0.7,
+546,PTY6CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,0,-1.1,
+547,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1500,7.8,
+548,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1000,8.4,
+549,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,500,6.3,
+550,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,200,4,
+551,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,100,1.1,
+552,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,50,-0.5,
+553,TYP1,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,0,-2.4,
+554,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1500,6.7,
+555,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1000,5.7,
+556,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,500,3.9,
+557,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,200,1.9,
+558,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,100,0.3,
+559,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,50,-1.1,
+560,TYP1CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,0,-2.7,
+561,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1500,13.3,
+562,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1000,14.7,
+563,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,500,12.1,
+564,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,200,5.7,
+565,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,100,1.8,
+566,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,50,-0.1,
+567,TYP2,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,0,-1.6,
+568,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1500,18.9,
+569,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1000,19,
+570,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,500,14.6,
+571,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,200,4.6,
+572,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,100,1.8,
+573,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,50,-0.7,
+574,TYP2CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,0,-1.9,
+575,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1500,17.7,
+576,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1000,16.2,
+577,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,500,13.1,
+578,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,200,6,
+579,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,100,2.1,
+580,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,50,-0.3,
+581,TYP3,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,0,-1.5,
+582,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1500,20.7,
+583,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1000,20.7,
+584,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,500,14.9,
+585,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,200,6.7,
+586,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,100,2.4,
+587,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,50,0.6,
+588,TYP3CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,0,-0.4,
+589,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1500,21.3,
+590,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,1000,20.5,
+591,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,500,15.6,
+592,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,200,6.7,
+593,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,100,2.4,
+594,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,50,0,
+595,TYP4,2017,Typha,Typha_Phragmites,Phragmites,Competition,12-Jul-17,0,-1.4,
+596,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1500,23.8,
+597,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,1000,22,
+598,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,500,16.4,
+599,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,200,6.3,
+600,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,100,1.5,
+601,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,50,-0.1,
+602,TYP4CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,12-Jul-17,0,-1.2,
+603,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,1500,22.6,
+604,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,1000,21.5,
+605,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,500,16.4,
+606,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,200,7,
+607,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,100,2.6,
+608,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,50,0.2,
+609,TYP5,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,0,-1.2,
+610,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,1500,21.3,
+611,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,1000,18.4,
+612,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,500,13.4,
+613,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,200,6.5,
+614,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,100,2.4,
+615,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,50,0.1,
+616,TYP5CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,0,-1.4,
+617,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,1500,22.3,
+618,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,1000,22.8,
+619,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,500,17.2,
+620,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,200,7.8,
+621,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,100,3.5,
+622,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,50,2.1,
+623,TYP6,2017,Typha,Typha_Phragmites,Phragmites,Competition,14-Jul-17,0,0.8,
+624,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,1500,24,
+625,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,1000,22.2,
+626,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,500,17,
+627,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,200,7.1,
+628,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,100,2.7,
+629,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,50,0.2,
+630,TYP6CU,2017,Typha,Typha_Phragmites,Phragmites,No competition,14-Jul-17,0,-1.4,

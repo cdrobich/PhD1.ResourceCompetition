@@ -46,16 +46,15 @@ CAP12,2017,Carex,Carex_Phragmites,Phragmites,Competition,11-Jul-17,8.1,7.3,6,3.8
 PCC1CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,16.3,15.7,11.1,4.8,1.3,-0.6,-1.9
 PCC2CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,16,13.9,10.2,5.1,2.2,0.4,-0.4
 PCC3CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,04-Jul-17,15.4,13.1,10.9,6.1,2.9,1.1,-0.2
-PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,06-Jul-17,21.2,18,12.9,6.2,1.5,-0.1,-0.4
+PCC4,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,06-Jul-17,21.2,18,12.9,6.2,1.5,-0.1,-0.4
 PCA1CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,09-Jul-17,14.7,13,9.8,3.9,0.7,-1.3,-2.3
 PCC4CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,09-Jul-17,16.9,13.9,10.3,3.7,0,-1.5,-3
 PCA3CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,18.1,15.5,12.2,6.1,2.1,0.3,-0.7
 PCA4CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,25.9,22.7,15.7,6.7,3.1,1,-0.6
 PCA5CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,15.6,14.4,11,5.5,1.7,0,-1.2
 PCA6CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,23.1,24.3,14.3,6.1,1.7,0,-1.6
-PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,19.2,17.3,13.2,6.1,2.5,0.4,-0.9
+PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,10-Jul-17,17.45,15.7,12,5.75,2.3,0.55,-0.55
 PCC5CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,17.7,15.8,12.1,4.7,1.5,-0.3,-1.9
-PCC6CU,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,No competition,11-Jul-17,15.7,14.1,10.8,5.4,2.1,0.7,-0.2
 PTY1CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,16.1,15,11.9,5.9,2.2,0.4,-0.8
 PTY2CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,23.1,19.8,14.2,5.8,2.2,0.4,-1
 PTY4CU,2017,Phragmites,Phragmites_Typha,Typha,No competition,14-Jul-17,28.7,25.8,21.6,9,6.2,2.1,0.8
@@ -67,11 +66,11 @@ PCA1,2017,Phragmites,Phragmites_Carex,Carex,Competition,09-Jul-17,18.9,17.2,12.8
 PCA4,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,19.9,18.2,14.1,7,2.9,1.1,-0.2
 PCA5,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,21,19,14.4,6.7,2.6,0.6,-0.8
 PCA6,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,22.3,19.6,15.3,8.3,4,2.8,1.7
-PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,17.6,16.2,13.1,6.4,2.9,0.3,-0.7
-PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,24.7,21.7,14.9,5.8,1.5,-0.7,-1.9
+PCA2CU,2017,Phragmites,Phragmites_Carex,Carex,No competition,10-Jul-17,19.7,17.8,13.5,5.7,1.9,0,-1.4
+PCA3,2017,Phragmites,Phragmites_Carex,Carex,Competition,10-Jul-17,16.4,15,11.5,5.1,1.8,-0.2,-1.2
+PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,10-Jul-17,15.75,14.45,11.45,5.75,1.75,0.2,-0.85
 PCA2,2017,Phragmites,Phragmites_Carex,Carex,Competition,11-Jul-17,13,12.5,10.3,5.2,1.6,-0.1,-1.3
-PCC5,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,13.9,12.7,9.8,5.1,0.6,0.1,-1
-PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,5.7,6.2,6.2,5.2,3.3,1.5,-1
+PCC6,2017,Phragmites,Phragmites_Calamagrostis,Calamagrostis,Competition,11-Jul-17,15.2,13.95,10.55,5.5,2.4,0.4,-1.45
 PTY1,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,12.2,12.1,10.9,7.1,3.9,2.7,0.6
 PTY2,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,24,21.4,16.7,9.1,3.8,1.7,0.9
 PTY3,2017,Phragmites,Phragmites_Typha,Typha,Competition,14-Jul-17,21.9,19.9,14.4,8.2,3.5,1.4,0
