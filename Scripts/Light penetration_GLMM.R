@@ -1,6 +1,6 @@
 
 ########## GLMM wih pair and year as random ##########
-
+library(tidyverse)
 library(lme4)
 library(MuMIn)
 
@@ -261,10 +261,6 @@ r.squaredGLMM(phrag.cala)
 
 
 
-
-
-
-
 phrag.typha <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = p.typha.light)
 summary(phrag.typha)
 
@@ -287,12 +283,12 @@ summary(phrag.typha)
 #Number of obs: 20, groups:  Pair, 10; Year, 2
 
 #Fixed effects:
-#  Estimate Std. Error t value
+#Estimate Std. Error t value
 #(Intercept)      94.023      2.874  32.718
 #Competitionyes   -1.000      1.832  -0.546
 
 #Correlation of Fixed Effects:
-#  (Intr)
+#(Intr)
 #Competitnys -0.319
 
 

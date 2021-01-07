@@ -328,38 +328,37 @@ colnames(light.1500)
 carex1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), data = carex.A, REML = TRUE)
 summary(carex1500)
 
-
 #Linear mixed model fit by REML ['lmerMod']
 #Formula: carbon ~ Treatment + (1 | Pair) + (1 | Year)
 #Data: carex.A
 
-#REML criterion at convergence: 143.9
+# REML criterion at convergence: 142.3
 
-#Scaled residuals: 
+# Scaled residuals: 
 #  Min       1Q   Median       3Q      Max 
-#-1.61492 -0.68856 -0.07908  0.44919  2.43037 
+# -1.17382 -0.60067 -0.03122  0.51606  2.25761 
 
 # Random effects:
 # Groups   Name        Variance Std.Dev.
-# Pair     (Intercept)  1.801   1.342   
-# Year     (Intercept) 11.151   3.339   
-# Residual              9.445   3.073   
-# Number of obs: 28, groups:  Pair, 11; Year, 2
+# Pair     (Intercept)  5.449   2.334   
+# Year     (Intercept) 12.338   3.513   
+# Residual              5.915   2.432   
+# Number of obs: 28, groups:  Pair, 18; Year, 2
 
-#Fixed effects:
-#                        Estimate  Std. Error  t value
-#(Intercept)                8.502      2.539   3.349
-#Treatment No competition    5.008      1.206   4.153
+# Fixed effects:
+# Estimate Std. Error t value
+# (Intercept)                8.557      2.634   3.249
+# TreatmentNo competition    4.567      0.995   4.589
 
-#Correlation of Fixed Effects:
+# Correlation of Fixed Effects:
 #  (Intr)
-#TrtmntNcmpt -0.208
+# TrtmntNcmpt -0.164
 
 
 r.squaredGLMM(carex1500) # marginal and conditional r2 for model 1
 
-#      R2m       R2c
-#[1,] 0.2240789 0.6727968
+#         R2m       R2c
+#[1,] 0.184963 0.7966059
 
 
 # examine the residuals 
@@ -384,31 +383,34 @@ summary(cala1500)
 
 #REML criterion at convergence: 216.8
 
-#Scaled residuals: 
+# Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-2.8456 -0.6725  0.1624  0.6967  1.7385 
+# -2.8601 -0.6941  0.1529  0.7756  1.7835 
 
-#Random effects:
+# Random effects:
 #  Groups   Name        Variance Std.Dev.
-#Pair     (Intercept) 0.2407   0.4907  
-#Year     (Intercept) 0.3626   0.6022  
-#Residual             7.4879   2.7364  
-#Number of obs: 45, groups:  Pair, 12; Year, 2
+# Pair     (Intercept) 0.0000   0.0000  
+# Year     (Intercept) 0.3691   0.6075  
+# Residual             7.7177   2.7781  
+# Number of obs: 45, groups:  Pair, 24; Year, 2
 
-#Fixed effects:
-#                          Estimate  Std. Error  t value
-#(Intercept)                8.665       0.717    12.084
-# TreatmentNo competition    4.484      0.820    5.469
+# Fixed effects:
+# Estimate Std. Error t value
+# (Intercept)               8.6667     0.7114  12.182
+# TreatmentNo competition   4.4702     0.8312   5.378
 
 # Correlation of Fixed Effects:
 #  (Intr)
-# TrtmntNcmpt -0.532
+# TrtmntNcmpt -0.544
+# optimizer (nloptwrap) convergence code: 0 (OK)
+# boundary (singular) fit: see ?isSingular
+# r.squaredGLMM(cala1500) # marginal and conditional r2 for model 1
 
-r.squaredGLMM(cala1500) # marginal and conditional r2 for model 1
+r.squaredGLMM(cala1500)
 
-#          R2m      R2c
-#[1,] 0.387503 0.433176
-
+#           R2m       R2c
+# [1,] 0.3861236 0.4141413
+ 
 
 # examine the residuals 
 plot(cala1500)
@@ -420,46 +422,44 @@ qqline(resid(cala1500))
 coef(cala1500)
 
 
-
 ###  Typha 1500 GLMM ####
 
 typ1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), data = typha.A, REML = TRUE)
 summary(typ1500)
 
+# Linear mixed model fit by REML ['lmerMod']
+# Formula: carbon ~ Treatment + (1 | Pair) + (1 | Year)
+# Data: typha.A
 
-#Linear mixed model fit by REML ['lmerMod']
-#Formula: carbon ~ Treatment + (1 | Pair) + (1 | Year)
-#Data: typha.A
-
-#REML criterion at convergence: 139.2
+# REML criterion at convergence: 130.4
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-2.7388 -0.4282  0.0635  0.7221  1.4427 
+# -1.4838 -0.6877  0.0482  0.4930  1.1329 
 
 #Random effects:
 #  Groups   Name        Variance  Std.Dev. 
-#Pair     (Intercept) 0.000e+00 0.000e+00
-#Year     (Intercept) 3.192e-14 1.787e-07
-#Residual             2.619e+01 5.118e+00
-#Number of obs: 24, groups:  Pair, 6; Year, 2
+# Pair     (Intercept) 1.948e+01 4.4134441
+# Year     (Intercept) 2.642e-09 0.0000514
+# Residual             6.713e+00 2.5910391
+# Number of obs: 24, groups:  Pair, 12; Year, 2
 
-#Fixed effects:
-#                      Estimate Std. Error t value
-#(Intercept)               17.633      1.477  11.936
-#TreatmentNo competition    3.083      2.089   1.476
+# Fixed effects:
+#  Estimate Std. Error t value
+# (Intercept)               17.633      1.477  11.936
+# TreatmentNo competition    3.083      1.058   2.915
 
-#Correlation of Fixed Effects:
+# Correlation of Fixed Effects:
 #  (Intr)
-#TrtmntNcmpt -0.707
-#optimizer (nloptwrap) convergence code: 0 (OK)
-#boundary (singular) fit: see ?isSingular
+# TrtmntNcmpt -0.358
+# optimizer (nloptwrap) convergence code: 0 (OK)
+# boundary (singular) fit: see ?isSingular
 
 
 r.squaredGLMM(typ1500) # marginal and conditional r2 for model 1
 
-#         R2m        R2c
-#[1,] 0.08649794 0.08649794
+#         R2m       R2c
+#[1,] 0.08649793 0.7658526
 
 # examine the residuals 
 plot(typ1500)
@@ -478,6 +478,7 @@ phragmites.phyt <- light.1500 %>% filter(Species == "Phragmites")
 phragmites.phyt <- phragmites.phyt %>% 
   unite("neigh_trt", Neighbour, Treatment, remove = FALSE)
 
+
 carex.phr <- phragmites.phyt %>% filter(Neighbour == "Carex")
 cala.phr <- phragmites.phyt %>% filter(Neighbour == "Calamagrostis")
 typha.phr <- phragmites.phyt %>% filter(Neighbour == "Typha")
@@ -486,7 +487,8 @@ typha.phr <- phragmites.phyt %>% filter(Neighbour == "Typha")
 ###  Phrag and Carex ####
 
 phr.car1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), 
-                    data = carex.phr, REML = TRUE)
+                    data = carex.phr)
+
 summary(phr.car1500)
 
 
@@ -498,29 +500,30 @@ summary(phr.car1500)
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-1.7281 -0.6296  0.4076  0.6574  1.2145 
+#-1.7931 -0.6715  0.4773  0.6540  1.2470 
 
 #Random effects:
-
-#Groups   Name        Variance Std.Dev.
-#Pair     (Intercept)  0.4923  0.7016  
-#Year     (Intercept)  0.2621  0.5120  
-#Residual             13.1017  3.6196  
-#Number of obs: 23, groups:  Pair, 6; Year, 2
+#  Groups   Name        Variance Std.Dev.
+#Pair     (Intercept)  0.0000  0.0000  
+#Year     (Intercept)  0.2239  0.4732  
+#Residual             13.5724  3.6841  
+#Number of obs: 23, groups:  Pair, 12; Year, 2
 
 #Fixed effects:
-#                        Estimate  Std. Error  t value
-#(Intercept)               18.275      1.142   15.998
-#TreatmentNo competition    3.164      1.512   2.092
+#                         Estimate Std. Error t value
+#(Intercept)               18.275      1.115  16.392
+#TreatmentNo competition    3.164      1.538   2.057
 
 #Correlation of Fixed Effects:
 #  (Intr)
-#TrtmntNcmpt -0.632
+#TrtmntNcmpt -0.660
+#optimizer (nloptwrap) convergence code: 0 (OK)
+#boundary (singular) fit: see ?isSingular
 
 r.squaredGLMM(phr.car1500) # marginal and conditional r2 for model 1
 
 #           R2m       R2c
-#[1,] 0.1585793 0.2043916
+#[1,] 0.1591981 0.1728443
 
 
 # examine the residuals 
@@ -537,40 +540,37 @@ coef(phr.car1500)
 
 phr.cal1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), 
                     data = cala.phr, REML = TRUE)
+
 summary(phr.cal1500)
 
-#Linear mixed model fit by REML ['lmerMod']
-#Formula: carbon ~ Treatment + (1 | Pair) + (1 | Year)
-#Data: cala.phr
-
-#REML criterion at convergence: 121.5
+#REML criterion at convergence: 121.6
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-1.1434 -0.8113 -0.2591  0.3306  2.2935 
+#-1.1885 -0.7396 -0.2993  0.3218  2.3442 
 
 #Random effects:
 #  Groups   Name        Variance Std.Dev.
-#Pair     (Intercept)  0.3622  0.6018  
-#Year     (Intercept)  0.0000  0.0000  
-#Residual             11.4025  3.3768  
-#Number of obs: 24, groups:  Pair, 6; Year, 2
+#Pair     (Intercept)  0.00    0.000   
+#Year     (Intercept)  0.00    0.000   
+#Residual             11.73    3.425   
+#Number of obs: 24, groups:  Pair, 12; Year, 2
 
-# Fixed effects:
-#                       Estimate  Std. Error  t value
-#(Intercept)              18.2708     1.0053  18.175
-#TreatmentNo competition   0.5083     1.3786   0.369
+#Fixed effects:
+#  Estimate Std. Error t value
+#(Intercept)              18.2708     0.9888  18.478
+#TreatmentNo competition   0.5083     1.3983   0.364
 
 #Correlation of Fixed Effects:
 #  (Intr)
-#TrtmntNcmpt -0.686
+#TrtmntNcmpt -0.707
 #optimizer (nloptwrap) convergence code: 0 (OK)
 #boundary (singular) fit: see ?isSingular
 
 r.squaredGLMM(phr.cal1500) # marginal and conditional r2 for model 1
 
 #            R2m        R2c
-#[1,] 0.005697145 0.03631021
+#[1,] 0.005713046 0.005713046
 
 
 # examine the residuals 
@@ -587,38 +587,35 @@ coef(phr.cal1500)
 
 phr.typ1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), 
                     data = typha.phr, REML = TRUE)
-summary(phr.typ1500)
 
-#Linear mixed model fit by REML ['lmerMod']
-#Formula: carbon ~ Treatment + (1 | Pair) + (1 | Year)
-#Data: typha.phr
+summary(phr.typ1500)
 
 #REML criterion at convergence: 126.2
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-2.7932 -0.3898  0.2746  0.5476  1.1180 
+#-2.6999 -0.4148  0.2861  0.5720  1.1562 
 
 #Random effects:
 #  Groups   Name        Variance Std.Dev.
-#Pair     (Intercept)  5.904   2.430   
-#Year     (Intercept)  1.088   1.043   
-#Residual             20.760   4.556   
-#Number of obs: 22, groups:  Pair, 6; Year, 2
+#Pair     (Intercept)  7.9017  2.8110  
+#Year     (Intercept)  0.7526  0.8675  
+#Residual             18.3074  4.2787  
+#Number of obs: 22, groups:  Pair, 12; Year, 2
 
 #Fixed effects:
-#  Estimate Std. Error t value
-#(Intercept)               19.875      1.805  11.011
-#TreatmentNo competition    1.237      1.966   0.629
+#                      Estimate Std. Error t value
+#(Intercept)               19.875      1.600  12.421
+#TreatmentNo competition    1.555      1.859   0.837
 
-#Correlation of Fixed Effects:
+# Correlation of Fixed Effects:
 #  (Intr)
-#TrtmntNcmpt -0.488
+# TrtmntNcmpt -0.513
 
 r.squaredGLMM(phr.typ1500) # marginal and conditional r2 for model 1
 
 #          R2m       R2c
-#[1,] 0.01412186 0.2625179
+#[1,] 0.02276981 0.3364449
 
 
 # examine the residuals 

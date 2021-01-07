@@ -1,4 +1,6 @@
 library(nicheROVER)
+citation("nicheROVER")
+
 
 data.raw <- read.csv("Data/PCA scores_123.csv") # raw PCA scores
 data.raw$Species <- as.factor(data.raw$Species)
@@ -75,26 +77,26 @@ over.stat <- overlap(data.par, nreps = nsamples, nprob = 1000, alpha = c(0.95,
 # The mean overlap metrics calculated across iteratations for both niche
 # region sizes (alpha = .95 and alpha = .99) can be calculated and displayed
 # in an array.
-over.mean <- apply(over.stat, c(1:2, 4), median) * 100
+over.mean <- apply(over.stat, c(1:2, 4), mean) * 100
 round(over.mean, 2)
 
 #, , alpha = 95%
 
-#                              Species B
+#                               Species B
 #Species A       Calamagrostis Carex Phragmites Typha
-#Calamagrostis            NA  25.50        0.3    0.0
-#Carex                  1.85    NA       70.0    29.1
-#Phragmites             0.10  55.85         NA   41.0
-#Typha                  0.00  17.80       51.8    NA
+#Calamagrostis            NA 32.21       6.29  3.59
+#Carex                  2.67    NA      69.09 30.20
+#Phragmites             0.32 56.46         NA 42.23
+#Typha                  0.17 20.12      52.44    NA
 
 #, , alpha = 99%
 
-#                                   Species B
+#                             Species B
 #Species A       Calamagrostis Carex Phragmites Typha
-#Calamagrostis            NA  60.8       8.30    2.50
-#Carex                   3.6    NA      83.55   50.95
-#Phragmites              0.2  72.0         NA   57.75
-#Typha                   0.1  31.9      70.25    NA
+#Calamagrostis            NA 58.80      22.02 14.59
+#Carex                  4.72    NA      81.76 49.69
+#Phragmites             0.64 71.80         NA 58.30
+#Typha                  0.31 34.25      69.79    NA
 
 over.cred <- apply(over.stat * 100, c(1:2, 4), quantile, prob = c(0.025, 0.975), 
                    na.rm = TRUE)

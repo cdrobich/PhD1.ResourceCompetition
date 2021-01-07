@@ -37,10 +37,44 @@ soils.log <- soils.log %>% select(Moist.log:Light.log)
 
 soils.log$pH <- soil$pH
 
-hist.data.frame(soils.log)
+hist.data.frame(soils.log) # looks better go with this one
+
+
+## Tidy keeps freaking out when i try to transform so I did it in excel
+
+soils.tr <- read.csv("Data/soil_nutrients_transform.csv")
+soils.log <- soils.tr %>% select(Moisture:pH)# just the soil nutrient data
+env <- soils.tr %>% select(Vegetation:Species)
 
 pca <- rda(soils.log, scale = TRUE) 
 summary(pca)
+
+#Call:
+#  rda(X = soils.log, scale = TRUE) 
+
+#Partitioning of correlations:
+#                 Inertia Proportion
+#Total              16          1
+#Unconstrained      16          1
+
+#Eigenvalues, and their contribution to the correlations 
+
+#Importance of components:
+#  PC1     PC2     PC3     PC4     PC5     PC6     PC7     PC8      PC9     PC10     PC11   PC12     PC13
+#Eigenvalue            10.6775 1.28773 1.05527 0.90061 0.55561 0.38778 0.30447 0.24715 0.148847 0.146857 0.087963 0.0800 0.062438
+#Proportion Explained   0.6673 0.08048 0.06595 0.05629 0.03473 0.02424 0.01903 0.01545 0.009303 0.009179 0.005498 0.0050 0.003902
+#Cumulative Proportion  0.6673 0.74783 0.81378 0.87007 0.90480 0.92903 0.94806 0.96351 0.972812 0.981990 0.987488 0.9925 0.996390
+
+#PC14     PC15      PC16
+#Eigenvalue            0.025712 0.017380 0.0146676
+#Proportion Explained  0.001607 0.001086 0.0009167
+#Cumulative Proportion 0.997997 0.999083 1.0000000
+
+#Scaling 2 for species and site scores
+#* Species are scaled proportional to eigenvalues
+#* Sites are unscaled: weighted dispersion equal on all dimensions
+#* General scaling constant of scores:  5.542976 
+
 
 summary(eigenvals(pca))
 
