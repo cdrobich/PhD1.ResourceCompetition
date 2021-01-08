@@ -60,7 +60,7 @@ summary(pca)
 #Eigenvalues, and their contribution to the correlations 
 
 #Importance of components:
-#  PC1     PC2     PC3     PC4     PC5     PC6     PC7     PC8      PC9     PC10     PC11   PC12     PC13
+#                        PC1     PC2     PC3     PC4     PC5     PC6     PC7     PC8      PC9     PC10     PC11   PC12     PC13
 #Eigenvalue            10.6775 1.28773 1.05527 0.90061 0.55561 0.38778 0.30447 0.24715 0.148847 0.146857 0.087963 0.0800 0.062438
 #Proportion Explained   0.6673 0.08048 0.06595 0.05629 0.03473 0.02424 0.01903 0.01545 0.009303 0.009179 0.005498 0.0050 0.003902
 #Cumulative Proportion  0.6673 0.74783 0.81378 0.87007 0.90480 0.92903 0.94806 0.96351 0.972812 0.981990 0.987488 0.9925 0.996390

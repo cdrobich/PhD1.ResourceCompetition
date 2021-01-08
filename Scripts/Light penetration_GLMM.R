@@ -28,7 +28,7 @@ typha.light <- light.res.pair %>% filter(Phytometer == "Typha")
 
 # Carex
 
-test.carex <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = carex.light, REML = FALSE)
+test.carex <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = carex.light, REML = TRUE)
 summary(test.carex)
 
 #Linear mixed model fit by REML ['lmerMod']
@@ -37,19 +37,19 @@ summary(test.carex)
 
 #REML criterion at convergence: 426.9
 
-#           Scaled residuals: 
+#Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
 #-1.3936 -0.6833 -0.2722  0.7527  2.2935 
 
-#              Random effects:
-#  Groups   Name        Variance Std.Dev.
+#Random effects:
+#Groups   Name        Variance Std.Dev.
 #Pair     (Intercept)  59.1     7.688  
 #Year     (Intercept) 129.2    11.367  
 #Residual             746.3    27.319  
 #Number of obs: 46, groups:  Pair, 23; Year, 2
 
 #Fixed effects:
-#              Estimate Std. Error t value
+#Estimate Std. Error t value
 #(Intercept)      50.264      9.983   5.035
 #Competitionyes   -8.522      8.056  -1.058
 
@@ -88,32 +88,32 @@ summary(test.cala)
 #Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
 #Data: cala.light
 
-#REML criterion at convergence: 411.8
+#REML criterion at convergence: 430.5
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-# -1.9141 -0.6920 -0.1274  0.7652  2.1376 
+#-1.8933 -0.6931 -0.1603  0.8116  2.1346 
 
 #Random effects:
-#  Groups   Name        Variance Std.Dev.
-#Pair     (Intercept)  73.27    8.56   
-#Year     (Intercept) 150.81   12.28   
-#Residual             814.55   28.54   
-#Number of obs: 44, groups:  Pair, 22; Year, 2
+#Groups   Name        Variance Std.Dev.
+#Pair     (Intercept)  66.54    8.157  
+#Year     (Intercept) 191.66   13.844  
+#Residual             801.92   28.318  
+#Number of obs: 46, groups:  Pair, 24; Year, 2
 
 #Fixed effects:
-#              Estimate Std. Error  t value
-#(Intercept)      67.694     10.766   6.288
-#Competitionyes  -26.636      8.605  -3.095
+#  Estimate Std. Error t value
+#(Intercept)      67.939     11.636   5.839
+#Competitionyes  -25.064      8.379  -2.991
 
 #Correlation of Fixed Effects:
 #  (Intr)
-#Competitnys -0.400
+#Competitnys -0.377
 
 r.squaredGLMM(test.cala) 
 
 #       R2m       R2c
-#[1,] 0.148753 0.3324101
+#[1,] 0.1313019 0.3428793
 
 
 
@@ -121,7 +121,6 @@ r.squaredGLMM(test.cala)
 
 test.typha <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = typha.light)
 summary(test.typha)
-
 
 #Linear mixed model fit by REML ['lmerMod']
 #Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
@@ -134,16 +133,16 @@ summary(test.typha)
 #-2.59889 -0.44558 -0.01338  0.48103  1.43819 
 
 #Random effects:
-#  Groups   Name        Variance Std.Dev.
+#Groups   Name        Variance Std.Dev.
 #Pair     (Intercept)  54.88    7.408  
 #Year     (Intercept) 128.89   11.353  
 #Residual             198.65   14.094  
 #Number of obs: 24, groups:  Pair, 12; Year, 2
 
 #Fixed effects:
-#  Estimate Std. Error t value
-# (Intercept)      90.000      9.250   9.729
-# Competitionyes  -14.750      5.754  -2.563
+#Estimate Std. Error t value
+#(Intercept)      90.000      9.250   9.729
+#Competitionyes  -14.750      5.754  -2.563
 
 #Correlation of Fixed Effects:
 #  (Intr)
@@ -152,7 +151,7 @@ summary(test.typha)
 r.squaredGLMM(test.typha) 
 
 #       R2m       R2c
-#[1,] 0.1292334 0.5476748
+#[1,] 0.1292334 0.547674
 
 
 ######## Phragmites ###############
@@ -162,6 +161,28 @@ phrag.light.pair <- read.csv("Data/Light_phrag.csv")
 
 phrag.light.pair$Year <- as.factor(phrag.light.pair$Year)
 
+colnames(phrag.light.pair)
+
+phrag.light.pair %>% 
+  group_by(Neighbour, Competition) %>% 
+  summarise(Light.avg = mean(Incident),
+            Light.sd = sd(Incident),
+            N = length(Incident),
+            st.err = (Light.sd)/(sqrt(N)))
+  
+#  Neighbour     Competition Light.avg Light.sd     N st.err
+#1 Calamagrostis no               91.6     7.80    11   2.35
+#2 Calamagrostis yes              77.3    29.0     12   8.37
+#3 Carex         no               90.6     6.62    11   2.00
+#4 Carex         yes              82.6    26.1     12   7.54
+#5 Typha         no               94.4     5.89    10   1.86
+#6 Typha         yes              93.7     5.63    12   1.63
+
+
+
+
+
+
 
 ggplot(phrag.light.pair, aes(x=Incident)) + 
   geom_histogram(binwidth = 3,
@@ -170,6 +191,20 @@ ggplot(phrag.light.pair, aes(x=Incident)) +
 
 phrag.light.pair <- phrag.light.pair %>% mutate(sqrt.incident = sqrt(Incident - 1),
                                                 log.incident = log(Incident +1))
+
+
+
+
+ggplot(phrag.light.pair, aes(x=sqrt.incident)) + 
+  geom_histogram(binwidth = 3,
+                 color="black", fill="white")
+
+
+
+ggplot(phrag.light.pair, aes(x=log.incident)) + 
+  geom_histogram(binwidth = 3,
+                 color="black", fill="white") # going to go wtih raw
+
 
 phrag.light.pair <- phrag.light.pair %>% 
   unite("compyear", Competition:Year, remove = FALSE)
@@ -189,125 +224,118 @@ summary(phrag.carex)
 #Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
 #Data: p.carex.light
 
-#REML criterion at convergence: 180.7
+#REML criterion at convergence: 189.1
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-# -3.7303 -0.1215  0.2060  0.5334  0.9534 
+#-3.8348 -0.1098  0.2758  0.4842  0.8955 
 
 #Random effects:
-#Groups   Name        Variance  Std.Dev. 
-#Pair     (Intercept) 2.239e-11 4.732e-06
-#Year     (Intercept) 0.000e+00 0.000e+00
-#Residual             3.858e+02 1.964e+01
-#Number of obs: 22, groups:  Pair, 11; Year, 2
+#  Groups   Name        Variance Std.Dev.
+#Pair     (Intercept)   0.0     0.00   
+#Year     (Intercept)   0.0     0.00   
+#Residual             378.3    19.45   
+#Number of obs: 23, groups:  Pair, 12; Year, 2
 
 #Fixed effects:
-#               Estimate Std. Error t value
-#(Intercept)      90.636      5.923  15.304
-#Competitionyes   -9.364      8.376  -1.118
+#  Estimate Std. Error t value
+#(Intercept)      90.636      5.864  15.456
+#Competitionyes   -8.053      8.118  -0.992
 
 #Correlation of Fixed Effects:
 #  (Intr)
-#Competitnys -0.707
+#Competitnys -0.722
 #optimizer (nloptwrap) convergence code: 0 (OK)
 #boundary (singular) fit: see ?isSingular
 
 r.squaredGLMM(phrag.carex) 
 
 #       R2m        R2c
-#[1,] 0.05617228 0.05617228
+#[1,] 0.04281042 0.04281042
 
 phrag.cala <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = p.cala.light)
 summary(phrag.cala)
 
 #Linear mixed model fit by REML ['lmerMod']
-#Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
+#Formula: 
+#  Incident ~ Competition + (1 | Pair) + (1 | Year)
 #Data: p.cala.light
 
-#REML criterion at convergence: 184.5
+#REML criterion at convergence: 193.5
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-2.8237 -0.1080  0.2077  0.6006  1.0100 
+#-2.9248 -0.1254  0.2699  0.5916  0.9578 
 
 #Random effects:
-#Groups   Name        Variance Std.Dev.
-#Pair     (Intercept)  51.06    7.146  
-#Year     (Intercept)  10.92    3.305  
-#Residual             414.95   20.370  
-#Number of obs: 22, groups:  Pair, 11; Year, 2
+#  Groups   Name        Variance  Std.Dev. 
+#Pair     (Intercept) 5.645e+01 7.513e+00
+#Year     (Intercept) 7.207e-08 2.685e-04
+#Residual             4.131e+02 2.032e+01
+#Number of obs: 23, groups:  Pair, 12; Year, 2
 
 #Fixed effects:
-#Estimate Std. Error t value
-#(Intercept)      91.544      6.918  13.232
-#Competitionyes  -16.091      8.686  -1.853
+#  Estimate Std. Error t value
+#(Intercept)      91.851      6.530  14.067
+#Competitionyes  -14.518      8.506  -1.707
 
 #Correlation of Fixed Effects:
 #  (Intr)
-#Competitnys -0.628
+#Competitnys -0.683
+#optimizer (nloptwrap) convergence code: 0 (OK)
+#boundary (singular) fit: see ?isSingular
 
 r.squaredGLMM(phrag.cala)
 
 #       R2m       R2c
-#[1,] 0.1244844 0.2382694
-
-
-# variance for mountain ranges is 339.7 - explain a lot of variation
-# Take mountain range variance and divide by total variance
-
-339.7/(339.7 + 223.8)  # ~60 %
-
-
+#[1,] 0.1048243 0.2124382
 
 
 phrag.typha <- lmer(Incident ~ Competition + (1|Pair) + (1|Year), data = p.typha.light)
 summary(phrag.typha)
 
-
 #Linear mixed model fit by REML ['lmerMod']
-#Formula: Incident ~ Competition + (1 | Pair) + (1 | Year)
+#Formula: 
+#  Incident ~ Competition + (1 | Pair) + (1 | Year)
 #Data: p.typha.light
 
-#REML criterion at convergence: 116.4
+#REML criterion at convergence: 128.1
 
 #Scaled residuals: 
 #  Min      1Q  Median      3Q     Max 
-#-2.0268 -0.2256  0.1934  0.4662  1.0824 
+#-2.0245 -0.1534  0.2065  0.4997  1.0239 
 
 #Random effects:
 #  Groups   Name        Variance Std.Dev.
-# Pair     (Intercept) 13.79    3.713   
-#Year     (Intercept) 10.28    3.206   
-#Residual             16.78    4.096   
-#Number of obs: 20, groups:  Pair, 10; Year, 2
+#Pair     (Intercept) 13.295   3.646   
+#Year     (Intercept)  5.092   2.257   
+#Residual             16.225   4.028   
+#Number of obs: 22, groups:  Pair, 12; Year, 2
 
 #Fixed effects:
-#Estimate Std. Error t value
-#(Intercept)      94.023      2.874  32.718
-#Competitionyes   -1.000      1.832  -0.546
+#  Estimate Std. Error t value
+#(Intercept)     94.3872     2.3263  40.575
+#Competitionyes  -0.7205     1.7634  -0.409
 
 #Correlation of Fixed Effects:
-#(Intr)
-#Competitnys -0.319
+#  (Intr)
+#Competitnys -0.428
 
 
 r.squaredGLMM(phrag.typha)
 
 #        R2m       R2c
-#[1,] 0.006402295 0.5918182
+#[1,] 0.003880565 0.5330511
 
-
-
-light <- light %>% #rename the factors
+phrag.light.pair <- phrag.light.pair %>% #rename the factors
   mutate(Competition = fct_recode(Competition,
                                   "No" = "no",
                                   "Yes" = "yes"))
 
-light %>% 
-  group_by(Phytometer, Competition) %>% 
+phrag.light.pair %>% 
+  group_by(Neighbour, Competition) %>% 
   mutate(mean = mean(Incident),
-         median = median(Incident)) -> light
+         median = median(Incident)) -> phrag.light.pair
 
 colnames(phrag.light.pair)
 
@@ -324,12 +352,14 @@ colnames(phrag.light.pair)
        y = "Density") +
   xlim(0, 150) +
   labs(fill = "Competition") +
-  theme(legend.position = c(0.75, 0.9)) +
-  #geom_vline(aes(xintercept = mean,
-        #         colour = Competition),
-         #    size = 1,
-          #   show.legend = FALSE) +
+  theme(legend.position = c(0.75, 0.8)) +
+  geom_vline(aes(xintercept = mean,
+              colour = Competition),
+           size = 1,
+           show.legend = FALSE) +
   scale_colour_manual(values = c("#fee08b", "black"))) 
 
 ggsave("Figures/Phragmites_neighbours_lightdensity.TIFF", phrag.light,
        dpi = 300)
+
+
