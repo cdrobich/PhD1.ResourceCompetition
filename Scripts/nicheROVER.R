@@ -1,6 +1,16 @@
-library(nicheROVER)
 citation("nicheROVER")
 
+# for Niche Size
+
+library(devtools)
+
+devtools::install_github("mlysy/nicheROVER", ref = "master")
+
+# Updated Vignette
+# http://htmlpreview.github.io/?https://github.com/mlysy/nicheROVER/master/doc/ecol-vignette.html
+## for niche.size
+
+library(nicheROVER)
 
 data.raw <- read.csv("Data/PCA scores_123.csv") # raw PCA scores
 data.raw$Species <- as.factor(data.raw$Species)
@@ -57,15 +67,45 @@ soil.data <- tapply(1:nrow(data), data$Species, function(ii) X = data[ii, 2:4])
 
 niche.plot(niche.par = data.par, niche.data = soil.data, pfrac = 0.05, 
            iso.names = expression(PC1, PC2, PC3), 
-           col = clrs, xlab = expression("Environmental Variables"))
+           col = clrs, xlab = expression(""))
 
 legend("topright", legend = names(data.par), fill = clrs)
 
 
+
+
+####### Estimating Niche Size ##########
+
+# posterior distribution of (mu, Sigma) for each species
+nsamples <- 1000
+data.par <- tapply(1:nrow(data), data$Species, 
+                   function(ii) niw.post(nsamples = nsamples, X = data[ii, 2:4]))
+
+
+# posterior distribution of niche size by species
+data.size <- sapply(data.par, function(spec) {
+  apply(spec$Sigma, 3, niche.size, alpha = .95)
+})
+
+# point estimate and standard error
+rbind(est = colMeans(data.size),
+      se = apply(data.size, 2, sd))
+
+#      Calamagrostis      Carex Phragmites      Typha
+# est   0.006193441 0.03689646 0.06017494 0.05439230
+# se    0.002027420 0.01106185 0.01912802 0.01732852
+
+# boxplots
+boxplot(data.size, col = clrs, pch = 16, cex = .5,
+        ylab = "Niche Size", xlab = "Species")
+
+
+###### Niche Overlap ##########
+
 # niche overlap plots for 95% niche region sizes
 nsamples <- 1000
-data.par <- tapply(1:nrow(data), data$Species, function(ii) niw.post(nsamples = nsamples, 
-                                                                     X = data[ii, 2:4]))
+data.par <- tapply(1:nrow(data), data$Species, 
+                   function(ii) niw.post(nsamples = nsamples, X = data[ii, 2:4]))
 
 # Overlap calculation.  use nsamples = nprob = 10000 (1e4) for higher
 # accuracy.  the variable over.stat can be supplied directly to the
@@ -104,7 +144,7 @@ round(over.cred[, , , 1])  # display alpha = .95 niche region
 
 #, , Species B = Calamagrostis
 
-#Species A
+#             Species A
 #           Calamagrostis Carex Phragmites Typha
 #2.5%             NA     0          0     0
 #97.5%            NA    10          2     1
@@ -112,7 +152,7 @@ round(over.cred[, , , 1])  # display alpha = .95 niche region
 #, , Species B = Carex
 
 #Species A
-#Calamagrostis Carex Phragmites Typha
+#       Calamagrostis Carex Phragmites Typha
 #2.5%              0    NA         30     4
 #97.5%            87    NA         84    54
 
@@ -136,3 +176,8 @@ round(over.cred[, , , 1])  # display alpha = .95 niche region
 over.stat <- overlap(data.par, nreps = nsamples, nprob = 1000, alpha = 0.95)
 overlap.plot(over.stat, col = clrs, mean.cred.col = "black", equal.axis = TRUE, 
              xlab = "Overlap Probability (%) -- Niche Region Size: 95%")
+
+
+
+
+
