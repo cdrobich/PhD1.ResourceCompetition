@@ -157,10 +157,11 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
        x = "") + 
   scale_colour_manual(values = c("black", "grey")) +
   theme(panel.border = element_rect(fill = NA)) +
-  theme(text = element_text(size = 14),
+  theme(text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
-        axis.text.y = element_text(size = 16)) +
-  ylim(-5, 30) +
+        axis.text.y = element_text(size = 12),
+        strip.text = element_text(size=12)) +
+  ylim(-2, 30) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
   theme(legend.position = "none")
 
@@ -189,10 +190,11 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
   theme(panel.border = element_rect(fill = NA)) +
-  theme(text = element_text(size = 14),
+  theme(text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
-        axis.text.y = element_text(size = 16)) +
-  ylim(-5, 30) +
+        axis.text.y = element_text(size = 12),
+        strip.text = element_text(size=12)) +
+  ylim(-2, 30) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
   theme(legend.position = c(0.9, 0.2))
 
@@ -200,7 +202,8 @@ plot.phr
 
 
 (carbon.assim.panel <- ggarrange(plot.res, plot.phr,
-          nrow = 2))
+          nrow = 2,
+          labels = c("A","B")))
 
 ggsave("Figures/Carbon_facet.jpeg", carbon.assim.panel)
 
@@ -232,26 +235,35 @@ light1500.res %>%
   mutate(Cmean = mean(carbon),
          Cmedian = median(carbon)) -> light1500.res
 
-res1500 <- ggplot(light1500.res, aes(x = carbon, fill = as.factor(Treatment))) +
-  geom_density(alpha = 0.6, size = 1) +
+# change order
+light1500.res$Treatment <- as.factor(light1500.res$Treatment)
+
+light1500.res$Treatment<- factor(light1500.res$Treatment, levels = c("No competition",
+                                                                     "Competition"))
+
+
+res1500 <- ggplot(light1500.res, aes(x = Treatment,
+                                     y = carbon)) +
+  geom_jitter(aes(colour = Treatment,
+                  shape = Treatment),
+              size = 2,
+              width = 0.08) +
   facet_wrap("Species") + 
-  scale_fill_manual(values = c("black", "grey")) +
-  theme_classic(base_size = 14) +
-  theme(plot.title = element_text(size = 14, face = "bold"),
+  theme_classic(base_size = 12) +
+  theme(plot.title = element_text(size = 12, face = "bold"),
         legend.title=element_text(size=9), 
         legend.text=element_text(size=9)) +
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = " ",
-       y = "Density") +
-  xlim(0, 40) +
-  labs(fill = "Competition") +
-  theme(legend.position = c(0.85, 0.8)) +
-  geom_vline(aes(xintercept = Cmean,
-                 colour = Treatment),
-             size = 1,
-             show.legend = FALSE) +
-  scale_colour_manual(values = c("black", "grey")) +
-  theme(legend.position = "none")
+       y = expression(paste
+                      ("Carbon Assimilation"," ", " (", "umol CO"[2],
+                        s^-1, " ", m^-2, sep=")"))) +
+  ylim(0, 40) +
+  theme(legend.position = "none") +
+  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1) 
 
 res1500
 
@@ -266,38 +278,46 @@ light1500.phrag %>%
          Cmedian = median(carbon)) -> light1500.phrag
 
 
-phrag1500 <- ggplot(light1500.phrag, aes(x = carbon, fill = as.factor(Treatment))) +
-  geom_density(alpha = 0.6, size = 1) +
-  facet_wrap("Phytometer") + 
-  scale_fill_manual(values = c("black", "grey")) +
-  theme_classic(base_size = 14) +
-  theme(plot.title = element_text(size = 14, face = "bold"),
+light1500.phrag$Treatment <- as.factor(light1500.phrag$Treatment)
+
+light1500.phrag$Treatment<- factor(light1500.phrag$Treatment, 
+                                   levels = c("No competition",
+                                              "Competition"))
+
+
+
+phrag1500 <- ggplot(light1500.phrag, aes(x = Treatment,
+                                         y = carbon)) +
+  geom_jitter(aes(colour = Treatment,
+                  shape = Treatment),
+              size = 2,
+              width = 0.08) +
+  facet_wrap("Phytometer") +
+  theme_classic(base_size = 12) +
+  theme(plot.title = element_text(size = 12, face = "bold"),
         legend.title=element_text(size=9), 
         legend.text=element_text(size=9)) +
   theme(panel.border = element_rect(fill = NA)) +
-  labs(x = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2], "umol  ",  s^-1, " ", m^-2, sep=")")),
-       y = "Density") +
-  xlim(0, 40) +
-  labs(fill = "Competition") +
-  theme(legend.position = "none") +
-  geom_vline(aes(xintercept = Cmean,
-                 colour = Treatment),
-             size = 1,
-             show.legend = FALSE) +
-  scale_colour_manual(values = c("black", "grey")) +
-  theme(legend.position = c(0.7, 0.85))
+  labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2], "umol  ",  s^-1, " ", m^-2, sep=")")),
+       x = " ") +
+  ylim(0, 40) +
+  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1) +
+  theme(legend.position = c(0.9, 0.85))
 
 phrag1500
 
 (carbon.1500 <- ggarrange(res1500, phrag1500,
-          nrow = 2))
+          nrow = 2,
+          labels = c("C","D")))
 
 
 ggsave("Figures/Carbon Assimilation 1500 panel.JPEG", carbon.1500)
 
 
-(all.panel <- ggarrange(carbon.assim.panel, carbon.1500,
-          labels = "AUTO"))
+(all.panel <- ggarrange(carbon.assim.panel, carbon.1500))
 
 
 ggsave("Figures/All_Carbon_Assimilation.JPEG", all.panel)

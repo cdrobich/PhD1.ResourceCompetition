@@ -144,7 +144,7 @@ ggsave("Figures/RCI_panel.TIFF", RCI.panel,
 
 summed <- full_join(sum, ph.sum)
 
-summmed <- summed %>% 
+summed <- summed %>% 
   mutate(Year = fct_relevel(Year, "2017", "2016"))
 
 summed <- summed %>% 
@@ -278,12 +278,15 @@ RCI.res
 rci.res.den <- ggplot(RCI.res, aes(x = RCI, fill = as.factor(Phytometer))) +
   geom_density(alpha = 0.5, size = 1) +
   facet_wrap("Phytometer") + 
-  scale_fill_manual(values = c("black", "black", "black")) +
-  theme_classic(base_size = 14) +
+  scale_fill_manual(values = c("grey", "grey", "grey")) +
+  theme_classic(base_size = 12) +
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = "Relative Competition Index (RCI)",
        y = "Density") +
-  theme(legend.position = "none") +
+  theme(legend.position = "none",
+        strip.text = element_text(size=12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12)) +
   xlim(-5, 2) +
   geom_vline(xintercept = 0, linetype="dotted", 
              color = "black", size=1)
@@ -305,12 +308,15 @@ RCI.phrag <- RCI.phrag %>%
 rci.phr.den <- ggplot(RCI.phrag, aes(x = RCI, fill = as.factor(Phytometer))) +
   geom_density(alpha = 0.5, size = 1) +
   facet_wrap("Species") + 
-  scale_fill_manual(values = c("grey", "grey", "grey")) +
-  theme_classic(base_size = 14) +
+  scale_fill_manual(values = c("grey")) +
+  theme_classic(base_size = 12) +
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = "Relative Competition Index (RCI)",
        y = "Density") +
-  theme(legend.position = "none") +
+  theme(legend.position = "none",
+        strip.text = element_text(size=12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12)) +
   xlim(-5, 2) +
   geom_vline(xintercept = 0, linetype="dotted", 
              color = "black", size=1)
@@ -334,6 +340,11 @@ weights <- na.omit(weights)
 weights <- weights %>% 
   unite("spp_trt", Species, Competition, remove = FALSE)
 
+weights <- weights %>% #rename the factors
+  mutate(Competition = fct_recode(Competition,
+                                  "No competition" = "No",
+                                  "Competition" = "Yes"))
+
 
 target <- c("Carex", "Calamagrostis", "Typha")
 
@@ -348,26 +359,33 @@ weights %>%
   mutate(mean = mean(Total),
          median = median(Total)) -> weights
 
+library(viridis)
 
-density <- ggplot(weights, aes(x = Total, fill = as.factor(Competition))) +
-  geom_density(alpha = 0.5, size = 1) +
+density <- ggplot(weights, aes(x = Competition, 
+                               y = Total)) +
+  geom_jitter(aes(colour = Competition,
+                  shape = Competition),
+              width = 0.1,
+              height = 1,
+              size = 2) +
   facet_wrap("Species") + 
-  scale_fill_manual(values = c("grey", "black")) +
-  theme_classic(base_size = 16) +
-  theme(plot.title = element_text(size = 14, face = "bold"),
-        legend.title=element_text(size=9), 
+  theme_classic(base_size = 12) +
+  theme(legend.title=element_text(size=9), 
         legend.text=element_text(size=9)) +
-  theme(panel.border = element_rect(fill = NA)) +
-  labs(x = "Total Biomass (g)",
-       y = "Density") +
+  theme(panel.border = element_rect(fill = NA),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        strip.text = element_text(size=12)) +
+  labs(x = "",
+       y = "Total Biomass (g)") +
   labs(fill = "Competition") +
-  theme(legend.position = c(0.85, 0.8)) +
-  geom_vline(aes(xintercept = mean, colour = Competition),
-             size = 1,
-             show.legend = FALSE) +
-  scale_colour_manual(values = c("grey", "black"))
+  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  theme(legend.position = c(0.85,0.85)) +
+  stat_summary(aes(shape = Competition, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1) +
+  scale_y_continuous(breaks = c(0, 10, 20, 30, 40, 50, 60))
 
-  
 density
 
 ggsave("Figures/biomass_density.TIFF", density,
@@ -382,8 +400,8 @@ light <- full_join(phrag.light.pair, light.res.pair)
 
 light <- light %>% #rename the factors
   mutate(Competition = fct_recode(Competition,
-                                "No" = "no",
-                                "Yes" = "yes"))
+                                "No competition" = "No",
+                                "Competition" = "Yes"))
 
 light %>% 
   group_by(Phytometer, Competition) %>% 
@@ -392,25 +410,28 @@ light %>%
 
 
 
-light.den <- ggplot(light, aes(x = Incident, fill = as.factor(Competition))) +
-  geom_density(alpha = 0.6, size = 1) +
+light.den <- ggplot(light, aes(x = Competition,
+                               y = Incident)) +
+  geom_jitter(aes(colour = Competition,
+                  shape = Competition),
+              width = 0.07,
+              height = 1,
+              size = 2) +
   facet_wrap("Phytometer") + 
-  scale_fill_manual(values = c("#fee08b", "black")) +
-  theme_classic(base_size = 14) +
-  theme(plot.title = element_text(size = 14, face = "bold"),
-        legend.title=element_text(size=9), 
-        legend.text=element_text(size=9)) +
+  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  theme_classic(base_size = 12) +
+  theme(legend.title=element_text(size=9), 
+        legend.text=element_text(size=9),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        strip.text = element_text(size=12)) +
   theme(panel.border = element_rect(fill = NA)) +
-  labs(x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")")),
-       y = "Density") +
-  xlim(0, 150) +
-  labs(fill = "Competition") +
-  theme(legend.position = c(0.85, 0.8)) +
-  geom_vline(aes(xintercept = mean,
-                 colour = Competition),
-             size = 1,
-             show.legend = FALSE) +
-  scale_colour_manual(values = c("#fee08b", "black")) 
+  labs(y = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")")),
+       x = " ") +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Competition, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1) 
 
 light.den
 
@@ -423,13 +444,13 @@ Light.Biomass <- ggarrange(light.den, density,
                        ncol = 2,
                        nrow = 2,
                        labels = "AUTO",
-                       hjust = c(-2, -2),
+                       hjust = c(-3.5, -2.5, -3, -3),
                        vjust = 2)
 
 Light.Biomass
 
 ggsave("Figures/Light_Biomass.TIFF", Light.Biomass,
-       height = 8.38, width = 13.7, units = "in",
+       height = 9.3, width = 14, units = "in",
        dpi = 300)
 
 ####### Height ###########
