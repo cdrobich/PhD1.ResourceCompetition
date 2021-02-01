@@ -366,7 +366,7 @@ summary(carex1500)
 # Number of obs: 28, groups:  Pair, 18; Year, 2
 
 # Fixed effects:
-# Estimate Std. Error t value
+#                         Estimate Std. Error t value
 # (Intercept)                8.557      2.634   3.249
 # TreatmentNo competition    4.567      0.995   4.589
 

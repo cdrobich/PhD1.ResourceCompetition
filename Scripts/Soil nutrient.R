@@ -157,7 +157,7 @@ p <-
 p
 
 
-
+ggsave("Figures/soils_PCA_axis12.jpeg", p)
 
 
 p3 <-
