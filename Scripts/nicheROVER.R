@@ -69,7 +69,6 @@ niche.plot(niche.par = data.par, niche.data = soil.data, pfrac = 0.05,
            iso.names = expression(PC1, PC2), 
            col = clrs, xlab = expression(""))
 
-legend("topright", legend = names(data.par), fill = clrs)
 
 
 
@@ -90,7 +89,6 @@ data.size <- sapply(data.par, function(spec) {
 # point estimate and standard error
 rbind(est = colMeans(data.size),
       se = apply(data.size, 2, sd))
-
 
 #    Calamagrostis      Carex Phragmites      Typha
 #est    0.07769107 0.18014774  0.3716952 0.30575692
@@ -138,6 +136,29 @@ round(over.mean, 2)
 #Carex                 10.19    NA      97.71 54.33
 #Phragmites            14.56 77.59         NA 69.13
 #Typha                  0.61 32.68      80.36    NA
+
+
+over.median <- apply(over.stat, c(1:2, 4), median) * 100
+round(over.median, 2)
+
+#, , alpha = 95%
+
+#Species B
+#Species A       Calamagrostis Carex Phragmites Typha
+#Calamagrostis            NA  16.9      86.15  0.00
+#Carex                   4.4    NA      95.60 30.80
+#Phragmites              9.7  62.8         NA 52.45
+#Typha                   0.1  16.2      64.55    NA
+
+#, , alpha = 99%
+
+#Species B
+#Species A       Calamagrostis Carex Phragmites Typha
+#Calamagrostis            NA 51.55       98.4  1.10
+#Carex                   8.1    NA       99.2 57.70
+#Phragmites             14.0 77.85         NA 71.65
+#Typha                   0.2 30.25       84.0    NA
+
 
 over.cred <- apply(over.stat * 100, c(1:2, 4), quantile, prob = c(0.025, 0.975), 
                    na.rm = TRUE)
