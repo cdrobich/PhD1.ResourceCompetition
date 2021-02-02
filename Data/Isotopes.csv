@@ -3,7 +3,6 @@ A1,CCP6,Calamagrostis,Phragmites,Competition,Calamagrostis_Competition,47.3,1.19
 A2,CCP5CU,Calamagrostis,Phragmites,No_competition,Calamagrostis_No competition,45.7,1.6,-27.88,4.34
 A3,CCP11,Calamagrostis,Phragmites,Competition,Calamagrostis_Competition,44.93,0.78,-28.77,1.14
 A4,CCP7CU,Calamagrostis,Phragmites,No_competition,Calamagrostis_No competition,46.81,1.86,-27.01,0.16
-A6,CCP4,Calamagrostis,Phragmites,Competition,Calamagrostis_Competition,45.339,0.415,-29.32,-0.47
 A7,TYP6CU,Typha,Phragmites,No_competition,Typha_No competition,49.42,2.19,-30.14,2.7
 A8,TYP2CU,Typha,Phragmites,No_competition,Typha_No competition,46.66,0.86,-28.65,0.62
 A9,TYP4,Typha,Phragmites,Competition,Typha_Competition,48.31,2.2,-30.34,1.89
@@ -46,4 +45,4 @@ E4,PCA2,Phragmites,Carex,Competition,Phragmites_Competition,46.93,1.74,-27.1,3.4
 E5,PCA6CU,Phragmites,Carex,No_competition,Phragmites_No competition,46.6,2.4,-27.58,4.42
 E6,PCA6,Phragmites,Carex,Competition,Phragmites_Competition,48.33,1.92,-27.19,2.85
 E7,PCA4,Phragmites,Carex,Competition,Phragmites_Competition,46.92,1.74,-26.67,2.47
-E9,PCA4CU,Phragmites,Carex,No_competition,Phragmites_No competition,43.98,2.33,-25.59,4.54
+E9,PCA4CU,Phragmites,Carex,No_competition,Phragmites_No competition,44.86,2.49,-25.70,4.79
