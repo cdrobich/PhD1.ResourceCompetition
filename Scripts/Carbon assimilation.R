@@ -246,13 +246,15 @@ res1500 <- ggplot(light1500.res, aes(x = Treatment,
                                      y = carbon)) +
   geom_jitter(aes(colour = Treatment,
                   shape = Treatment),
-              size = 2,
+              size = 3,
               width = 0.08) +
   facet_wrap("Species") + 
   theme_classic(base_size = 12) +
   theme(plot.title = element_text(size = 12, face = "bold"),
         legend.title=element_text(size=9), 
-        legend.text=element_text(size=9)) +
+        legend.text=element_text(size=9),
+        strip.text = element_text(size=12),
+        axis.text.x = element_text(size = 12)) +
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = " ",
        y = expression(paste
@@ -290,13 +292,15 @@ phrag1500 <- ggplot(light1500.phrag, aes(x = Treatment,
                                          y = carbon)) +
   geom_jitter(aes(colour = Treatment,
                   shape = Treatment),
-              size = 2,
+              size = 3,
               width = 0.08) +
   facet_wrap("Phytometer") +
   theme_classic(base_size = 12) +
   theme(plot.title = element_text(size = 12, face = "bold"),
         legend.title=element_text(size=9), 
-        legend.text=element_text(size=9)) +
+        legend.text=element_text(size=9),
+        strip.text = element_text(size=12),
+        axis.text.x = element_text(size = 12)) +
   theme(panel.border = element_rect(fill = NA)) +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2], "umol  ",  s^-1, " ", m^-2, sep=")")),
        x = " ") +
@@ -305,7 +309,7 @@ phrag1500 <- ggplot(light1500.phrag, aes(x = Treatment,
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1) +
-  theme(legend.position = c(0.9, 0.85))
+  theme(legend.position = "none")
 
 phrag1500
 
@@ -320,7 +324,10 @@ ggsave("Figures/Carbon Assimilation 1500 panel.JPEG", carbon.1500)
 (all.panel <- ggarrange(carbon.assim.panel, carbon.1500))
 
 
-ggsave("Figures/All_Carbon_Assimilation.JPEG", all.panel)
+ggsave("Figures/All_Carbon_Assimilation.JPEG", all.panel,
+       width = 16.5,
+       height = 8.8,
+       units = "in")
 
 
 ########## GLMM wih pair and year as random ##########
