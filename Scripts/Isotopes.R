@@ -18,19 +18,29 @@ ggplot(Isotopes, aes(x = DeltaC)) +
   geom_histogram(binwidth = 3,
                  color="black", fill="white")
 
+
+# res species two-way ANOVA -----------------------------------------------------------
+
 deltaC <- lm(DeltaC ~ Species * Treatment, data = residents.isotopes)
 Anova(deltaC, type = 2)
 
 #Anova Table (Type II tests)
 
 #Response: DeltaC
-#                    Sum Sq Df F value    Pr(>F)    
-#Species           20.6373  2  15.873 4.054e-05 ***
-#Treatment          7.9567  1  12.240  0.001849 ** 
-#Species:Treatment  0.2250  2   0.173  0.842154    
-#Residuals         15.6016 24                      
+#                   Sum Sq Df F value    Pr(>F)    
+#Species           22.1254  2 17.9221 2.034e-05 ***
+#Treatment          6.3836  1 10.3418  0.003831 ** 
+#Species:Treatment  0.0554  2  0.0448  0.956235    
+#Residuals         14.1971 23 
+
 
 spp <- HSD.test(deltaC, "Species")
+
+#$means
+#DeltaC       std  r    Min    Max    Q25     Q50    Q75
+#Calamagrostis -27.450 1.0219956  9 -28.93 -25.83 -27.88 -27.450 -26.83
+#Carex         -28.297 0.8486074 10 -29.90 -27.26 -28.71 -27.995 -27.72
+#Typha         -29.631 0.8027100 10 -30.79 -28.61 -30.29 -29.460 -29.02
 
 #              DeltaC    groups
 #Calamagrostis -27.637      a
@@ -53,24 +63,34 @@ deltaN <- lm(DeltaN ~ Species * Treatment, data = residents.isotopes)
 Anova(deltaN, type = 2) # no interaction so using type II
 
 #Response: DeltaN
-#                   Sum Sq Df F value  Pr(>F)  
-#Species            5.387  2  2.0036 0.15678  
-#Treatment          4.784  1  3.5586 0.07139 .
-#Species:Treatment  1.301  2  0.4837 0.62238  
-#Residuals         32.264 24                               
+#                   Sum Sq Df F value Pr(>F)
+#Species            4.7810  2  2.0166 0.1560
+#Treatment          2.8735  1  2.4241 0.1331
+#Species:Treatment  0.8035  2  0.3389 0.7160
+#Residuals         27.2645 23                              
 
 
 aovC <- lm(C ~ Species * Treatment, data = residents.isotopes)
 Anova(aovC, type = 2)
 
+#Anova Table (Type II tests)
+
 #Response: C
-#                  Sum Sq Df F value   Pr(>F)   
-#Species           26.837  2  7.8323 0.002408 **
-#Treatment          0.006  1  0.0035 0.953108   
-#Species:Treatment  3.841  2  1.1211 0.342387   
-#Residuals         41.117 24   
+#                   Sum Sq Df F value   Pr(>F)   
+#Species           27.306  2  8.2265 0.002018 **
+#Treatment          0.229  1  0.1379 0.713799   
+#Species:Treatment  2.422  2  0.7296 0.492920   
+#Residuals         38.172 23 
+
 
 sppC <- HSD.test(aovC, "Species")
+
+#$means
+
+#C       std  r   Min    Max      Q25   Q50    Q75
+#Calamagrostis 47.48411 1.5097954  9 44.93 49.910 46.81000 47.83 48.340
+#Carex         46.05430 0.8619747 10 44.75 47.700 45.64475 46.08 46.495
+#Typha         48.37010 1.3291585 10 46.58 51.026 47.67375 48.30 49.085
 
 #C groups
 #Typha         48.3701      a
@@ -82,52 +102,66 @@ sppC <- HSD.test(aovC, "Species")
 aovN <- lm(N ~ Species * Treatment, data = residents.isotopes)
 Anova(aovN, type = 3)
 
+#Anova Table (Type III tests)
 
 #Response: N
 #                   Sum Sq Df F value    Pr(>F)    
-# (Intercept)       4.4840  1 26.2079 3.073e-05 ***
-#  Species           4.1837  2 12.2262 0.0002182 ***
-#  Treatment         1.6565  1  9.6817 0.0047539 ** 
-#  Species:Treatment 1.6491  2  4.8194 0.0173964 *  
-#  Residuals         4.1063 24  
+#(Intercept)       4.6656  1 28.5966 1.978e-05 ***
+#Species           3.7644  2 11.5366  0.000339 ***
+#Treatment         1.0306  1  6.3167  0.019415 *  
+#Species:Treatment 1.2302  2  3.7700  0.038360 *  
+#Residuals         3.7525 23                      
+
+
+# phrag two-way anovas ----------------------------------------------------
 
 phrag.isotopes <- Isotopes %>% filter(Species == "Phragmites")
 
 deltN.phr <- lm(DeltaN ~ Neighbours * Treatment, data = phrag.isotopes)
 Anova(deltN.phr , type = 2)
 
-#Response: DeltaN
-#                      Sum Sq Df F value Pr(>F)
-#Neighbours           2.4797  2  2.4511 0.1281
-#Treatment            0.5796  1  1.1459 0.3055
-#Neighbours:Treatment 2.2621  2  2.2360 0.1495
-#Residuals            6.0699 12 
+#Anova Table (Type II tests)
 
+#Response: DeltaN
+#                     Sum Sq Df F value Pr(>F)
+#Neighbours           2.2444  2  2.1364 0.1608
+#Treatment            0.6728  1  1.2809 0.2798
+#Neighbours:Treatment 2.4868  2  2.3672 0.1360
+#Residuals            6.3032 12 
 
 deltC.phr  <- lm(DeltaC ~ Neighbours * Treatment, data = phrag.isotopes)
 Anova(deltC.phr, type = 2)
 
+#Anova Table (Type II tests)
+
 #Response: DeltaC
-#                      Sum Sq Df F value Pr(>F)
-#Neighbours           0.7757  2  0.5365 0.5982
-#Treatment            1.0368  1  1.4342 0.2542
-#Neighbours:Treatment 0.0692  2  0.0479 0.9534
-#Residuals            8.6747 12 
+#                     Sum Sq Df F value Pr(>F)
+#Neighbours           0.7995  2  0.5635 0.5836
+#Treatment            0.9847  1  1.3879 0.2616
+#Neighbours:Treatment 0.0544  2  0.0384 0.9625
+#Residuals            8.5133 12 
 
 
 
 aovN.ph <- lm(N ~ Neighbours * Treatment, data = phrag.isotopes)
 Anova(aovN.ph, type = 2)
 
+#Anova Table (Type II tests)
 
 #Response: N
-#                     Sum Sq  Df F value   Pr(>F)   
-#Neighbours           0.10430  2  0.3819 0.690543   
-#Treatment            2.37838  1 17.4196 0.001291 **
-#Neighbours:Treatment 0.00093  2  0.0034 0.996612   
-#Residuals            1.63842 12                    
+#                      Sum Sq Df F value    Pr(>F)    
+#Neighbours           0.12277  2  0.4619 0.6408272    
+#Treatment            2.49612  1 18.7833 0.0009719 ***
+#Neighbours:Treatment 0.00265  2  0.0100 0.9900817    
+#Residuals            1.59468 12                 
 
 ph.N.trt <- HSD.test(aovN.ph, "Treatment")
+
+#$means
+#                      N       std r  Min   Max  Q25  Q50  Q75
+#Competition    1.747667 0.2841549 9 1.37 2.349 1.57 1.74 1.80
+#No_competition 2.492444 0.3664270 9 1.91 3.060 2.35 2.49 2.69
+
 
 #          N groups
 #No_competition 2.474667      a
@@ -136,12 +170,14 @@ ph.N.trt <- HSD.test(aovN.ph, "Treatment")
 aovC.ph <- lm(C ~ Neighbours * Treatment, data = phrag.isotopes)
 Anova(aovC.ph, type = 2)
 
-#                       Sum Sq Df F value  Pr(>F)  
-#Neighbours            0.9945  2  0.4526 0.64639  
-#Treatment             3.9069  1  3.5561 0.08376 .
-#Neighbours:Treatment  1.4949  2  0.6803 0.52495  
-#Residuals            13.1838 12 
+#Anova Table (Type II tests)
 
+#Response: C
+#                       Sum Sq Df F value  Pr(>F)  
+#Neighbours            0.5653  2  0.3229 0.73013  
+#Treatment             3.1300  1  3.5762 0.08299 .
+#Neighbours:Treatment  0.9958  2  0.5689 0.58070  
+#Residuals            10.5027 12  
 
 
 
@@ -156,15 +192,16 @@ nutrient.sum <- Isotopes %>% group_by(Type) %>%
             C.err = (C.sd/(sqrt(C.length))))
 
 
-#Type                         N.avg  N.sd N.length  N.err C.avg  C.sd C.length C.err
-#1 Calamagrostis_Competition    0.947 0.348        5 0.156   46.9 1.66         5 0.741
-#2 Calamagrostis_No competition 1.76  0.206        5 0.0920  47.7 1.57         5 0.701
-#3 Carex_Competition            0.838 0.225        5 0.101   46.0 0.348        5 0.156
-#4 Carex_No competition         1.08  0.349        5 0.156   46.1 1.24         5 0.556
-#5 Phragmites_Competition       1.75  0.284        9 0.0947  47.4 0.748        9 0.249
-#6 Phragmites_No competition    2.47  0.370        9 0.123   46.4 1.18         9 0.394
-#7 Typha_Competition            2.01  0.548        5 0.245   48.8 1.24         5 0.552
-#8 Typha_No competition         1.67  0.625        5 0.280   47.9 1.37         5 0.614
+#  Type                      N.avg  N.sd N.length  N.err C.avg  C.sd C.length C.err
+#1 Calamagrostis_Competition 1.08  0.209        4 0.105   47.3 1.64         4 0.818
+#2 Calamagrostis_No competi~ 1.76  0.206        5 0.0920  47.7 1.57         5 0.701
+#3 Carex_Competition         0.838 0.225        5 0.101   46.0 0.348        5 0.156
+#4 Carex_No competition      1.08  0.349        5 0.156   46.1 1.24         5 0.556
+#5 Phragmites_Competition    1.75  0.284        9 0.0947  47.4 0.748        9 0.249
+#6 Phragmites_No competition 2.49  0.366        9 0.122   46.5 0.974        9 0.325
+#7 Typha_Competition         2.01  0.548        5 0.245   48.8 1.24         5 0.552
+#8 Typha_No competition      1.67  0.625        5 0.280   47.9 1.37         5 0.614
+
 
 
 isotope.sum <- Isotopes %>% group_by(Type) %>% 
@@ -177,18 +214,23 @@ isotope.sum <- Isotopes %>% group_by(Type) %>%
             dC.length = length(DeltaC),
             dC.err = (dC.sd/(sqrt(dC.length))))
 
-#Type                        dN.avg dN.sd dN.length dN.err dC.avg dC.sd dC.length dC.err
-#1 Calamagrostis_Competition   1.53 1.50          5  0.673  -28.3 1.06          5  0.476
-#2 Calamagrostis_No competi~   2.69 1.84          5  0.824  -27.0 0.879         5  0.393
-#3 Carex_Competition           2.40 0.648         5  0.290  -28.8 0.851         5  0.380
-#4 Carex_No competition        3.41 0.756         5  0.338  -27.8 0.494         5  0.221
-#5 Phragmites_Competition      3.85 0.865         9  0.288  -26.8 0.634         9  0.211
-#6 Phragmites_No competition   4.21 0.776         9  0.259  -26.3 0.888         9  0.296
-#7 Typha_Competition           1.82 0.787         5  0.352  -30.0 0.795         5  0.355
-#8 Typha_No competition        2.04 0.893         5  0.399  -29.2 0.629         5  0.281
+#  Type                         dN.avg dN.sd dN.length dN.err dC.avg dC.sd dC.length dC.err
+#1 Calamagrostis_Competition      2.03 1.16          4  0.581  -28.0 1.02          4  0.511
+#2 Calamagrostis_No competition   2.69 1.84          5  0.824  -27.0 0.879         5  0.393
+#3 Carex_Competition              2.40 0.648         5  0.290  -28.8 0.851         5  0.380
+#4 Carex_No competition           3.41 0.756         5  0.338  -27.8 0.494         5  0.221
+#5 Phragmites_Competition         3.85 0.865         9  0.288  -26.8 0.634         9  0.211
+#6 Phragmites_No competition      4.23 0.794         9  0.265  -26.3 0.877         9  0.292
+#7 Typha_Competition              1.82 0.787         5  0.352  -30.0 0.795         5  0.355
+#8 Typha_No competition           2.04 0.893         5  0.399  -29.2 0.629         5  0.281
+
 
 nutrient.summary <- full_join(nutrient.sum, isotope.sum)
+
 write.csv(nutrient.summary, "Data/Nutrient_Isotope_sum.csv")
+
+
+# Figures -----------------------------------------------------------------
 
 colnames(residents.isotopes)
 
@@ -199,7 +241,8 @@ centroids <- merge(centroids,se, by="Type")
 
 write.csv(centroids, "Data/isotope_isotopes.csv")
 
-isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN, shape = Type, colour = Type)) +
+isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN, 
+                                 shape = Type, colour = Type)) +
   geom_point(size = 3, stroke = 1.5) +
   theme_classic(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA)) +
@@ -220,10 +263,15 @@ legends <- as_ggplot(legend)
 iso.eror <- isotopes + 
   geom_errorbar(data = centroids,
                 aes(ymin = DeltaN - se.y, ymax = DeltaN + se.y), 
-                width = 0.1, size = 1)+
+                width = 0.1, size = 1,
+                colour = "black")+
   geom_errorbarh(data = centroids, aes(xmin = DeltaC - se.x, xmax = DeltaC + se.x),
-                 height = 0.1, size = 1) +
-  geom_point(data = centroids, size = 6, stroke = 1.5)
+                 height = 0.1, size = 1,
+                 colour = "black") +
+  geom_point(data = centroids, size = 6, stroke = 1.5,
+             colour = "black")
+
+iso.eror
   
 
 
@@ -317,6 +365,66 @@ ggsave("Figures/Isotopes_Nutrient_density.TIFF", isotope.nut.den,
 
 
 
+# Jitter plot and error ---------------------------------------------------
 
+nut.den.jit <- ggplot(Isotopes, 
+                      aes(x = Treatment, y = N,
+                          colour = Treatment,
+                          shape = Treatment)) +
+  geom_jitter(width = 0.05,
+              size = 2) +
+  facet_wrap("Species") + 
+  scale_fill_manual(values = c("#fb6a4a", "white")) +
+  theme_classic(base_size = 14) +
+  theme(plot.title = element_text(size = 14, face = "bold"),
+        legend.title=element_text(size=9), 
+        legend.text=element_text(size=9)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Total % Nitrogen") +
+  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black") 
+
+nut.den.jit
+
+
+nut.c.jit <- ggplot(Isotopes, 
+                      aes(x = Treatment, y = C,
+                          colour = Treatment,
+                          shape = Treatment)) +
+  geom_jitter(width = 0.05,
+              size = 2) +
+  facet_wrap("Species") + 
+  scale_fill_manual(values = c("#fb6a4a", "white")) +
+  theme_classic(base_size = 14) +
+  theme(plot.title = element_text(size = 14, face = "bold"),
+        legend.title=element_text(size=9), 
+        legend.text=element_text(size=9)) +
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Total % Carbon") +
+  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black") 
+
+nut.c.jit
+
+
+
+
+(isotope.nut.jit <- ggarrange(iso.eror, nut.den.jit,
+                              legends, nut.c.jit,
+                              labels = c("A","B"," ","C")))
+
+
+ggsave("Figures/Isotopes_Nutrient_jitter.TIFF", isotope.nut.jit,
+       dpi = 300)
 
 
