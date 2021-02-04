@@ -151,11 +151,12 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
   facet_wrap("Phytometer") +
-  geom_point(size = 5) +
+  geom_point(alpha = 0.7,
+             size = 5) +
   theme_classic() +
-  labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
+  labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = "") + 
-  scale_colour_manual(values = c("black", "grey")) +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
@@ -184,11 +185,12 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
   facet_wrap("phy_trt") +
-  geom_point(size = 5) +
-  scale_colour_manual(values = c("black", "grey")) +
+  geom_point(alpha = 0.7,
+             size = 5) +
+  scale_colour_manual(values = c("#454ADE", "#440C53")) +
   theme_classic() +
-  labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2],  s^-1, " ", m^-2, sep=")")),
-       x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
+       x = expression(paste("Photosynthetically Active Radiation"," ", " (", "\u00B5mol  ",  s^-1, " ", m^-2, sep=")"))) + 
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
@@ -196,6 +198,7 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
         strip.text = element_text(size=12)) +
   ylim(-2, 30) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
+  guides(colour = "none") +
   theme(legend.position = c(0.9, 0.2))
 
 plot.phr
@@ -238,8 +241,8 @@ light1500.res %>%
 # change order
 light1500.res$Treatment <- as.factor(light1500.res$Treatment)
 
-light1500.res$Treatment<- factor(light1500.res$Treatment, levels = c("No competition",
-                                                                     "Competition"))
+light1500.res$Treatment<- factor(light1500.res$Treatment, levels = c("Competition",
+                                                                     "No competition"))
 
 
 res1500 <- ggplot(light1500.res, aes(x = Treatment,
@@ -247,7 +250,8 @@ res1500 <- ggplot(light1500.res, aes(x = Treatment,
   geom_jitter(aes(colour = Treatment,
                   shape = Treatment),
               size = 3,
-              width = 0.08) +
+              width = 0.08,
+              alpha = 0.7) +
   facet_wrap("Species") + 
   theme_classic(base_size = 12) +
   theme(plot.title = element_text(size = 12, face = "bold"),
@@ -258,11 +262,11 @@ res1500 <- ggplot(light1500.res, aes(x = Treatment,
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = " ",
        y = expression(paste
-                      ("Carbon Assimilation"," ", " (", "umol CO"[2],
+                      ("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],
                         s^-1, " ", m^-2, sep=")"))) +
   ylim(0, 40) +
   theme(legend.position = "none") +
-  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1) 
@@ -283,8 +287,8 @@ light1500.phrag %>%
 light1500.phrag$Treatment <- as.factor(light1500.phrag$Treatment)
 
 light1500.phrag$Treatment<- factor(light1500.phrag$Treatment, 
-                                   levels = c("No competition",
-                                              "Competition"))
+                                   levels = c("Competition",
+                                              "No competition"))
 
 
 
@@ -293,7 +297,8 @@ phrag1500 <- ggplot(light1500.phrag, aes(x = Treatment,
   geom_jitter(aes(colour = Treatment,
                   shape = Treatment),
               size = 3,
-              width = 0.08) +
+              width = 0.08,
+              alpha = 0.7) +
   facet_wrap("Phytometer") +
   theme_classic(base_size = 12) +
   theme(plot.title = element_text(size = 12, face = "bold"),
@@ -302,10 +307,10 @@ phrag1500 <- ggplot(light1500.phrag, aes(x = Treatment,
         strip.text = element_text(size=12),
         axis.text.x = element_text(size = 12)) +
   theme(panel.border = element_rect(fill = NA)) +
-  labs(y = expression(paste("Carbon Assimilation"," ", " (", "umol CO"[2], "umol  ",  s^-1, " ", m^-2, sep=")")),
+  labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2], s^-1, " ", m^-2, sep=")")),
        x = " ") +
   ylim(0, 40) +
-  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  scale_colour_manual(values = c("#454ADE", "#440C53")) +
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1) +
@@ -352,7 +357,8 @@ colnames(light.1500)
 
 #### Carex GLMM ####
 
-carex1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), data = carex.A, REML = TRUE)
+carex1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), 
+                  data = carex.A, REML = TRUE)
 summary(carex1500)
 
 #Linear mixed model fit by REML ['lmerMod']
@@ -378,7 +384,7 @@ summary(carex1500)
 # TreatmentNo competition    4.567      0.995   4.589
 
 # Correlation of Fixed Effects:
-#  (Intr)
+# (Intr)
 # TrtmntNcmpt -0.164
 
 
@@ -422,7 +428,7 @@ summary(cala1500)
 # Number of obs: 45, groups:  Pair, 24; Year, 2
 
 # Fixed effects:
-# Estimate Std. Error t value
+#                         Estimate Std. Error t value
 # (Intercept)               8.6667     0.7114  12.182
 # TreatmentNo competition   4.4702     0.8312   5.378
 
@@ -451,8 +457,10 @@ coef(cala1500)
 
 ###  Typha 1500 GLMM ####
 
-typ1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), data = typha.A, REML = TRUE)
+typ1500 <- lmer(carbon ~ Treatment + (1|Pair) + (1|Year), 
+                data = typha.A, REML = TRUE)
 summary(typ1500)
+anova(typ1500)
 
 # Linear mixed model fit by REML ['lmerMod']
 # Formula: carbon ~ Treatment + (1 | Pair) + (1 | Year)
@@ -472,7 +480,7 @@ summary(typ1500)
 # Number of obs: 24, groups:  Pair, 12; Year, 2
 
 # Fixed effects:
-#  Estimate Std. Error t value
+#                          Estimate Std. Error t value
 # (Intercept)               17.633      1.477  11.936
 # TreatmentNo competition    3.083      1.058   2.915
 
@@ -482,6 +490,9 @@ summary(typ1500)
 # optimizer (nloptwrap) convergence code: 0 (OK)
 # boundary (singular) fit: see ?isSingular
 
+ranef(typ1500)
+
+coef(typ1500)
 
 r.squaredGLMM(typ1500) # marginal and conditional r2 for model 1
 

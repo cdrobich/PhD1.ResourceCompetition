@@ -14,11 +14,21 @@ target <- c("Carex", "Calamagrostis", "Typha")
   
 residents.isotopes <- Isotopes %>% filter(Species %in% target)
 
-ggplot(Isotopes, aes(x = DeltaC)) + 
-  geom_histogram(binwidth = 3,
+ggplot(Isotopes, aes(x = DeltaN)) + 
+  geom_histogram(binwidth = 1,
                  color="black", fill="white")
 
+ggplot(Isotopes, aes(x = C)) + 
+  geom_histogram(binwidth = 1,
+                 color="black", fill="white")
 
+ggplot(Isotopes, aes(x = N)) + 
+  geom_histogram(binwidth = 1,
+                 color="black", fill="white")
+
+ggplot(Isotopes, aes(x = DeltaC)) + 
+  geom_histogram(binwidth = 1,
+                 color="black", fill="white")
 # res species two-way ANOVA -----------------------------------------------------------
 
 deltaC <- lm(DeltaC ~ Species * Treatment, data = residents.isotopes)
@@ -59,6 +69,11 @@ yr <- HSD.test(deltaC, "Treatment")
 #No_competition -28.00667      a
 #Competition    -29.03667      b
 
+plot(deltaC)
+
+
+
+
 deltaN <- lm(DeltaN ~ Species * Treatment, data = residents.isotopes)
 Anova(deltaN, type = 2) # no interaction so using type II
 
@@ -68,6 +83,12 @@ Anova(deltaN, type = 2) # no interaction so using type II
 #Treatment          2.8735  1  2.4241 0.1331
 #Species:Treatment  0.8035  2  0.3389 0.7160
 #Residuals         27.2645 23                              
+
+plot(deltaN)
+
+
+
+
 
 
 aovC <- lm(C ~ Species * Treatment, data = residents.isotopes)
@@ -87,7 +108,7 @@ sppC <- HSD.test(aovC, "Species")
 
 #$means
 
-#C       std  r   Min    Max      Q25   Q50    Q75
+#C                            std  r   Min    Max      Q25   Q50    Q75
 #Calamagrostis 47.48411 1.5097954  9 44.93 49.910 46.81000 47.83 48.340
 #Carex         46.05430 0.8619747 10 44.75 47.700 45.64475 46.08 46.495
 #Typha         48.37010 1.3291585 10 46.58 51.026 47.67375 48.30 49.085
@@ -96,6 +117,9 @@ sppC <- HSD.test(aovC, "Species")
 #Typha         48.3701      a
 #Calamagrostis 47.2696     ab
 #Carex         46.0543      b
+
+plot(aovC)
+
 
 
 
@@ -111,6 +135,16 @@ Anova(aovN, type = 3)
 #Treatment         1.0306  1  6.3167  0.019415 *  
 #Species:Treatment 1.2302  2  3.7700  0.038360 *  
 #Residuals         3.7525 23                      
+
+plot(aovN)
+
+
+
+
+
+
+
+
 
 
 # phrag two-way anovas ----------------------------------------------------
@@ -428,3 +462,161 @@ ggsave("Figures/Isotopes_Nutrient_jitter.TIFF", isotope.nut.jit,
        dpi = 300)
 
 
+
+# no facet wrap -----------------------------------------------------------
+
+iso.resident <- Isotopes %>% filter(Species %in% c("Calamagrostis", "Carex","Typha"))
+iso.phrag <- Isotopes %>% filter(Species == "Phragmites")
+
+# Resident species
+
+N.resident <- ggplot(iso.resident, 
+       aes(x = Species, y = N)) +
+  geom_jitter(
+         aes(shape = Treatment, color = Treatment), 
+         position = position_jitterdodge(jitter.width = 0.2,
+                                         dodge.width = 0.8),
+         size = 3,
+         alpha = 0.7)  +
+  theme_classic() +
+  theme(plot.title = element_text(size = 12),
+        legend.title = element_text(size=9), 
+        legend.text = element_text(size=9),
+        axis.text.x = element_text(size = 12),
+        axis.title.y = element_text(size = 13),
+        panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Nitrogen (%)") +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black",
+               position = position_dodge(0.8)) +
+  ylim(0,3)
+
+
+C.resident <- ggplot(iso.resident, 
+       aes(x = Species, y = C)) +
+  geom_jitter(
+    aes(shape = Treatment, color = Treatment), 
+    position = position_jitterdodge(jitter.width = 0.2,
+                                    dodge.width = 0.8),
+    size = 3,
+    alpha = 0.7)  +
+  theme_classic() +
+  theme(plot.title = element_text(size = 12),
+        legend.title = element_text(size=9), 
+        legend.text = element_text(size=9),
+        axis.text.x = element_text(size = 12),
+        axis.title.y = element_text(size = 13),
+        panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Carbon (%)") +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black",
+               position = position_dodge(0.8)) +
+  annotate("text", x = 1:3, y = c(51),
+           label = c("ab", "b", "a"),
+           size = 4.5) 
+
+
+
+
+resident.CN <- ggarrange(C.resident, N.resident,
+                         labels = c("A","B"))
+
+resident.CN.label <- annotate_figure(resident.CN,
+                top = text_grob("Resident phytometers"))
+
+
+### Phragmites
+
+N.phrag <- ggplot(iso.phrag, 
+       aes(x = Neighbours, y = N)) +
+  geom_jitter(
+    aes(shape = Treatment, color = Treatment), 
+    position = position_jitterdodge(jitter.width = 0.2,
+                                    dodge.width = 0.8),
+    size = 3,
+    alpha = 0.7)  +
+  theme_classic() +
+  theme(plot.title = element_text(size = 12),
+        legend.title = element_text(size=9), 
+        legend.text = element_text(size=9),
+        axis.text.x = element_text(size = 12),
+        axis.title.y = element_text(size = 13),
+        panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Nitrogen (%)") +
+  scale_colour_manual(values = c("#454ADE", "#440C53")) +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black",
+               position = position_dodge(0.8)) 
+  
+
+
+
+C.phrag <- ggplot(iso.phrag, 
+       aes(x = Neighbours, y = C)) +
+  geom_jitter(
+    aes(shape = Treatment, color = Treatment), 
+    position = position_jitterdodge(jitter.width = 0.2,
+                                    dodge.width = 0.8),
+    size = 3,
+    alpha = 0.7)  +
+  theme_classic() +
+  theme(plot.title = element_text(size = 12),
+        legend.title = element_text(size=9), 
+        legend.text = element_text(size=9),
+        axis.text.x = element_text(size = 12),
+        axis.title.y = element_text(size = 13),
+        panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Carbon (%)") +
+  scale_colour_manual(values = c("#454ADE", "#440C53")) +
+  theme(legend.position = "none") +
+  stat_summary(aes(shape = Treatment, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black",
+               position = position_dodge(0.8))
+
+phrag.CN <- ggarrange(C.phrag, N.phrag,
+                         common.legend = TRUE,
+                         legend = "bottom",
+                      labels = c("C","D"))
+
+phrag.CN.label <- annotate_figure(phrag.CN,
+                top = text_grob("Phragmites phytometers and neighbours"))
+
+
+CN.panel <- ggarrange(resident.CN.label, phrag.CN.label,
+          nrow = 2)
+
+ggsave("Figures/nutrient_panels.jpeg", CN.panel,
+       width = 9.6,
+       height = 8.6,
+       dpi = 300,
+       units = "in")
+
+
+figures <- ggarrange(resident.CN.label, iso.eror, 
+          phrag.CN.label, legends,
+          labels = c("","E","",""),
+          vjust = 3,
+          hjust = -6)
+
+ggsave("Figures/panels_nutrient_good.jpeg",
+       width = 13.1,
+       height = 8.65,
+       units = "in",
+       dpi = 300)
