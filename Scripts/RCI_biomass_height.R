@@ -283,7 +283,7 @@ rci.res.den <- ggplot(RCI.res, aes(x = RCI, fill = as.factor(Phytometer))) +
   scale_fill_manual(values = c("grey", "grey", "grey")) +
   theme_classic(base_size = 12) +
   theme(panel.border = element_rect(fill = NA)) +
-  labs(x = "Relative Competition Index (RCI)",
+  labs(x = " ",
        y = "Density") +
   theme(legend.position = "none",
         strip.text = element_text(size=12),
@@ -291,7 +291,7 @@ rci.res.den <- ggplot(RCI.res, aes(x = RCI, fill = as.factor(Phytometer))) +
         axis.text.y = element_text(size = 12)) +
   xlim(-5, 2) +
   geom_vline(xintercept = 0, linetype="dotted", 
-             color = "black", size=1)
+             color = "black", size=2)
 
 rci.res.den 
 
@@ -321,13 +321,24 @@ rci.phr.den <- ggplot(RCI.phrag, aes(x = RCI, fill = as.factor(Phytometer))) +
         axis.text.y = element_text(size = 12)) +
   xlim(-5, 2) +
   geom_vline(xintercept = 0, linetype="dotted", 
-             color = "black", size=1)
+             color = "black", size= 2)
 
 rci.phr.den 
 
 ggsave("Figures/RCI_phrag_density.TIFF", rci.phr.den,
        dpi= 300)
 
+
+RCI.panel <- ggarrange(rci.res.den, rci.phr.den,
+          nrow = 2,
+          labels = "AUTO",
+          hjust = -2,
+          vjust = 2)
+
+ggsave("Figures/RCI_panel.jpeg", RCI.panel,
+       height = 6.68,
+       width = 9,
+       dpi = 300)
 
 ############ Raw Biomass ##########
 
@@ -387,7 +398,7 @@ density <- ggplot(weights, aes(x = Competition,
        y = "Total Biomass (g)") +
   labs(fill = "Competition") +
   scale_colour_manual(values = c("#24908C", "#3A518B")) +
-  theme(legend.position = c(0.85,0.85)) +
+  theme(legend.position = "none") +
   stat_summary(aes(shape = Competition, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1) +
@@ -451,6 +462,23 @@ light.den
 
 ggsave("Figures/Light_densityplot.TIFF", light.den,
        dpi = 300)
+
+
+light.biomass.jitter <- ggarrange(light.den, density,
+                           ncol = 2,
+                           labels = "AUTO",
+                           hjust = -2)
+
+
+ggsave("Figures/PAR_biomass_jitter.jpeg", light.biomass.jitter,
+       dpi = 300)
+
+
+
+
+
+
+
 
 
 Light.Biomass <- ggarrange(light.den, density,
