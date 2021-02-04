@@ -139,6 +139,7 @@ panel
 ggsave("Figures/pane_CIRAS.TIFF", panel,
        width = 25, height = 6.74, units = "in",
        dpi = 300)
+
 # size 17.8 x 6.74 in
 
 ### facet wrap #####
@@ -152,7 +153,7 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
   geom_line() +
   facet_wrap("Phytometer") +
   geom_point(alpha = 0.7,
-             size = 5) +
+             size = 3) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = "") + 
@@ -162,7 +163,7 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
         strip.text = element_text(size=12)) +
-  ylim(-2, 30) +
+  scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25, 30)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
   theme(legend.position = "none")
 
@@ -186,7 +187,7 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
   geom_line() +
   facet_wrap("phy_trt") +
   geom_point(alpha = 0.7,
-             size = 5) +
+             size = 3) +
   scale_colour_manual(values = c("#454ADE", "#440C53")) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
@@ -196,7 +197,7 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
         strip.text = element_text(size=12)) +
-  ylim(-2, 30) +
+  scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25, 30)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
   guides(colour = "none") +
   theme(legend.position = c(0.9, 0.2))
@@ -264,7 +265,7 @@ res1500 <- ggplot(light1500.res, aes(x = Treatment,
        y = expression(paste
                       ("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],
                         s^-1, " ", m^-2, sep=")"))) +
-  ylim(0, 40) +
+  scale_y_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) +
   theme(legend.position = "none") +
   scale_colour_manual(values = c("#24908C", "#3A518B")) +
   stat_summary(aes(shape = Treatment, size = 0.5),
@@ -309,7 +310,7 @@ phrag1500 <- ggplot(light1500.phrag, aes(x = Treatment,
   theme(panel.border = element_rect(fill = NA)) +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2], s^-1, " ", m^-2, sep=")")),
        x = " ") +
-  ylim(0, 40) +
+  scale_y_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) +
   scale_colour_manual(values = c("#454ADE", "#440C53")) +
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
