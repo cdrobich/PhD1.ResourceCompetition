@@ -193,7 +193,10 @@ sum.phrag <- RCI.phrag %>%
 
 write.csv(sum.phrag, "Data/phrag.RCI.sum.csv")
 
-RCI.plot.phr <- ggplot(sum.phrag, aes(x = Phytometer, y = average, shape = Phytometer)) + 
+RCI.plot.phr <- ggplot(sum.phrag, 
+                       aes(x = Phytometer, 
+                           y = average, 
+                           shape = Phytometer)) + 
   geom_errorbar(aes(ymin = average - SE, ymax = average + SE),
                 width = 0.3, 
                 color = "black",
@@ -211,8 +214,7 @@ RCI.plot.phr <- ggplot(sum.phrag, aes(x = Phytometer, y = average, shape = Phyto
   coord_flip() +
   theme(legend.position = c(0.2, 0.8)) +
   theme(legend.title = element_blank()) +
-  theme(legend.text=element_text(size=11))
-
+  theme(legend.text=element_text(size = 11))
 
 RCI.plot.phr
 
@@ -350,9 +352,13 @@ target <- c("Carex", "Calamagrostis", "Typha")
 
 weight.res <- weights %>% filter(Species %in% target)
 
-res.den <- ggdensity(weight.res, x = "Total", fill = "spp_trt", combine = TRUE)
+res.den <- ggdensity(weight.res, x = "Total",
+                     fill = "spp_trt", combine = TRUE)
 res.den
 
+weights$Competition <- factor(weights$Competition, 
+                            levels = c("Competition",
+                                       "No competition"))
 
 weights %>% 
   group_by(Species, Competition) %>% 
@@ -367,7 +373,8 @@ density <- ggplot(weights, aes(x = Competition,
                   shape = Competition),
               width = 0.1,
               height = 1,
-              size = 2) +
+              size = 2.5,
+              alpha = 0.7) +
   facet_wrap("Species") + 
   theme_classic(base_size = 12) +
   theme(legend.title=element_text(size=9), 
@@ -379,7 +386,7 @@ density <- ggplot(weights, aes(x = Competition,
   labs(x = "",
        y = "Total Biomass (g)") +
   labs(fill = "Competition") +
-  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
   theme(legend.position = c(0.85,0.85)) +
   stat_summary(aes(shape = Competition, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
@@ -400,8 +407,14 @@ light <- full_join(phrag.light.pair, light.res.pair)
 
 light <- light %>% #rename the factors
   mutate(Competition = fct_recode(Competition,
-                                "No competition" = "No",
-                                "Competition" = "Yes"))
+                                "No competition" = "no",
+                                "Competition" = "yes"))
+
+light$Competition <- factor(light$Competition, 
+                                   levels = c("Competition",
+                                              "No competition"))
+
+
 
 light %>% 
   group_by(Phytometer, Competition) %>% 
@@ -416,9 +429,10 @@ light.den <- ggplot(light, aes(x = Competition,
                   shape = Competition),
               width = 0.07,
               height = 1,
-              size = 2) +
+              size = 2.5,
+              alpha = 0.7) +
   facet_wrap("Phytometer") + 
-  scale_colour_manual(values = c("#762a83", "#1b7837")) +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
   theme_classic(base_size = 12) +
   theme(legend.title=element_text(size=9), 
         legend.text=element_text(size=9),
@@ -426,7 +440,7 @@ light.den <- ggplot(light, aes(x = Competition,
         axis.text.y = element_text(size = 12),
         strip.text = element_text(size=12)) +
   theme(panel.border = element_rect(fill = NA)) +
-  labs(y = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")")),
+  labs(y = expression(paste("Photosynthetically Active Radiation "," ", " ( ", "\u00B5mol  ",  s^-1, " ", m^-2, sep=")")),
        x = " ") +
   theme(legend.position = "none") +
   stat_summary(aes(shape = Competition, size = 0.5),
@@ -616,3 +630,57 @@ panel <- ggarrange(plot16, plot17,
           labels = "AUTO")
 
 ggsave("Figures/Height_panel.JPEG", panel)
+
+
+# Starting height ---------------------------------------------------------
+
+heights.start <- heights %>% 
+  filter(Month == "05")
+
+unique(heights.start$dates)
+
+heights.start <- heights.start %>% 
+  filter(date != c("270517"))
+
+colnames(heights.start)
+
+
+heights.start <- heights.start %>% 
+  separate(dates, c("Year", NA, NA), remove = FALSE) %>% 
+  separate(dates, c(NA, "Month", NA), remove = FALSE) 
+
+
+
+
+phy.height <- ggplot(heights.start, 
+       aes(x = Year, y = height,
+           shape = Competition,
+           colour = Competition)) +
+  geom_jitter(aes(shape = Competition, 
+                  color = Competition), 
+    position = position_jitterdodge(jitter.width = 0.15,
+                                    dodge.width = 0.7),
+    size = 4,
+    alpha = 0.55) + 
+  facet_wrap("Species") +
+  theme_classic() +
+  labs(y = "Height (cm)",
+       x = "") + 
+  scale_color_manual(values = c("#24908C", "#3A518B")) +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 14)) +
+  scale_y_continuous(breaks = c(20, 40, 60, 80, 100, 120)) +
+  stat_summary(aes(shape = Competition, size = 0.5),
+               fun.data = "mean_se", fun.args = list(mult = 1), 
+               geom = "pointrange", size = 1,
+               colour = "black",
+               position = position_dodge(0.8)) +
+  theme(legend.position = c(0.6,0.07),
+        legend.background = element_rect(linetype = 1, 
+                                         size = 0.5, colour = 1))
+
+phy.height 
+
+ggsave("Figures/phytometer_starting_height.jpeg", phy.height)
