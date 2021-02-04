@@ -152,7 +152,10 @@ p <-
   geom_vline(xintercept=0, linetype="dotted") +
   coord_fixed() +
   labs(x = "PC1 (0.667)",
-       y = "PC2 (0.080)") 
+       y = "PC2 (0.080)") +
+  theme(legend.position = c(0.95,0.9),
+        legend.background = element_rect(linetype = 2, 
+                                         size = 0.1, colour = 1))
 
 p
 
