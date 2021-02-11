@@ -139,11 +139,55 @@ Anova(aovN, type = 3)
 plot(aovN)
 
 
+residents.isotopes %>% group_by(Species, Treatment) %>% 
+  summarise(N.avg = mean(N),
+            N.sd = sd(N),
+            N.n = length(N),
+            N.str = N.sd/sqrt(N.n))
+
+#  Species       Treatment      N.avg  N.sd   N.n  N.str
+#1 Calamagrostis Competition    1.08  0.209     4 0.105 
+#2 Calamagrostis No_competition 1.76  0.206     5 0.0920
+#3 Carex         Competition    0.838 0.225     5 0.101 
+#4 Carex         No_competition 1.08  0.349     5 0.156 
+#5 Typha         Competition    2.01  0.548     5 0.245 
+#6 Typha         No_competition 1.67  0.625     5 0.280 
+
+
+residents.isotopes %>% group_by(Species) %>% 
+  summarise(avg = mean(C),
+            sd = sd(C),
+            n = length(C),
+            str = sd/sqrt(n))
+
+# Carbon content
+# Species         avg    sd     n   str
+#1 Calamagrostis  47.5 1.51      9 0.503
+#2 Carex          46.1 0.862    10 0.273
+#3 Typha          48.4 1.33     10 0.420
 
 
 
 
+residents.isotopes %>% group_by(Species) %>% 
+  summarise(dN.avg = mean(DeltaN),
+          dN.sd = sd(DeltaN),
+          dN.length = length(DeltaN),
+          dN.err = (dN.sd/(sqrt(dN.length))),
+          dC.avg = mean(DeltaC),
+          dC.sd= sd(DeltaC),
+          dC.length = length(DeltaC),
+          dC.err = (dC.sd/(sqrt(dC.length))))
 
+residents.isotopes %>% group_by(Treatment) %>% 
+  summarise(dN.avg = mean(DeltaN),
+            dN.sd = sd(DeltaN),
+            dN.length = length(DeltaN),
+            dN.err = (dN.sd/(sqrt(dN.length))),
+            dC.avg = mean(DeltaC),
+            dC.sd= sd(DeltaC),
+            dC.length = length(DeltaC),
+            dC.err = (dC.sd/(sqrt(dC.length))))
 
 
 
@@ -213,6 +257,34 @@ Anova(aovC.ph, type = 2)
 #Neighbours:Treatment  0.9958  2  0.5689 0.58070  
 #Residuals            10.5027 12  
 
+phrag.isotopes %>% group_by(Neighbours, Treatment) %>% 
+  summarise(N.avg = mean(N),
+            N.sd = sd(N),
+            N.length = length(N),
+            N.err = (N.sd/(sqrt(N.length))),
+            C.avg = mean(C),
+            C.sd= sd(C),
+            C.length = length(C),
+            C.err = (C.sd/(sqrt(C.length))))
+
+#  Neighbours    Treatment      N.avg  N.sd N.length  N.err C.avg  C.sd C.length C.err
+#1 Calamagrostis Competition     1.65 0.240        3 0.139   47.0 0.851        3 0.491
+#2 Calamagrostis No_competition  2.36 0.324        3 0.187   46.8 0.405        3 0.234
+#3 Carex         Competition     1.8  0.104        3 0.0600  47.4 0.811        3 0.468
+#4 Carex         No_competition  2.57 0.227        3 0.131   46.1 1.07         3 0.618
+#5 Typha         Competition     1.80 0.481        3 0.278   47.7 0.711        3 0.411
+#6 Typha         No_competition  2.54 0.584        3 0.337   46.7 1.43         3 0.827
+
+
+phrag.isotopes  %>% group_by(Neighbours, Treatment) %>% 
+  summarise(dN.avg = mean(DeltaN),
+            dN.sd = sd(DeltaN),
+            dN.length = length(DeltaN),
+            dN.err = (dN.sd/(sqrt(dN.length))),
+            dC.avg = mean(DeltaC),
+            dC.sd= sd(DeltaC),
+            dC.length = length(DeltaC),
+            dC.err = (dC.sd/(sqrt(dC.length))))
 
 
 nutrient.sum <- Isotopes %>% group_by(Type) %>% 
@@ -265,6 +337,11 @@ write.csv(nutrient.summary, "Data/Nutrient_Isotope_sum.csv")
 
 
 # Figures -----------------------------------------------------------------
+unique(Isotopes$Species)
+colours = c("Calamagrostis" = "#084594", 
+            "Typha" = "#6e016b", 
+            "Carex" = "#9ecae1", 
+            "Phragmites" = "#fb6a4a")
 
 colnames(residents.isotopes)
 
@@ -276,19 +353,18 @@ centroids <- merge(centroids,se, by="Type")
 write.csv(centroids, "Data/isotope_isotopes.csv")
 
 isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN, 
-                                 shape = Type, colour = Type)) +
-  geom_point(size = 3, stroke = 1.5) +
+                                 shape = Type, colour = Species)) +
+  geom_point(size = 4, stroke = 1.5) +
   theme_classic(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA)) +
   ylim(-1, 6) +
   labs(x = expression(paste(delta^{13}, "C")),
        y = expression(paste(delta^{15}, "N"))) +
   scale_shape_manual(values = c(0,15,1, 16,2, 17, 5,18)) +
-  scale_colour_manual(values = c("black","#bdbdbd",
-                                 "#084594","#9ecae1",
-                                 "#99000d","#fb6a4a",
-                                 "#8c96c6","#6e016b")) +
+  scale_colour_manual(values = colours) +
   theme(legend.position = "none") 
+
+
 
 legend <- get_legend(isotopes)
 legends <- as_ggplot(legend)
@@ -307,34 +383,48 @@ iso.eror <- isotopes +
 
 iso.eror
   
+colnames(Isotopes)
+
+cent <- aggregate(cbind(C,N)~Type,Isotopes,mean)
+f         <- function(z)sd(z)/sqrt(length(z)) # function to calculate std.err
+ser        <- aggregate(cbind(se.x=C,se.y=N)~Type,Isotopes,f)
+cent.nut <- merge(cent,ser, by="Type")
 
 
-
-
-nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type, colour = Type)) +
+nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type, 
+                                 colour = Species)) +
   geom_point(size = 5, stroke = 1.5) +
   theme_classic(base_size = 16) + 
-  theme(panel.border = element_rect(fill = NA)) +
+  theme(panel.border = element_rect(fill = NA),
+        legend.position = "none") +
   xlab("Total % Carbon") +
   ylab("Total % Nitrogen") +
   scale_shape_manual(values = c(0,15,1, 16,2, 17, 5,18)) +
-  scale_colour_manual(values = c("black","#bdbdbd",
-                                 "#084594","#9ecae1",
-                                 "#99000d","#fb6a4a",
-                                 "#8c96c6","#6e016b")) 
-nutrient
+  scale_colour_manual(values = colours) 
+
+nutrient.eror <- nutrient +
+  geom_errorbar(data = cent.nut,
+                aes(ymin = N - se.y, ymax = N + se.y), 
+                width = 0.1, size = 1,
+                colour = "black")+
+  geom_errorbarh(data = cent.nut, aes(xmin = C - se.x, xmax = C + se.x),
+                 height = 0.1, size = 1,
+                 colour = "black") +
+  geom_point(data = cent.nut, size = 6, stroke = 1.5,
+             colour = "black")
 
 
 
-leaf.nutrient <- ggarrange(isotopes, nutrient,
-          common.legend = TRUE,
-          legend = "right",
-          labels = "AUTO",
-          hjust = c(-5, -4.5),
-          vjust = 2.5)
+leaf.nutrient <- ggarrange(nutrient.eror,iso.eror, 
+                           legends,
+          labels = c("A","B",""),
+          ncol = 3,
+          widths = c(1,1,0.5))
+
+leaf.nutrient
 
 ggsave("Figures/Plant_Nutrients.TIFF", leaf.nutrient,
-       dpi = 300)
+       dpi = 300) #13.9 x 6.6
 
 
 Isotopes %>% 
@@ -494,7 +584,7 @@ N.resident <- ggplot(iso.resident,
                geom = "pointrange", size = 1,
                colour = "black",
                position = position_dodge(0.8)) +
-  ylim(0,3)
+  ylim(0,4)
 
 
 C.resident <- ggplot(iso.resident, 
@@ -521,15 +611,11 @@ C.resident <- ggplot(iso.resident,
                geom = "pointrange", size = 1,
                colour = "black",
                position = position_dodge(0.8)) +
-  annotate("text", x = 1:3, y = c(51),
-           label = c("ab", "b", "a"),
-           size = 4.5) 
-
-
+  ylim(43, 53)
 
 
 resident.CN <- ggarrange(C.resident, N.resident,
-                         labels = c("A","B"))
+                         labels = c("C","D"))
 
 resident.CN.label <- annotate_figure(resident.CN,
                 top = text_grob("Resident phytometers"))
@@ -551,16 +637,17 @@ N.phrag <- ggplot(iso.phrag,
         legend.text = element_text(size=9),
         axis.text.x = element_text(size = 12),
         axis.title.y = element_text(size = 13),
-        panel.border = element_rect(fill = NA)) +
+        panel.border = element_rect(fill = NA),
+        legend.position = c(0.6, 0.2)) +
   labs(x = " ",
        y = "Nitrogen (%)") +
   scale_colour_manual(values = c("#454ADE", "#440C53")) +
-  theme(legend.position = "none") +
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1,
                colour = "black",
-               position = position_dodge(0.8)) 
+               position = position_dodge(0.8)) +
+  ylim(0, 4)
   
 
 
@@ -588,19 +675,18 @@ C.phrag <- ggplot(iso.phrag,
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1,
                colour = "black",
-               position = position_dodge(0.8))
+               position = position_dodge(0.8)) +
+  ylim(43, 53)
 
 phrag.CN <- ggarrange(C.phrag, N.phrag,
-                         common.legend = TRUE,
-                         legend = "bottom",
-                      labels = c("C","D"))
+                         labels = c("E","F"))
 
 phrag.CN.label <- annotate_figure(phrag.CN,
                 top = text_grob("Phragmites phytometers and neighbours"))
 
 
 CN.panel <- ggarrange(resident.CN.label, phrag.CN.label,
-          nrow = 2)
+          ncol=2)
 
 ggsave("Figures/nutrient_panels.jpeg", CN.panel,
        width = 9.6,
@@ -620,3 +706,16 @@ ggsave("Figures/panels_nutrient_good.jpeg",
        height = 8.65,
        units = "in",
        dpi = 300)
+
+
+scatt.jitt <- ggarrange(leaf.nutrient,CN.panel,
+          nrow = 2)
+
+scatt.jitt
+
+
+ggsave("Figures/isotope_nutrients_scatter_jitter.jpeg", 
+       scatt.jitt,
+       width = 13.8,
+       height = 9.24,
+       units = "in") #13.8 x 9.24 in

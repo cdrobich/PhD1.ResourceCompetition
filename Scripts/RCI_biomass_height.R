@@ -16,15 +16,13 @@ sum <- RCI.res %>%
             N = length(RCI),
             SE = (std/(sqrt(N))))
 
-# A tibble: 6 x 6
-# Groups:   Phytometer [3]
-#Phytometer      Year   average   std     N     SE
-#1 Calamagrostis 2016  -1.37    3.50     10  1.11  
-#2 Calamagrostis 2017   0.00591 0.862    11  0.260 
-#3 Carex         2016   0.365   0.244     5  0.109 
-#4 Carex         2017   0.0611  0.244    11  0.0735
-#5 Typha         2016   0.188   0.383     6  0.156 
-#6 Typha         2017  -0.192   0.699     6  0.285 
+#  Phytometer    Year  average   std     N     SE
+#1 Calamagrostis 2016  -1.37   3.50     10 1.11  
+#2 Calamagrostis 2017   0.163  0.420     9 0.140 
+#3 Carex         2016   0.365  0.244     5 0.109 
+#4 Carex         2017   0.0611 0.244    11 0.0735
+#5 Typha         2016   0.188  0.383     6 0.156 
+#6 Typha         2017  -0.192  0.699     6 0.285 
 
 sum.res <- RCI.res %>% 
   group_by(Phytometer) %>% 
@@ -34,10 +32,9 @@ sum.res <- RCI.res %>%
             SE = (std/(sqrt(N))))
 
 #Phytometer     average   std     N     SE
-# Calamagrostis -0.651   2.53     21 0.552 
-# Carex          0.156   0.277    16 0.0692
-# Typha         -0.00193 0.573    12 0.165 
-
+#1 Calamagrostis -0.646   2.61     19 0.600 
+#2 Carex          0.156   0.277    16 0.0692
+#3 Typha         -0.00193 0.573    12 0.165
 
 ##### Resident species ##############
 
@@ -289,7 +286,7 @@ rci.res.den <- ggplot(RCI.res, aes(x = RCI, fill = as.factor(Phytometer))) +
         strip.text = element_text(size=12),
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12)) +
-  xlim(-5, 2) +
+  xlim(-15, 2) +
   geom_vline(xintercept = 0, linetype="dotted", 
              color = "black", size=2)
 
@@ -375,6 +372,23 @@ weights %>%
   group_by(Species, Competition) %>% 
   mutate(mean = mean(Total),
          median = median(Total)) -> weights
+
+
+weights %>% 
+  group_by(Species) %>% 
+  summarise(mean = mean(Total),
+         median = median(Total),
+         std = sd(Total),
+         N = length(Total),
+         sterr = std/sqrt(N))
+
+#  Species        mean median   std   N   sterr
+#1 Calamagrostis  1.87   1.59  1.91   43  0.291
+#2 Carex          2.09   1.98  1.10   33  0.191
+#3 Phragmites     21.0   20.3  11.8   66  1.45 
+#4 Typha          37.5   37.1  10.4   24  2.13 
+
+
 
 library(viridis)
 
