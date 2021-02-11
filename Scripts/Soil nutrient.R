@@ -1,8 +1,14 @@
+
+# Load packages -----------------------------------------------------------
+
 library(tidyverse)
 library(vegan)
 library(ggrepel)
 library(Hmisc)
 library(ggpubr)
+
+
+# Load data ---------------------------------------------------------------
 
 soil <- read.csv("Data/soil_nutrients.csv")
 dim(soil)
@@ -13,87 +19,82 @@ env <- soil %>% select(Vegetation:Species) # species is the group factor
 
 hist.data.frame(soils)
 
-# CHECK THEM AND LOG + 10 TRANSFORM
+
+# Data sum ----------------------------------------------------------------
+install.packages("plotrix")
+library(plotrix)
+
+?std.error
+
+sum <- soil %>% group_by(Species) %>% 
+  summarise(across(
+    .cols = where(is.numeric),
+    .fns = list(Mean = mean, SD = sd, SE = std.error), na.rm = TRUE,
+    .names = "{col}_{fn}"
+  ))
+
+sum <- sum %>% t %>% as.data.frame
+write.csv(sum, "Data/soil_nutrients_sum.csv")
+
+soil %>% group_by(Species) %>% 
+  summarise(CV = cv(Moisture))
+
+# Log transformation ------------------------------------------------------
 
 soils.log <- soils %>% 
-  mutate(Moist.log = log(Moisture -1),
+  mutate(Moist.log = log(Moisture + 1),
          Cu.log = log(Cu+1),
          Fe.log = log(Fe+1),
          Mn.log = log(Mn+1),
          P.log = log(P+1),
          Mg.log = log(Mg+1),
          K.log = log(K+1),
-         N.log = log(N+1),
          Zn.log = log(Zn+1),
-         PC.log = log(PC+1),
+         C.log = log(C+1),
          TN.log = log(TN+1),
          Na.log = log(Na+1),
          Ca.log = log(Ca+1),
          S.log = log(S+1),
          Light.log= log(Light+1))
 
-
 soils.log <- soils.log %>% select(Moist.log:Light.log)
 
 soils.log$pH <- soil$pH
+colnames(soils.log)
+dim(soils.log)
 
 hist.data.frame(soils.log) # looks better go with this one
 
+write.csv(soils.log,"Data/soil_nutrients_logtransform.csv")
 
-## Tidy keeps freaking out when i try to transform so I did it in excel
 
-soils.tr <- read.csv("Data/soil_nutrients_transform.csv")
-soils.log <- soils.tr %>% select(Moisture:pH)# just the soil nutrient data
-env <- soils.tr %>% select(Vegetation:Species)
+# PCA ---------------------------------------------------------------------
 
 pca <- rda(soils.log, scale = TRUE) 
-summary(pca)
-
-#Call:
-#  rda(X = soils.log, scale = TRUE) 
+head(summary(pca))
 
 #Partitioning of correlations:
-#                 Inertia Proportion
-#Total              16          1
-#Unconstrained      16          1
+#  Inertia Proportion
+#Total              15          1
+#Unconstrained      15          1
 
 #Eigenvalues, and their contribution to the correlations 
 
 #Importance of components:
-#                        PC1     PC2     PC3     PC4     PC5     PC6     PC7     PC8      PC9     PC10     PC11   PC12     PC13
-#Eigenvalue            10.6775 1.28773 1.05527 0.90061 0.55561 0.38778 0.30447 0.24715 0.148847 0.146857 0.087963 0.0800 0.062438
-#Proportion Explained   0.6673 0.08048 0.06595 0.05629 0.03473 0.02424 0.01903 0.01545 0.009303 0.009179 0.005498 0.0050 0.003902
-#Cumulative Proportion  0.6673 0.74783 0.81378 0.87007 0.90480 0.92903 0.94806 0.96351 0.972812 0.981990 0.987488 0.9925 0.996390
+#                      PC1     PC2     PC3     PC4     PC5
+#Eigenvalue            9.720 1.28635 1.05100 0.90016 0.55455
+#Proportion Explained  0.648 0.08576 0.07007 0.06001 0.03697
+#Cumulative Proportion 0.648 0.73377 0.80383 0.86384 0.90081
 
-#PC14     PC15      PC16
-#Eigenvalue            0.025712 0.017380 0.0146676
-#Proportion Explained  0.001607 0.001086 0.0009167
-#Cumulative Proportion 0.997997 0.999083 1.0000000
-
-#Scaling 2 for species and site scores
-#* Species are scaled proportional to eigenvalues
-#* Sites are unscaled: weighted dispersion equal on all dimensions
-#* General scaling constant of scores:  5.542976 
 
 
 summary(eigenvals(pca))
 
 #Importance of components:
-
-#                        PC1     PC2     PC3     PC4     PC5     PC6     PC7
-#Eigenvalue            10.6775 1.28773 1.05527 0.90061 0.55561 0.38778 0.30447
-#Proportion Explained   0.6673 0.08048 0.06595 0.05629 0.03473 0.02424 0.01903
-#Cumulative Proportion  0.6673 0.74783 0.81378 0.87007 0.90480 0.92903 0.94806
-
-#PC8      PC9     PC10     PC11   PC12     PC13     PC14
-#Eigenvalue            0.24715 0.148847 0.146857 0.087963 0.0800 0.062438 0.025712
-#Proportion Explained  0.01545 0.009303 0.009179 0.005498 0.0050 0.003902 0.001607
-#Cumulative Proportion 0.96351 0.972812 0.981990 0.987488 0.9925 0.996390 0.997997
-
-#PC15      PC16
-#Eigenvalue            0.017380 0.0146676
-#Proportion Explained  0.001086 0.0009167
-#Cumulative Proportion 0.999083 1.0000000
+#                       PC1     PC2     PC3     PC4     PC5     PC6     PC7    PC8      PC9     PC10
+#Eigenvalue            9.720 1.28635 1.05100 0.90016 0.55455 0.38612 0.30406 0.2355 0.146933 0.142682
+#Proportion Explained  0.648 0.08576 0.07007 0.06001 0.03697 0.02574 0.02027 0.0157 0.009796 0.009512
+#Cumulative Proportion 0.648 0.73377 0.80383 0.86384 0.90081 0.92655 0.94683 0.9625 0.972323 0.981836
 
 par(1,1)
 screeplot(pca, bstick = TRUE, type = "l",
@@ -122,6 +123,12 @@ pca.spp <- read.csv("Data/PCA scores_spp.csv")
 pca.sites <- read.csv("Data/PCA scores_123.csv")
 
 
+colours = c("Calamagrostis" = "#084594", 
+            "Typha" = "#6e016b", 
+            "Carex" = "#9ecae1", 
+            "Phragmites" = "#fb6a4a")
+
+
 p <-
   pca.sites %>%
   ggplot()+
@@ -146,8 +153,7 @@ p <-
   #xlim(-2, 2.2) +
   theme_classic() +
   scale_shape_manual(values = c(0, 1, 2, 5)) +
-  scale_colour_manual(values = c("#525252","#9ecae1",
-                                 "#fb6a4a","#6a51a3")) +
+  scale_colour_manual(values = colours) +
   geom_hline(yintercept=0, linetype="dotted") +
   geom_vline(xintercept=0, linetype="dotted") +
   coord_fixed() +

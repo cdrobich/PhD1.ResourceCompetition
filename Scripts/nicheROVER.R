@@ -19,7 +19,13 @@ data.raw <- data.raw %>% relocate(Species, .before = PC1)
 data.raw <- data.raw %>% select(Species:PC3)
 
 
-data <- read.csv("Data/PCA scores_123_adjusted.csv") # PCA scores x prop. variance explained
+# multiply scores by variance explained
+data.raw$PCA1.ad <- (data.raw$PC1 * 0.648)
+data.raw$PCA2.ad <- (data.raw$PC2 * 0.08576)
+
+data <- data.raw %>% 
+  select(X,Species, PCA1.ad,PCA2.ad)
+
 data$Species <- as.factor(data$Species)
 
 str(data)
@@ -29,14 +35,20 @@ str(data)
 nsamples <- 1000
 system.time({
   data.par <- tapply(1:nrow(data), data$Species, function(ii) niw.post(nsamples = nsamples, 
-                                                                       X = data[ii, 2:3]))
+                                                                       X = data[ii, 3:4]))
 })
 
 #user  system elapsed 
-#0.67    0.00    0.68
+#0.08    0.00    0.08
 
 # various parameter plots
-clrs <- c("#525252", "#9ecae1", "#fb6a4a", "#6a51a3")  # colors for each species
+clrs <- c("#084594", "#9ecae1", "#fb6a4a", "#6e016b")  # colors for each species
+
+colours = c("Calamagrostis" = "#084594", 
+            "Typha" = "#6e016b", 
+            "Carex" = "#9ecae1", 
+            "Phragmites" = "#fb6a4a")
+
 
 # mu1 (del15N), mu2 (del13C), and Sigma12
 par(mar = c(4, 4, 0.5, 0.1) + 0.1, mfrow = c(1, 3))
@@ -60,10 +72,10 @@ niche.par.plot(data.par, col = clrs, plot.mu = TRUE, plot.Sigma = TRUE)
 # 2-d projections of 10 niche regions
 nsamples <- 10
 data.par <- tapply(1:nrow(data), data$Species, function(ii) niw.post(nsamples = nsamples, 
-                                                                     X = data[ii, 2:3]))
+                                                                     X = data[ii, 3:4]))
 
 # format data for plotting function
-soil.data <- tapply(1:nrow(data), data$Species, function(ii) X = data[ii, 2:3])
+soil.data <- tapply(1:nrow(data), data$Species, function(ii) X = data[ii, 3:4])
 
 niche.plot(niche.par = data.par, niche.data = soil.data, pfrac = 0.05, 
            iso.names = expression(PC1, PC2), 
@@ -78,7 +90,7 @@ niche.plot(niche.par = data.par, niche.data = soil.data, pfrac = 0.05,
 # posterior distribution of (mu, Sigma) for each species
 nsamples <- 1000
 data.par <- tapply(1:nrow(data), data$Species, 
-                   function(ii) niw.post(nsamples = nsamples, X = data[ii, 2:3]))
+                   function(ii) niw.post(nsamples = nsamples, X = data[ii, 3:4]))
 
 
 # posterior distribution of niche size by species
@@ -90,9 +102,9 @@ data.size <- sapply(data.par, function(spec) {
 rbind(est = colMeans(data.size),
       se = apply(data.size, 2, sd))
 
-#    Calamagrostis      Carex Phragmites      Typha
-#est    0.07769107 0.18014774  0.3716952 0.30575692
-#se     0.02152039 0.04817866  0.0989603 0.08162212
+#    Calamagrostis      Carex Phragmites     Typha
+#est    0.07721194 0.18603562 0.35979881 0.30447676
+#se     0.02134153 0.04774974 0.09810626 0.08312643
 
 # boxplots
 boxplot(data.size, col = clrs, pch = 16, cex = .5,
@@ -104,14 +116,14 @@ boxplot(data.size, col = clrs, pch = 16, cex = .5,
 # niche overlap plots for 95% niche region sizes
 nsamples <- 1000
 data.par <- tapply(1:nrow(data), data$Species, 
-                   function(ii) niw.post(nsamples = nsamples, X = data[ii, 2:3]))
+                   function(ii) niw.post(nsamples = nsamples, X = data[ii, 3:4]))
 
 # Overlap calculation.  use nsamples = nprob = 10000 (1e4) for higher
 # accuracy.  the variable over.stat can be supplied directly to the
 # overlap.plot function
 
-over.stat <- overlap(data.par, nreps = nsamples, nprob = 1000, alpha = c(0.95, 
-                                                                           0.99))
+over.stat <- overlap(data.par, nreps = nsamples, 
+                     nprob = 1000, alpha = c(0.95, 0.99))
 
 # The mean overlap metrics calculated across iteratations for both niche
 # region sizes (alpha = .95 and alpha = .99) can be calculated and displayed
@@ -119,46 +131,18 @@ over.stat <- overlap(data.par, nreps = nsamples, nprob = 1000, alpha = c(0.95,
 over.mean <- apply(over.stat, c(1:2, 4), mean) * 100
 round(over.mean, 2)
 
-#, , alpha = 95%
-
-#                                Species B
-#Species A       Calamagrostis Carex Phragmites Typha
-#Calamagrostis            NA 26.29      78.48  2.62
-#Carex                  6.07    NA      93.09 32.33
-#Phragmites            10.24 63.54         NA 51.18
-#Typha                  0.36 18.25      62.77    NA
-
-#, , alpha = 99%
-
-#                             Species B
-#Species A       Calamagrostis Carex Phragmites Typha
-#Calamagrostis            NA 53.64      94.73 11.14
-#Carex                 10.19    NA      97.71 54.33
-#Phragmites            14.56 77.59         NA 69.13
-#Typha                  0.61 32.68      80.36    NA
-
 
 over.median <- apply(over.stat, c(1:2, 4), median) * 100
 round(over.median, 2)
 
 #, , alpha = 95%
 
-#Species B
-#Species A       Calamagrostis Carex Phragmites Typha
-#Calamagrostis            NA  16.9      86.15  0.00
-#Carex                   4.4    NA      95.60 30.80
-#Phragmites              9.7  62.8         NA 52.45
-#Typha                   0.1  16.2      64.55    NA
-
-#, , alpha = 99%
-
-#Species B
-#Species A       Calamagrostis Carex Phragmites Typha
-#Calamagrostis            NA 51.55       98.4  1.10
-#Carex                   8.1    NA       99.2 57.70
-#Phragmites             14.0 77.85         NA 71.65
-#Typha                   0.2 30.25       84.0    NA
-
+#                Species B
+#Species A     Calamagrostis Carex Phragmites Typha
+#Calamagrostis            NA 20.15       83.6  0.00
+#Carex                   4.7    NA       94.9 31.90
+#Phragmites              8.3 64.30         NA 53.45
+#Typha                   0.1 16.50       61.3    NA
 
 over.cred <- apply(over.stat * 100, c(1:2, 4), quantile, prob = c(0.025, 0.975), 
                    na.rm = TRUE)
@@ -166,31 +150,31 @@ round(over.cred[, , , 1])  # display alpha = .95 niche region
 
 #, , Species B = Calamagrostis
 
-#               Species A
+#Species A
 #      Calamagrostis Carex Phragmites Typha
 #2.5%             NA     0          2     0
-#97.5%            NA    21         23     3
+#97.5%            NA    18         22     2
 
 #, , Species B = Carex
 
-#             Species A
-#       Calamagrostis Carex Phragmites Typha
-#2.5%              0    NA         40     3
-#97.5%            88    NA         88    49
+#Species A
+#          Calamagrostis Carex Phragmites Typha
+#2.5%              0    NA         42     3
+#97.5%            83    NA         87    51
 
 #, , Species B = Phragmites
 
 #Species A
 #      Calamagrostis Carex Phragmites Typha
-#2.5%             20    74         NA    26
-#97.5%           100   100         NA    93
+#2.5%             15    74         NA    28
+#97.5%           100   100         NA    94
 
 #, , Species B = Typha
 
 #Species A
-#      Calamagrostis Carex Phragmites Typha
-#2.5%              0     5         22    NA
-#97.5%            32    80         86    NA
+#Calamagrostis Carex Phragmites Typha
+#2.5%              0     6         25    NA
+#97.5% 
 
 # Overlap plot with 95% alpha
 

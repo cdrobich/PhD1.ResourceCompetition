@@ -1,0 +1,819 @@
+,Dataset,DataName,SpeciesName,TraitName,OriglName,value,OrigUnitStr,ValueKindName,OrigUncertaintyStr,UncertaintyName,Replicates,StdValue,UnitName
+1,Leaf and Whole Plant Traits Database,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA,385.4,cm2/g,Single,NA,,NA,38.54,mm2 mg-1
+2,Leaf and Whole Plant Traits Database,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA,212.6,cm2/g,Single,NA,,NA,21.26,mm2 mg-1
+3,Leaf and Whole Plant Traits Database,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA,446,cm2/g,Single,NA,,NA,44.6,mm2 mg-1
+4,Leaf and Whole Plant Traits Database,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA,336,cm2/g,Single,NA,,NA,33.6,mm2 mg-1
+7,Leaf and Whole Plant Traits Database,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA (cm2/g),385.4,cm2/g,Single,NA,,NA,38.54,mm2 mg-1
+126,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,26.55397727,mm2 mg-1,Single,NA,,NA,26.55397727,mm2 mg-1
+127,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,26.19178744,mm2 mg-1,Single,NA,,NA,26.19178744,mm2 mg-1
+128,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,36.57356322,mm2 mg-1,Single,NA,,NA,36.57356322,mm2 mg-1
+129,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,23.94029126,mm2 mg-1,Single,NA,,NA,23.94029126,mm2 mg-1
+130,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,29.12592593,mm2 mg-1,Single,NA,,NA,29.12592593,mm2 mg-1
+131,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,20.95041667,mm2 mg-1,Single,NA,,NA,20.95041667,mm2 mg-1
+132,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,27.2038835,mm2 mg-1,Single,NA,,NA,27.2038835,mm2 mg-1
+133,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,26.09651741,mm2 mg-1,Single,NA,,NA,26.09651741,mm2 mg-1
+134,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,20.69638243,mm2 mg-1,Single,NA,,NA,20.69638243,mm2 mg-1
+135,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Calamagrostis canadensis,SLA.nopetiole,SLA mm2 mg-1,22.16115702,mm2 mg-1,Single,NA,,NA,22.16115702,mm2 mg-1
+167,"Leaf Area, Dry Mass and SLA Dataset",SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,Specific Leaf Area,210.3829272,cm2/g,Single,NA,,NA,21.03829272,mm2 mg-1
+168,"Leaf Area, Dry Mass and SLA Dataset",SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,Specific Leaf Area,209.9732518,cm2/g,Single,NA,,NA,20.99732518,mm2 mg-1
+169,"Leaf Area, Dry Mass and SLA Dataset",SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,Specific Leaf Area,199.6624473,cm2/g,Single,NA,,NA,19.96624473,mm2 mg-1
+686,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),298.6216216,cm2/g,Single,NA,,NA,29.86216216,mm2 mg-1
+687,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),179.0174672,cm2/g,Single,NA,,NA,17.90174672,mm2 mg-1
+688,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),223.3063063,cm2/g,Single,NA,,NA,22.33063063,mm2 mg-1
+689,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),175.0333333,cm2/g,Single,NA,,NA,17.50333333,mm2 mg-1
+690,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),218.9527559,cm2/g,Single,NA,,NA,21.89527559,mm2 mg-1
+691,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),213.8033708,cm2/g,Single,NA,,NA,21.38033708,mm2 mg-1
+692,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),797.7575758,cm2/g,Single,NA,,NA,79.77575758,mm2 mg-1
+693,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),259.8636364,cm2/g,Single,NA,,NA,25.98636364,mm2 mg-1
+694,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),216.5153374,cm2/g,Single,NA,,NA,21.65153374,mm2 mg-1
+695,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),567.5192308,cm2/g,Single,NA,,NA,56.75192308,mm2 mg-1
+696,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),529.2765957,cm2/g,Single,NA,,NA,52.92765957,mm2 mg-1
+697,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),203.0585366,cm2/g,Single,NA,,NA,20.30585366,mm2 mg-1
+698,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),157.3092784,cm2/g,Single,NA,,NA,15.73092784,mm2 mg-1
+699,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),196.4058442,cm2/g,Single,NA,,NA,19.64058442,mm2 mg-1
+700,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),272.8703704,cm2/g,Single,NA,,NA,27.28703704,mm2 mg-1
+701,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),226.3131313,cm2/g,Single,NA,,NA,22.63131313,mm2 mg-1
+702,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),219.7926829,cm2/g,Single,NA,,NA,21.97926829,mm2 mg-1
+703,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),286.6,cm2/g,Single,NA,,NA,28.66,mm2 mg-1
+704,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),212.0528169,cm2/g,Single,NA,,NA,21.20528169,mm2 mg-1
+705,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),242.4821429,cm2/g,Single,NA,,NA,24.24821429,mm2 mg-1
+706,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),202.0495868,cm2/g,Single,NA,,NA,20.20495868,mm2 mg-1
+707,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),444.6625,cm2/g,Single,NA,,NA,44.46625,mm2 mg-1
+708,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),313.1862745,cm2/g,Single,NA,,NA,31.31862745,mm2 mg-1
+709,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),210.9695122,cm2/g,Single,NA,,NA,21.09695122,mm2 mg-1
+710,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),213.1393939,cm2/g,Single,NA,,NA,21.31393939,mm2 mg-1
+711,Alaska Peatland Experiment PFT values,SLA: petiole  included,Calamagrostis canadensis,SLA.petiole,sla (cm2 -g1),210.7363636,cm2/g,Single,NA,,NA,21.07363636,mm2 mg-1
+82,Tundra Plant Traits Database,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLM,17,mg/cm2,Single,NA,,NA,5.882352941,mm2 mg-1
+116,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,58.82352941,cm2/g,Single,NA,,NA,5.882352941,mm2 mg-1
+117,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded (1),Calamagrostis canadensis,SLA.unsure,LMA,170,g/m2,Single,NA,,NA,5.882352941,mm2 mg-1
+179,Niwot Alpine Plant Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,Mean SLA (cm2/mg),31.63425783,cm2/g,Single,NA,,NA,3.163425783,mm2 mg-1
+186,Photosynthesis Traits Worldwide,SLA: undefined if petiole in- or excluded (1),Calamagrostis canadensis,SLA.unsure,SLA,58.8235294,cm2 g-1,Single,NA,,NA,5.88235294,mm2 mg-1
+729,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,58.82352941,SLA cm2/g,Single,NA,,NA,5.882352941,mm2 mg-1
+756,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,265.5397727,SLA cm2/g,Single,NA,,NA,26.55397727,mm2 mg-1
+757,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,261.9178744,SLA cm2/g,Single,NA,,NA,26.19178744,mm2 mg-1
+758,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,365.7356322,SLA cm2/g,Single,NA,,NA,36.57356322,mm2 mg-1
+759,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,239.4029126,SLA cm2/g,Single,NA,,NA,23.94029126,mm2 mg-1
+760,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,291.2592593,SLA cm2/g,Single,NA,,NA,29.12592593,mm2 mg-1
+761,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,209.5041667,SLA cm2/g,Single,NA,,NA,20.95041667,mm2 mg-1
+762,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,272.038835,SLA cm2/g,Single,NA,,NA,27.2038835,mm2 mg-1
+763,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,260.9651741,SLA cm2/g,Single,NA,,NA,26.09651741,mm2 mg-1
+764,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,206.9638243,SLA cm2/g,Single,NA,,NA,20.69638243,mm2 mg-1
+765,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,221.6115703,SLA cm2/g,Single,NA,,NA,22.16115703,mm2 mg-1
+811,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Calamagrostis canadensis,SLA.unsure,SLA,31.63425783,SLA cm2/g,Single,NA,,NA,3.163425783,mm2 mg-1
+13,The LEDA Traitbase,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,SLA: petiole and rachis excluded,10.35478548,mm2/mg,Best estimate,NA,,NA,10.35478548,mm2 mg-1
+14,The LEDA Traitbase,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,SLA: petiole and rachis excluded,10.35478548,mm2/mg,Mean,NA,,NA,10.35478548,mm2 mg-1
+98,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),79.12584778,g/m2,Single,NA,,NA,12.63809524,mm2 mg-1
+99,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),65.17690875,g/m2,Single,NA,,NA,15.34285714,mm2 mg-1
+100,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),56.63304888,g/m2,Single,NA,,NA,17.65753425,mm2 mg-1
+101,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),68.70799104,g/m2,Single,NA,,NA,14.55434783,mm2 mg-1
+102,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),85.79088472,g/m2,Single,NA,,NA,11.65625,mm2 mg-1
+103,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),73.45360825,g/m2,Single,NA,,NA,13.61403509,mm2 mg-1
+104,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),61.59110351,g/m2,Single,NA,,NA,16.23611111,mm2 mg-1
+105,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),65.2014652,g/m2,Single,NA,,NA,15.33707865,mm2 mg-1
+106,Photosynthesis and Leaf Characteristics Database,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA (g/m2),111.8335501,g/m2,Single,NA,,NA,8.941860462,mm2 mg-1
+170,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,79.12584778,g.m2,Single,NA,,NA,12.63809524,mm2 mg-1
+171,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,65.17690875,g.m2,Single,NA,,NA,15.34285714,mm2 mg-1
+172,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,56.63304888,g.m2,Single,NA,,NA,17.65753425,mm2 mg-1
+173,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,68.70799104,g.m2,Single,NA,,NA,14.55434783,mm2 mg-1
+174,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,85.79088472,g.m2,Single,NA,,NA,11.65625,mm2 mg-1
+175,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,73.45360825,g.m2,Single,NA,,NA,13.61403509,mm2 mg-1
+176,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,61.59110351,g.m2,Single,NA,,NA,16.23611111,mm2 mg-1
+177,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,65.2014652,g.m2,Single,NA,,NA,15.33707865,mm2 mg-1
+178,"Leaf Structure, Venation and Economic Spectrum",SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,LMA.g.m2,111.8335501,g.m2,Single,NA,,NA,8.941860462,mm2 mg-1
+717,European North Russia,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),15.04154329,mm2/mg,Mean,0.372842182,Standard Deviation,6,15.04154329,mm2 mg-1
+718,European North Russia,Leaf specific area (SLA): petiole excluded (min),Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),13.77313084,mm2/mg,Minimum,NA,,NA,13.77313084,mm2 mg-1
+719,European North Russia,Leaf specific area (SLA): petiole excluded  (max),Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),16.29337748,mm2/mg,Maximum,NA,,NA,16.29337748,mm2 mg-1
+720,European North Russia,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),21.03949544,mm2/mg,Mean,1.327760061,Standard Deviation,6,21.03949544,mm2 mg-1
+721,European North Russia,Leaf specific area (SLA): petiole excluded (min),Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),14.78815789,mm2/mg,Minimum,NA,,NA,14.78815789,mm2 mg-1
+722,European North Russia,Leaf specific area (SLA): petiole excluded  (max),Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),23.98232759,mm2/mg,Maximum,NA,,NA,23.98232759,mm2 mg-1
+723,European North Russia,SLA: petiole  excluded,Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),15.8664281,mm2/mg,Mean,0.27027299,Standard Deviation,5,15.8664281,mm2 mg-1
+724,European North Russia,Leaf specific area (SLA): petiole excluded (min),Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),15.20465793,mm2/mg,Minimum,NA,,NA,15.20465793,mm2 mg-1
+725,European North Russia,Leaf specific area (SLA): petiole excluded  (max),Carex aquatilis,SLA.nopetiole,Specific Leaf Area (mm2븁g-1),16.80267559,mm2/mg,Maximum,NA,,NA,16.80267559,mm2 mg-1
+8,The LEDA Traitbase,SLA: petiole  included,Carex aquatilis,SLA.petiole,SLA: petiole and rachis included,14.61,mm2/mg,Best estimate,NA,,NA,14.61,mm2 mg-1
+9,The LEDA Traitbase,SLA: petiole  included,Carex aquatilis,SLA.petiole,SLA: petiole and rachis included,14.61,mm2/mg,Mean,NA,,NA,14.61,mm2 mg-1
+10,The LEDA Traitbase,SLA: petiole  included,Carex aquatilis,SLA.petiole,SLA: petiole and rachis included,16.18,mm2/mg,Maximum,NA,,NA,16.18,mm2 mg-1
+11,The LEDA Traitbase,SLA: petiole  included,Carex aquatilis,SLA.petiole,SLA: petiole and rachis included,13.08,mm2/mg,Minimum,NA,,NA,13.08,mm2 mg-1
+12,The LEDA Traitbase,SLA: petiole  included,Carex aquatilis,SLA.petiole,SLA: petiole and rachis included,14.61,mm2/mg,Median,NA,,NA,14.61,mm2 mg-1
+181,Global Respiration Database,SLA: petiole  included,Carex aquatilis,SLA.petiole,LMA,88.78,gDM m-2,Single,NA,,NA,11.26379815,mm2 mg-1
+83,Tundra Plant Traits Database,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLM,12,mg/cm2,Single,NA,,NA,8.333333333,mm2 mg-1
+118,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,103.5478548,cm2/g,Single,NA,,NA,10.35478548,mm2 mg-1
+119,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded (1),Carex aquatilis,SLA.unsure,LMA,96.57370518,g/m2,Single,NA,,NA,10.35478548,mm2 mg-1
+180,Functional traits explaining variation in plant life history strategies,SLA: undefined if petiole in- or excluded (1),Carex aquatilis,SLA.unsure,SLA,13.04384615,mm2 / mg,Mean,NA,,NA,13.04384615,mm2 mg-1
+187,Photosynthesis Traits Worldwide,SLA: undefined if petiole in- or excluded (1),Carex aquatilis,SLA.unsure,SLA,103.547855,cm2 g-1,Single,NA,,NA,10.3547855,mm2 mg-1
+188,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,56.53170359,g m-2,Single,NA,,NA,17.68918919,mm2 mg-1
+189,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.77E-02,m2/g,Single,NA,,NA,17.68918919,mm2 mg-1
+190,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.7835542,g m-2,Single,NA,,NA,17.01156069,mm2 mg-1
+191,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.70E-02,m2/g,Single,NA,,NA,17.01156069,mm2 mg-1
+192,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,87.04318937,g m-2,Single,NA,,NA,11.48854962,mm2 mg-1
+193,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.15E-02,m2/g,Single,NA,,NA,11.48854962,mm2 mg-1
+194,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,68.43065693,g m-2,Single,NA,,NA,14.61333333,mm2 mg-1
+195,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.46E-02,m2/g,Single,NA,,NA,14.61333333,mm2 mg-1
+196,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,114.0456182,g m-2,Single,NA,,NA,8.768421053,mm2 mg-1
+197,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.77E-03,m2/g,Single,NA,,NA,8.768421053,mm2 mg-1
+198,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,62.1669627,g m-2,Single,NA,,NA,16.08571429,mm2 mg-1
+199,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.61E-02,m2/g,Single,NA,,NA,16.08571429,mm2 mg-1
+200,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.41660994,g m-2,Single,NA,,NA,19.07792208,mm2 mg-1
+201,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.91E-02,m2/g,Single,NA,,NA,19.07792208,mm2 mg-1
+202,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.02695537,g m-2,Single,NA,,NA,18.85833333,mm2 mg-1
+203,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.89E-02,m2/g,Single,NA,,NA,18.85833333,mm2 mg-1
+204,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.98249577,g m-2,Single,NA,,NA,16.39814815,mm2 mg-1
+205,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.64E-02,m2/g,Single,NA,,NA,16.39814815,mm2 mg-1
+206,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,59.68688845,g m-2,Single,NA,,NA,16.75409836,mm2 mg-1
+207,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.68E-02,m2/g,Single,NA,,NA,16.75409836,mm2 mg-1
+208,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.01906341,g m-2,Single,NA,,NA,17.23571429,mm2 mg-1
+209,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.72E-02,m2/g,Single,NA,,NA,17.23571429,mm2 mg-1
+210,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,62.26493941,g m-2,Single,NA,,NA,16.06040268,mm2 mg-1
+211,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.61E-02,m2/g,Single,NA,,NA,16.06040268,mm2 mg-1
+212,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.35122434,g m-2,Single,NA,,NA,16.56967213,mm2 mg-1
+213,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.66E-02,m2/g,Single,NA,,NA,16.56967213,mm2 mg-1
+214,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,73.39878448,g m-2,Single,NA,,NA,13.62420382,mm2 mg-1
+215,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.013624204,m2/g,Single,NA,,NA,13.62420382,mm2 mg-1
+216,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,72.98211696,g m-2,Single,NA,,NA,13.70198675,mm2 mg-1
+217,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.37E-02,m2/g,Single,NA,,NA,13.70198675,mm2 mg-1
+218,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,73.37807606,g m-2,Single,NA,,NA,13.62804878,mm2 mg-1
+219,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.36E-02,m2/g,Single,NA,,NA,13.62804878,mm2 mg-1
+220,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,62.59490467,g m-2,Single,NA,,NA,15.97574124,mm2 mg-1
+221,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.60E-02,m2/g,Single,NA,,NA,15.97574124,mm2 mg-1
+222,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,71.45782146,g m-2,Single,NA,,NA,13.99426934,mm2 mg-1
+223,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.40E-02,m2/g,Single,NA,,NA,13.99426934,mm2 mg-1
+224,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,59.50095969,g m-2,Single,NA,,NA,16.80645161,mm2 mg-1
+225,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.68E-02,m2/g,Single,NA,,NA,16.80645161,mm2 mg-1
+226,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,65.30515317,g m-2,Single,NA,,NA,15.31272727,mm2 mg-1
+227,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.53E-02,m2/g,Single,NA,,NA,15.31272727,mm2 mg-1
+228,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,73.21253673,g m-2,Single,NA,,NA,13.65886288,mm2 mg-1
+229,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.37E-02,m2/g,Single,NA,,NA,13.65886288,mm2 mg-1
+230,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,63.47862886,g m-2,Single,NA,,NA,15.75333333,mm2 mg-1
+231,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.58E-02,m2/g,Single,NA,,NA,15.75333333,mm2 mg-1
+232,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,63.33180358,g m-2,Single,NA,,NA,15.78985507,mm2 mg-1
+233,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.58E-02,m2/g,Single,NA,,NA,15.78985507,mm2 mg-1
+234,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.74193548,g m-2,Single,NA,,NA,20.94594595,mm2 mg-1
+235,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.09E-02,m2/g,Single,NA,,NA,20.94594595,mm2 mg-1
+236,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.20245072,g m-2,Single,NA,,NA,16.61061947,mm2 mg-1
+237,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.66E-02,m2/g,Single,NA,,NA,16.61061947,mm2 mg-1
+238,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,102.9585799,g m-2,Single,NA,,NA,9.712643678,mm2 mg-1
+239,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.71E-03,m2/g,Single,NA,,NA,9.712643678,mm2 mg-1
+240,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.23863636,g m-2,Single,NA,,NA,17.17073171,mm2 mg-1
+241,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.72E-02,m2/g,Single,NA,,NA,17.17073171,mm2 mg-1
+242,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,64.28187197,g m-2,Single,NA,,NA,15.55648536,mm2 mg-1
+243,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.56E-02,m2/g,Single,NA,,NA,15.55648536,mm2 mg-1
+244,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,77.45696835,g m-2,Single,NA,,NA,12.91039427,mm2 mg-1
+245,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.012910394,m2/g,Single,NA,,NA,12.91039427,mm2 mg-1
+246,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.17540767,g m-2,Single,NA,,NA,17.18939394,mm2 mg-1
+247,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.72E-02,m2/g,Single,NA,,NA,17.18939394,mm2 mg-1
+248,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,72.82018524,g m-2,Single,NA,,NA,13.73245614,mm2 mg-1
+249,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.37E-02,m2/g,Single,NA,,NA,13.73245614,mm2 mg-1
+250,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,64.19589676,g m-2,Single,NA,,NA,15.57731959,mm2 mg-1
+251,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.56E-02,m2/g,Single,NA,,NA,15.57731959,mm2 mg-1
+252,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,68.04238706,g m-2,Single,NA,,NA,14.69672131,mm2 mg-1
+253,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.47E-02,m2/g,Single,NA,,NA,14.69672131,mm2 mg-1
+254,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,57.45257453,g m-2,Single,NA,,NA,17.40566038,mm2 mg-1
+255,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.74E-02,m2/g,Single,NA,,NA,17.40566038,mm2 mg-1
+256,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.11965812,g m-2,Single,NA,,NA,17.20588235,mm2 mg-1
+257,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.72E-02,m2/g,Single,NA,,NA,17.20588235,mm2 mg-1
+258,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.30769231,g m-2,Single,NA,,NA,19.11764706,mm2 mg-1
+259,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.91E-02,m2/g,Single,NA,,NA,19.11764706,mm2 mg-1
+260,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,149.1666667,g m-2,Single,NA,,NA,6.703910615,mm2 mg-1
+261,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.70E-03,m2/g,Single,NA,,NA,6.703910615,mm2 mg-1
+262,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,62.85714286,g m-2,Single,NA,,NA,15.90909091,mm2 mg-1
+263,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.59E-02,m2/g,Single,NA,,NA,15.90909091,mm2 mg-1
+264,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.17241379,g m-2,Single,NA,,NA,18.125,mm2 mg-1
+265,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.018125,m2/g,Single,NA,,NA,18.125,mm2 mg-1
+266,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,57.69980507,g m-2,Single,NA,,NA,17.33108108,mm2 mg-1
+267,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.73E-02,m2/g,Single,NA,,NA,17.33108108,mm2 mg-1
+268,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,86.2745098,g m-2,Single,NA,,NA,11.59090909,mm2 mg-1
+269,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.16E-02,m2/g,Single,NA,,NA,11.59090909,mm2 mg-1
+270,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.21686747,g m-2,Single,NA,,NA,18.44444444,mm2 mg-1
+271,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.84E-02,m2/g,Single,NA,,NA,18.44444444,mm2 mg-1
+272,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.94736842,g m-2,Single,NA,,NA,16.96428571,mm2 mg-1
+273,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.70E-02,m2/g,Single,NA,,NA,16.96428571,mm2 mg-1
+274,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,67.13947991,g m-2,Single,NA,,NA,14.8943662,mm2 mg-1
+275,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.49E-02,m2/g,Single,NA,,NA,14.8943662,mm2 mg-1
+276,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,59.60784314,g m-2,Single,NA,,NA,16.77631579,mm2 mg-1
+277,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.68E-02,m2/g,Single,NA,,NA,16.77631579,mm2 mg-1
+278,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.44032922,g m-2,Single,NA,,NA,19.44,mm2 mg-1
+279,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.01944,m2/g,Single,NA,,NA,19.44,mm2 mg-1
+280,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,65,g m-2,Single,NA,,NA,15.38461538,mm2 mg-1
+281,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.54E-02,m2/g,Single,NA,,NA,15.38461538,mm2 mg-1
+282,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.33333333,g m-2,Single,NA,,NA,17.14285714,mm2 mg-1
+283,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.71E-02,m2/g,Single,NA,,NA,17.14285714,mm2 mg-1
+284,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.33333333,g m-2,Single,NA,,NA,18.75,mm2 mg-1
+285,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.01875,m2/g,Single,NA,,NA,18.75,mm2 mg-1
+286,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,122.6666667,g m-2,Single,NA,,NA,8.152173913,mm2 mg-1
+287,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.15E-03,m2/g,Single,NA,,NA,8.152173913,mm2 mg-1
+288,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,84.9328215,g m-2,Single,NA,,NA,11.7740113,mm2 mg-1
+289,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.011774011,m2/g,Single,NA,,NA,11.7740113,mm2 mg-1
+290,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,84.06702641,g m-2,Single,NA,,NA,11.89527027,mm2 mg-1
+291,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.19E-02,m2/g,Single,NA,,NA,11.89527027,mm2 mg-1
+292,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,84.66376391,g m-2,Single,NA,,NA,11.81142857,mm2 mg-1
+293,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.18E-02,m2/g,Single,NA,,NA,11.81142857,mm2 mg-1
+294,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,93.45794393,g m-2,Single,NA,,NA,10.7,mm2 mg-1
+295,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.0107,m2/g,Single,NA,,NA,10.7,mm2 mg-1
+296,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,94.19743783,g m-2,Single,NA,,NA,10.616,mm2 mg-1
+297,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.010616,m2/g,Single,NA,,NA,10.616,mm2 mg-1
+298,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,84.86352357,g m-2,Single,NA,,NA,11.78362573,mm2 mg-1
+299,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.18E-02,m2/g,Single,NA,,NA,11.78362573,mm2 mg-1
+300,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,80.62407391,g m-2,Single,NA,,NA,12.40324324,mm2 mg-1
+301,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.24E-02,m2/g,Single,NA,,NA,12.40324324,mm2 mg-1
+302,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,79.5701147,g m-2,Single,NA,,NA,12.56753247,mm2 mg-1
+303,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.26E-02,m2/g,Single,NA,,NA,12.56753247,mm2 mg-1
+304,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,90.25611946,g m-2,Single,NA,,NA,11.07958115,mm2 mg-1
+305,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.11E-02,m2/g,Single,NA,,NA,11.07958115,mm2 mg-1
+306,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,103.3431218,g m-2,Single,NA,,NA,9.676502732,mm2 mg-1
+307,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.68E-03,m2/g,Single,NA,,NA,9.676502732,mm2 mg-1
+308,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,99.9904771,g m-2,Single,NA,,NA,10.00095238,mm2 mg-1
+309,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.00E-02,m2/g,Single,NA,,NA,10.00095238,mm2 mg-1
+310,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,86.29608342,g m-2,Single,NA,,NA,11.58801142,mm2 mg-1
+311,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.16E-02,m2/g,Single,NA,,NA,11.58801142,mm2 mg-1
+312,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,87.21607455,g m-2,Single,NA,,NA,11.46577629,mm2 mg-1
+313,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.011465776,m2/g,Single,NA,,NA,11.46577629,mm2 mg-1
+314,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,83.48794063,g m-2,Single,NA,,NA,11.97777778,mm2 mg-1
+315,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.20E-02,m2/g,Single,NA,,NA,11.97777778,mm2 mg-1
+316,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,82.69230769,g m-2,Single,NA,,NA,12.09302326,mm2 mg-1
+317,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.012093023,m2/g,Single,NA,,NA,12.09302326,mm2 mg-1
+318,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,118.2930277,g m-2,Single,NA,,NA,8.453583607,mm2 mg-1
+319,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.45E-03,m2/g,Single,NA,,NA,8.453583607,mm2 mg-1
+320,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,118.2930277,g m-2,Single,NA,,NA,8.453583607,mm2 mg-1
+321,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.45E-03,m2/g,Single,NA,,NA,8.453583607,mm2 mg-1
+322,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,143.2316876,g m-2,Single,NA,,NA,6.9816953,mm2 mg-1
+323,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.98E-03,m2/g,Single,NA,,NA,6.9816953,mm2 mg-1
+324,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,106.308382,g m-2,Single,NA,,NA,9.406595992,mm2 mg-1
+325,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.41E-03,m2/g,Single,NA,,NA,9.406595992,mm2 mg-1
+326,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,143.2316876,g m-2,Single,NA,,NA,6.9816953,mm2 mg-1
+327,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.98E-03,m2/g,Single,NA,,NA,6.9816953,mm2 mg-1
+328,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,106.308382,g m-2,Single,NA,,NA,9.406595992,mm2 mg-1
+329,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.41E-03,m2/g,Single,NA,,NA,9.406595992,mm2 mg-1
+330,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,94.15922055,g m-2,Single,NA,,NA,10.62030881,mm2 mg-1
+331,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.06E-02,m2/g,Single,NA,,NA,10.62030881,mm2 mg-1
+332,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,94.15922055,g m-2,Single,NA,,NA,10.62030881,mm2 mg-1
+333,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.06E-02,m2/g,Single,NA,,NA,10.62030881,mm2 mg-1
+334,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,145.8296113,g m-2,Single,NA,,NA,6.857317874,mm2 mg-1
+335,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.86E-03,m2/g,Single,NA,,NA,6.857317874,mm2 mg-1
+336,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,118.2930277,g m-2,Single,NA,,NA,8.453583607,mm2 mg-1
+337,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.45E-03,m2/g,Single,NA,,NA,8.453583607,mm2 mg-1
+338,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,143.2316876,g m-2,Single,NA,,NA,6.9816953,mm2 mg-1
+339,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.98E-03,m2/g,Single,NA,,NA,6.9816953,mm2 mg-1
+340,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,118.2930277,g m-2,Single,NA,,NA,8.453583607,mm2 mg-1
+341,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.45E-03,m2/g,Single,NA,,NA,8.453583607,mm2 mg-1
+342,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,106.308382,g m-2,Single,NA,,NA,9.406595992,mm2 mg-1
+343,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.41E-03,m2/g,Single,NA,,NA,9.406595992,mm2 mg-1
+344,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,143.2316876,g m-2,Single,NA,,NA,6.9816953,mm2 mg-1
+345,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.98E-03,m2/g,Single,NA,,NA,6.9816953,mm2 mg-1
+346,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,106.308382,g m-2,Single,NA,,NA,9.406595992,mm2 mg-1
+347,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.41E-03,m2/g,Single,NA,,NA,9.406595992,mm2 mg-1
+348,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,113.8352626,g m-2,Single,NA,,NA,8.784624174,mm2 mg-1
+349,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.78E-03,m2/g,Single,NA,,NA,8.784624174,mm2 mg-1
+350,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,125.3772846,g m-2,Single,NA,,NA,7.975926448,mm2 mg-1
+351,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,7.98E-03,m2/g,Single,NA,,NA,7.975926448,mm2 mg-1
+352,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,113.8352626,g m-2,Single,NA,,NA,8.784624174,mm2 mg-1
+353,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.78E-03,m2/g,Single,NA,,NA,8.784624174,mm2 mg-1
+354,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,94.15922055,g m-2,Single,NA,,NA,10.62030881,mm2 mg-1
+355,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.06E-02,m2/g,Single,NA,,NA,10.62030881,mm2 mg-1
+356,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,125.3772846,g m-2,Single,NA,,NA,7.975926448,mm2 mg-1
+357,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,7.98E-03,m2/g,Single,NA,,NA,7.975926448,mm2 mg-1
+358,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,94.15922055,g m-2,Single,NA,,NA,10.62030881,mm2 mg-1
+359,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.06E-02,m2/g,Single,NA,,NA,10.62030881,mm2 mg-1
+360,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,125.3772846,g m-2,Single,NA,,NA,7.975926448,mm2 mg-1
+361,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,7.98E-03,m2/g,Single,NA,,NA,7.975926448,mm2 mg-1
+362,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,102.7555947,g m-2,Single,NA,,NA,9.7318302,mm2 mg-1
+363,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.73E-03,m2/g,Single,NA,,NA,9.7318302,mm2 mg-1
+364,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,153.0102124,g m-2,Single,NA,,NA,6.535511482,mm2 mg-1
+365,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.54E-03,m2/g,Single,NA,,NA,6.535511482,mm2 mg-1
+366,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,125.3772846,g m-2,Single,NA,,NA,7.975926448,mm2 mg-1
+367,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,7.98E-03,m2/g,Single,NA,,NA,7.975926448,mm2 mg-1
+368,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,113.8352626,g m-2,Single,NA,,NA,8.784624174,mm2 mg-1
+369,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.78E-03,m2/g,Single,NA,,NA,8.784624174,mm2 mg-1
+370,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,113.8352626,g m-2,Single,NA,,NA,8.784624174,mm2 mg-1
+371,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.78E-03,m2/g,Single,NA,,NA,8.784624174,mm2 mg-1
+372,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,153.0102124,g m-2,Single,NA,,NA,6.535511482,mm2 mg-1
+373,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.54E-03,m2/g,Single,NA,,NA,6.535511482,mm2 mg-1
+374,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,118.2930277,g m-2,Single,NA,,NA,8.453583607,mm2 mg-1
+375,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.45E-03,m2/g,Single,NA,,NA,8.453583607,mm2 mg-1
+376,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,121.2957003,g m-2,Single,NA,,NA,8.24431532,mm2 mg-1
+377,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.24E-03,m2/g,Single,NA,,NA,8.24431532,mm2 mg-1
+378,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,102.7555947,g m-2,Single,NA,,NA,9.7318302,mm2 mg-1
+379,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.73E-03,m2/g,Single,NA,,NA,9.7318302,mm2 mg-1
+380,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,158.6213411,g m-2,Single,NA,,NA,6.304321936,mm2 mg-1
+381,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.30E-03,m2/g,Single,NA,,NA,6.304321936,mm2 mg-1
+382,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,149.7102167,g m-2,Single,NA,,NA,6.679570854,mm2 mg-1
+383,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.68E-03,m2/g,Single,NA,,NA,6.679570854,mm2 mg-1
+384,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,158.6213411,g m-2,Single,NA,,NA,6.304321936,mm2 mg-1
+385,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.30E-03,m2/g,Single,NA,,NA,6.304321936,mm2 mg-1
+386,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,153.0102124,g m-2,Single,NA,,NA,6.535511482,mm2 mg-1
+387,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.54E-03,m2/g,Single,NA,,NA,6.535511482,mm2 mg-1
+388,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,158.6213411,g m-2,Single,NA,,NA,6.304321936,mm2 mg-1
+389,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.30E-03,m2/g,Single,NA,,NA,6.304321936,mm2 mg-1
+390,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,121.2957003,g m-2,Single,NA,,NA,8.24431532,mm2 mg-1
+391,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.24E-03,m2/g,Single,NA,,NA,8.24431532,mm2 mg-1
+392,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,158.6213411,g m-2,Single,NA,,NA,6.304321936,mm2 mg-1
+393,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.30E-03,m2/g,Single,NA,,NA,6.304321936,mm2 mg-1
+394,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,121.2957003,g m-2,Single,NA,,NA,8.24431532,mm2 mg-1
+395,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.24E-03,m2/g,Single,NA,,NA,8.24431532,mm2 mg-1
+396,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,145.8296113,g m-2,Single,NA,,NA,6.857317874,mm2 mg-1
+397,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.86E-03,m2/g,Single,NA,,NA,6.857317874,mm2 mg-1
+398,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,153.0102124,g m-2,Single,NA,,NA,6.535511482,mm2 mg-1
+399,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.54E-03,m2/g,Single,NA,,NA,6.535511482,mm2 mg-1
+400,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,102.7555947,g m-2,Single,NA,,NA,9.7318302,mm2 mg-1
+401,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.73E-03,m2/g,Single,NA,,NA,9.7318302,mm2 mg-1
+402,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,121.2957003,g m-2,Single,NA,,NA,8.24431532,mm2 mg-1
+403,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,8.24E-03,m2/g,Single,NA,,NA,8.24431532,mm2 mg-1
+404,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,145.8296113,g m-2,Single,NA,,NA,6.857317874,mm2 mg-1
+405,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.86E-03,m2/g,Single,NA,,NA,6.857317874,mm2 mg-1
+406,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,102.7555947,g m-2,Single,NA,,NA,9.7318302,mm2 mg-1
+407,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.73E-03,m2/g,Single,NA,,NA,9.7318302,mm2 mg-1
+408,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,145.8296113,g m-2,Single,NA,,NA,6.857317874,mm2 mg-1
+409,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,6.86E-03,m2/g,Single,NA,,NA,6.857317874,mm2 mg-1
+410,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,106.7839196,g m-2,Single,NA,,NA,9.364705882,mm2 mg-1
+411,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,9.36E-03,m2/g,Single,NA,,NA,9.364705882,mm2 mg-1
+412,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,83.48794063,g m-2,Single,NA,,NA,11.97777778,mm2 mg-1
+413,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.20E-02,m2/g,Single,NA,,NA,11.97777778,mm2 mg-1
+414,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,89.08467939,g m-2,Single,NA,,NA,11.22527473,mm2 mg-1
+415,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.12E-02,m2/g,Single,NA,,NA,11.22527473,mm2 mg-1
+416,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,73.3304234,g m-2,Single,NA,,NA,13.63690476,mm2 mg-1
+417,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.36E-02,m2/g,Single,NA,,NA,13.63690476,mm2 mg-1
+418,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,84.91710473,g m-2,Single,NA,,NA,11.77619048,mm2 mg-1
+419,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.18E-02,m2/g,Single,NA,,NA,11.77619048,mm2 mg-1
+420,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,79.53376757,g m-2,Single,NA,,NA,12.57327586,mm2 mg-1
+421,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.012573276,m2/g,Single,NA,,NA,12.57327586,mm2 mg-1
+422,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,78.39721254,g m-2,Single,NA,,NA,12.75555556,mm2 mg-1
+423,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.28E-02,m2/g,Single,NA,,NA,12.75555556,mm2 mg-1
+424,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,70.1754386,g m-2,Single,NA,,NA,14.25,mm2 mg-1
+425,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.01425,m2/g,Single,NA,,NA,14.25,mm2 mg-1
+426,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,68.21705426,g m-2,Single,NA,,NA,14.65909091,mm2 mg-1
+427,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.47E-02,m2/g,Single,NA,,NA,14.65909091,mm2 mg-1
+428,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,73.33333333,g m-2,Single,NA,,NA,13.63636364,mm2 mg-1
+429,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.36E-02,m2/g,Single,NA,,NA,13.63636364,mm2 mg-1
+430,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.74074074,g m-2,Single,NA,,NA,16.46341463,mm2 mg-1
+431,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.65E-02,m2/g,Single,NA,,NA,16.46341463,mm2 mg-1
+432,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,71.85185185,g m-2,Single,NA,,NA,13.91752577,mm2 mg-1
+433,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.39E-02,m2/g,Single,NA,,NA,13.91752577,mm2 mg-1
+434,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,65.89147287,g m-2,Single,NA,,NA,15.17647059,mm2 mg-1
+435,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.52E-02,m2/g,Single,NA,,NA,15.17647059,mm2 mg-1
+436,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,65.18518519,g m-2,Single,NA,,NA,15.34090909,mm2 mg-1
+437,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.53E-02,m2/g,Single,NA,,NA,15.34090909,mm2 mg-1
+438,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,68.07017544,g m-2,Single,NA,,NA,14.69072165,mm2 mg-1
+439,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.47E-02,m2/g,Single,NA,,NA,14.69072165,mm2 mg-1
+440,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,71.73913043,g m-2,Single,NA,,NA,13.93939394,mm2 mg-1
+441,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.39E-02,m2/g,Single,NA,,NA,13.93939394,mm2 mg-1
+442,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+443,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+444,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+445,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+446,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+447,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+448,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+449,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+450,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+451,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+452,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+453,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+454,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+455,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+456,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+457,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+458,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+459,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+460,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+461,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+462,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+463,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+464,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+465,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+466,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+467,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+468,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+469,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+470,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+471,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+472,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+473,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+474,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+475,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+476,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+477,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+478,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+479,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+480,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,66.86646416,g m-2,Single,NA,,NA,14.95517989,mm2 mg-1
+481,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.50E-02,m2/g,Single,NA,,NA,14.95517989,mm2 mg-1
+482,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,62.28070175,g m-2,Single,NA,,NA,16.05633803,mm2 mg-1
+483,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.016056338,m2/g,Single,NA,,NA,16.05633803,mm2 mg-1
+484,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.76190476,g m-2,Single,NA,,NA,16.45768025,mm2 mg-1
+485,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.65E-02,m2/g,Single,NA,,NA,16.45768025,mm2 mg-1
+486,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.34615385,g m-2,Single,NA,,NA,19.47565543,mm2 mg-1
+487,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.95E-02,m2/g,Single,NA,,NA,19.47565543,mm2 mg-1
+488,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.47863248,g m-2,Single,NA,,NA,19.05537459,mm2 mg-1
+489,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.91E-02,m2/g,Single,NA,,NA,19.05537459,mm2 mg-1
+490,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.76623377,g m-2,Single,NA,,NA,18.59903382,mm2 mg-1
+491,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.86E-02,m2/g,Single,NA,,NA,18.59903382,mm2 mg-1
+492,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,50.37037037,g m-2,Single,NA,,NA,19.85294118,mm2 mg-1
+493,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.99E-02,m2/g,Single,NA,,NA,19.85294118,mm2 mg-1
+494,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.625,g m-2,Single,NA,,NA,17.97752809,mm2 mg-1
+495,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.80E-02,m2/g,Single,NA,,NA,17.97752809,mm2 mg-1
+496,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.03030303,g m-2,Single,NA,,NA,18.85714286,mm2 mg-1
+497,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.89E-02,m2/g,Single,NA,,NA,18.85714286,mm2 mg-1
+498,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.6875,g m-2,Single,NA,,NA,18.28571429,mm2 mg-1
+499,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.83E-02,m2/g,Single,NA,,NA,18.28571429,mm2 mg-1
+500,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.53846154,g m-2,Single,NA,,NA,19.40298507,mm2 mg-1
+501,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.94E-02,m2/g,Single,NA,,NA,19.40298507,mm2 mg-1
+502,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.69230769,g m-2,Single,NA,,NA,18.97810219,mm2 mg-1
+503,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.018978102,m2/g,Single,NA,,NA,18.97810219,mm2 mg-1
+504,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,65.49450549,g m-2,Single,NA,,NA,15.26845638,mm2 mg-1
+505,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.53E-02,m2/g,Single,NA,,NA,15.26845638,mm2 mg-1
+506,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,73.75,g m-2,Single,NA,,NA,13.55932203,mm2 mg-1
+507,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.36E-02,m2/g,Single,NA,,NA,13.55932203,mm2 mg-1
+508,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.52631579,g m-2,Single,NA,,NA,16.52173913,mm2 mg-1
+509,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.65E-02,m2/g,Single,NA,,NA,16.52173913,mm2 mg-1
+510,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,44.47619048,g m-2,Single,NA,,NA,22.48394004,mm2 mg-1
+511,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.25E-02,m2/g,Single,NA,,NA,22.48394004,mm2 mg-1
+512,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,44.08602151,g m-2,Single,NA,,NA,22.68292683,mm2 mg-1
+513,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.27E-02,m2/g,Single,NA,,NA,22.68292683,mm2 mg-1
+514,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.55319149,g m-2,Single,NA,,NA,19.02834008,mm2 mg-1
+515,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.90E-02,m2/g,Single,NA,,NA,19.02834008,mm2 mg-1
+516,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.88888889,g m-2,Single,NA,,NA,17.89264414,mm2 mg-1
+517,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.79E-02,m2/g,Single,NA,,NA,17.89264414,mm2 mg-1
+518,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.93442623,g m-2,Single,NA,,NA,16.96801113,mm2 mg-1
+519,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.70E-02,m2/g,Single,NA,,NA,16.96801113,mm2 mg-1
+520,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.37815126,g m-2,Single,NA,,NA,18.05766313,mm2 mg-1
+521,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.81E-02,m2/g,Single,NA,,NA,18.05766313,mm2 mg-1
+522,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,58.11023622,g m-2,Single,NA,,NA,17.20867209,mm2 mg-1
+523,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.72E-02,m2/g,Single,NA,,NA,17.20867209,mm2 mg-1
+524,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.875,g m-2,Single,NA,,NA,19.27710843,mm2 mg-1
+525,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.93E-02,m2/g,Single,NA,,NA,19.27710843,mm2 mg-1
+526,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.78846154,g m-2,Single,NA,,NA,20.92555332,mm2 mg-1
+527,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.09E-02,m2/g,Single,NA,,NA,20.92555332,mm2 mg-1
+528,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,41.25,g m-2,Single,NA,,NA,24.24242424,mm2 mg-1
+529,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.42E-02,m2/g,Single,NA,,NA,24.24242424,mm2 mg-1
+530,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,49.41176471,g m-2,Single,NA,,NA,20.23809524,mm2 mg-1
+531,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.02E-02,m2/g,Single,NA,,NA,20.23809524,mm2 mg-1
+532,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55,g m-2,Single,NA,,NA,18.18181818,mm2 mg-1
+533,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.82E-02,m2/g,Single,NA,,NA,18.18181818,mm2 mg-1
+534,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.66666667,g m-2,Single,NA,,NA,19.35483871,mm2 mg-1
+535,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.94E-02,m2/g,Single,NA,,NA,19.35483871,mm2 mg-1
+536,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.38095238,g m-2,Single,NA,,NA,19.09090909,mm2 mg-1
+537,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.91E-02,m2/g,Single,NA,,NA,19.09090909,mm2 mg-1
+538,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.75,g m-2,Single,NA,,NA,20.94240838,mm2 mg-1
+539,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.09E-02,m2/g,Single,NA,,NA,20.94240838,mm2 mg-1
+540,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.53846154,g m-2,Single,NA,,NA,18.67816092,mm2 mg-1
+541,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.87E-02,m2/g,Single,NA,,NA,18.67816092,mm2 mg-1
+542,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,41.32513661,g m-2,Single,NA,,NA,24.19834711,mm2 mg-1
+543,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.024198347,m2/g,Single,NA,,NA,24.19834711,mm2 mg-1
+544,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,61.77777778,g m-2,Single,NA,,NA,16.18705036,mm2 mg-1
+545,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.62E-02,m2/g,Single,NA,,NA,16.18705036,mm2 mg-1
+546,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,45.66666667,g m-2,Single,NA,,NA,21.89781022,mm2 mg-1
+547,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.19E-02,m2/g,Single,NA,,NA,21.89781022,mm2 mg-1
+548,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,45.6,g m-2,Single,NA,,NA,21.92982456,mm2 mg-1
+549,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.19E-02,m2/g,Single,NA,,NA,21.92982456,mm2 mg-1
+550,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.75,g m-2,Single,NA,,NA,18.60465116,mm2 mg-1
+551,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.86E-02,m2/g,Single,NA,,NA,18.60465116,mm2 mg-1
+552,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.44744745,g m-2,Single,NA,,NA,21.07594937,mm2 mg-1
+553,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.11E-02,m2/g,Single,NA,,NA,21.07594937,mm2 mg-1
+554,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.25,g m-2,Single,NA,,NA,19.51219512,mm2 mg-1
+555,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.95E-02,m2/g,Single,NA,,NA,19.51219512,mm2 mg-1
+556,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,42.52819654,g m-2,Single,NA,,NA,23.51381157,mm2 mg-1
+557,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.35E-02,m2/g,Single,NA,,NA,23.51381157,mm2 mg-1
+558,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,57.01774254,g m-2,Single,NA,,NA,17.53840042,mm2 mg-1
+559,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.75E-02,m2/g,Single,NA,,NA,17.53840042,mm2 mg-1
+560,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.69333333,g m-2,Single,NA,,NA,17.95547043,mm2 mg-1
+561,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.80E-02,m2/g,Single,NA,,NA,17.95547043,mm2 mg-1
+562,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,49.36353341,g m-2,Single,NA,,NA,20.25786914,mm2 mg-1
+563,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.03E-02,m2/g,Single,NA,,NA,20.25786914,mm2 mg-1
+564,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.88318357,g m-2,Single,NA,,NA,19.27406784,mm2 mg-1
+565,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.93E-02,m2/g,Single,NA,,NA,19.27406784,mm2 mg-1
+566,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.41666667,g m-2,Single,NA,,NA,19.44894652,mm2 mg-1
+567,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.94E-02,m2/g,Single,NA,,NA,19.44894652,mm2 mg-1
+568,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,56.25806452,g m-2,Single,NA,,NA,17.77522936,mm2 mg-1
+569,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.78E-02,m2/g,Single,NA,,NA,17.77522936,mm2 mg-1
+570,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,62.40963855,g m-2,Single,NA,,NA,16.02316602,mm2 mg-1
+571,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.016023166,m2/g,Single,NA,,NA,16.02316602,mm2 mg-1
+572,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,67.46666667,g m-2,Single,NA,,NA,14.82213439,mm2 mg-1
+573,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.48E-02,m2/g,Single,NA,,NA,14.82213439,mm2 mg-1
+574,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,61.64341085,g m-2,Single,NA,,NA,16.222334,mm2 mg-1
+575,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.62E-02,m2/g,Single,NA,,NA,16.222334,mm2 mg-1
+576,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,65.55555556,g m-2,Single,NA,,NA,15.25423729,mm2 mg-1
+577,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.53E-02,m2/g,Single,NA,,NA,15.25423729,mm2 mg-1
+578,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,43.56190476,g m-2,Single,NA,,NA,22.95583734,mm2 mg-1
+579,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.30E-02,m2/g,Single,NA,,NA,22.95583734,mm2 mg-1
+580,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,56.95726496,g m-2,Single,NA,,NA,17.55702281,mm2 mg-1
+581,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.76E-02,m2/g,Single,NA,,NA,17.55702281,mm2 mg-1
+582,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,69.68333333,g m-2,Single,NA,,NA,14.35063382,mm2 mg-1
+583,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.44E-02,m2/g,Single,NA,,NA,14.35063382,mm2 mg-1
+584,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.41975309,g m-2,Single,NA,,NA,18.37568058,mm2 mg-1
+585,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.84E-02,m2/g,Single,NA,,NA,18.37568058,mm2 mg-1
+586,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.9047619,g m-2,Single,NA,,NA,18.55123675,mm2 mg-1
+587,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.86E-02,m2/g,Single,NA,,NA,18.55123675,mm2 mg-1
+588,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,81.82352941,g m-2,Single,NA,,NA,12.22142344,mm2 mg-1
+589,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.22E-02,m2/g,Single,NA,,NA,12.22142344,mm2 mg-1
+590,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.20430108,g m-2,Single,NA,,NA,18.79547292,mm2 mg-1
+591,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.88E-02,m2/g,Single,NA,,NA,18.79547292,mm2 mg-1
+592,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.06367041,g m-2,Single,NA,,NA,18.84528515,mm2 mg-1
+593,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.018845285,m2/g,Single,NA,,NA,18.84528515,mm2 mg-1
+594,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,53.72893773,g m-2,Single,NA,,NA,18.61194437,mm2 mg-1
+595,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.86E-02,m2/g,Single,NA,,NA,18.61194437,mm2 mg-1
+596,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,69.86394558,g m-2,Single,NA,,NA,14.31353457,mm2 mg-1
+597,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.43E-02,m2/g,Single,NA,,NA,14.31353457,mm2 mg-1
+598,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,46.82170543,g m-2,Single,NA,,NA,21.35761589,mm2 mg-1
+599,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.14E-02,m2/g,Single,NA,,NA,21.35761589,mm2 mg-1
+600,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,78.64444444,g m-2,Single,NA,,NA,12.71545634,mm2 mg-1
+601,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.27E-02,m2/g,Single,NA,,NA,12.71545634,mm2 mg-1
+602,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.74509804,g m-2,Single,NA,,NA,19.32550208,mm2 mg-1
+603,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.93E-02,m2/g,Single,NA,,NA,19.32550208,mm2 mg-1
+604,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.07751938,g m-2,Single,NA,,NA,18.49197248,mm2 mg-1
+605,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.85E-02,m2/g,Single,NA,,NA,18.49197248,mm2 mg-1
+606,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.91265306,g m-2,Single,NA,,NA,18.21073913,mm2 mg-1
+607,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.82E-02,m2/g,Single,NA,,NA,18.21073913,mm2 mg-1
+608,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,61.93587786,g m-2,Single,NA,,NA,16.14573063,mm2 mg-1
+609,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.61E-02,m2/g,Single,NA,,NA,16.14573063,mm2 mg-1
+610,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,46.80966184,g m-2,Single,NA,,NA,21.36311096,mm2 mg-1
+611,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.14E-02,m2/g,Single,NA,,NA,21.36311096,mm2 mg-1
+612,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,64.23605348,g m-2,Single,NA,,NA,15.56758153,mm2 mg-1
+613,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.56E-02,m2/g,Single,NA,,NA,15.56758153,mm2 mg-1
+614,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.62592593,g m-2,Single,NA,,NA,20.9969671,mm2 mg-1
+615,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.10E-02,m2/g,Single,NA,,NA,20.9969671,mm2 mg-1
+616,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.12231405,g m-2,Single,NA,,NA,18.47666748,mm2 mg-1
+617,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.85E-02,m2/g,Single,NA,,NA,18.47666748,mm2 mg-1
+618,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.59591837,g m-2,Single,NA,,NA,18.31638756,mm2 mg-1
+619,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.83E-02,m2/g,Single,NA,,NA,18.31638756,mm2 mg-1
+620,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,49.62318841,g m-2,Single,NA,,NA,20.15186916,mm2 mg-1
+621,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.02E-02,m2/g,Single,NA,,NA,20.15186916,mm2 mg-1
+622,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,44.63589744,g m-2,Single,NA,,NA,22.40349265,mm2 mg-1
+623,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.24E-02,m2/g,Single,NA,,NA,22.40349265,mm2 mg-1
+624,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,52.14573643,g m-2,Single,NA,,NA,19.17702325,mm2 mg-1
+625,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.92E-02,m2/g,Single,NA,,NA,19.17702325,mm2 mg-1
+626,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,49.38248848,g m-2,Single,NA,,NA,20.25009332,mm2 mg-1
+627,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.03E-02,m2/g,Single,NA,,NA,20.25009332,mm2 mg-1
+628,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,63.6440678,g m-2,Single,NA,,NA,15.71238349,mm2 mg-1
+629,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.57E-02,m2/g,Single,NA,,NA,15.71238349,mm2 mg-1
+630,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,45.5720524,g m-2,Single,NA,,NA,21.94327328,mm2 mg-1
+631,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.19E-02,m2/g,Single,NA,,NA,21.94327328,mm2 mg-1
+632,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,50.6031746,g m-2,Single,NA,,NA,19.76160602,mm2 mg-1
+633,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.98E-02,m2/g,Single,NA,,NA,19.76160602,mm2 mg-1
+634,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.22016807,g m-2,Single,NA,,NA,21.1773918,mm2 mg-1
+635,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.12E-02,m2/g,Single,NA,,NA,21.1773918,mm2 mg-1
+636,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,49.888,g m-2,Single,NA,,NA,20.04490058,mm2 mg-1
+637,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.00E-02,m2/g,Single,NA,,NA,20.04490058,mm2 mg-1
+638,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,43.93694581,g m-2,Single,NA,,NA,22.75988878,mm2 mg-1
+639,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.28E-02,m2/g,Single,NA,,NA,22.75988878,mm2 mg-1
+640,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,48.52923077,g m-2,Single,NA,,NA,20.60613746,mm2 mg-1
+641,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.06E-02,m2/g,Single,NA,,NA,20.60613746,mm2 mg-1
+642,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,61.96571429,g m-2,Single,NA,,NA,16.13795647,mm2 mg-1
+643,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.016137956,m2/g,Single,NA,,NA,16.13795647,mm2 mg-1
+644,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.08571429,g m-2,Single,NA,,NA,18.15352697,mm2 mg-1
+645,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.82E-02,m2/g,Single,NA,,NA,18.15352697,mm2 mg-1
+646,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,43.57189189,g m-2,Single,NA,,NA,22.95057563,mm2 mg-1
+647,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.30E-02,m2/g,Single,NA,,NA,22.95057563,mm2 mg-1
+648,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,41.06966292,g m-2,Single,NA,,NA,24.34887284,mm2 mg-1
+649,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.43E-02,m2/g,Single,NA,,NA,24.34887284,mm2 mg-1
+650,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,42.10095847,g m-2,Single,NA,,NA,23.75242836,mm2 mg-1
+651,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.38E-02,m2/g,Single,NA,,NA,23.75242836,mm2 mg-1
+652,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,55.68329049,g m-2,Single,NA,,NA,17.95870882,mm2 mg-1
+653,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.80E-02,m2/g,Single,NA,,NA,17.95870882,mm2 mg-1
+654,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,47.18624079,g m-2,Single,NA,,NA,21.19261851,mm2 mg-1
+655,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.12E-02,m2/g,Single,NA,,NA,21.19261851,mm2 mg-1
+656,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,59.07145877,g m-2,Single,NA,,NA,16.92864914,mm2 mg-1
+657,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.69E-02,m2/g,Single,NA,,NA,16.92864914,mm2 mg-1
+658,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,59.44715447,g m-2,Single,NA,,NA,16.82166302,mm2 mg-1
+659,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.68E-02,m2/g,Single,NA,,NA,16.82166302,mm2 mg-1
+660,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,64.29042904,g m-2,Single,NA,,NA,15.55441478,mm2 mg-1
+661,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.56E-02,m2/g,Single,NA,,NA,15.55441478,mm2 mg-1
+662,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,48.19047619,g m-2,Single,NA,,NA,20.75098814,mm2 mg-1
+663,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.08E-02,m2/g,Single,NA,,NA,20.75098814,mm2 mg-1
+664,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.46972477,g m-2,Single,NA,,NA,18.35882234,mm2 mg-1
+665,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.84E-02,m2/g,Single,NA,,NA,18.35882234,mm2 mg-1
+666,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,56.66470588,g m-2,Single,NA,,NA,17.64766947,mm2 mg-1
+667,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.76E-02,m2/g,Single,NA,,NA,17.64766947,mm2 mg-1
+668,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.98151261,g m-2,Single,NA,,NA,18.18793177,mm2 mg-1
+669,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.82E-02,m2/g,Single,NA,,NA,18.18793177,mm2 mg-1
+670,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,59.2,g m-2,Single,NA,,NA,16.89189189,mm2 mg-1
+671,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.69E-02,m2/g,Single,NA,,NA,16.89189189,mm2 mg-1
+672,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,63.03322615,g m-2,Single,NA,,NA,15.86464887,mm2 mg-1
+673,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.59E-02,m2/g,Single,NA,,NA,15.86464887,mm2 mg-1
+674,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,60.17090069,g m-2,Single,NA,,NA,16.61932909,mm2 mg-1
+675,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,0.016619329,m2/g,Single,NA,,NA,16.61932909,mm2 mg-1
+676,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,54.99129678,g m-2,Single,NA,,NA,18.18469573,mm2 mg-1
+677,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.82E-02,m2/g,Single,NA,,NA,18.18469573,mm2 mg-1
+678,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,51.86909091,g m-2,Single,NA,,NA,19.27930454,mm2 mg-1
+679,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.93E-02,m2/g,Single,NA,,NA,19.27930454,mm2 mg-1
+680,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,39.95268817,g m-2,Single,NA,,NA,25.02960491,mm2 mg-1
+681,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.50E-02,m2/g,Single,NA,,NA,25.02960491,mm2 mg-1
+682,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,50.33746631,g m-2,Single,NA,,NA,19.86591844,mm2 mg-1
+683,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,1.99E-02,m2/g,Single,NA,,NA,19.86591844,mm2 mg-1
+684,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",Leaf mass per area (LMA),Carex aquatilis,SLA.unsure,LMA,46.81546961,g m-2,Single,NA,,NA,21.36046073,mm2 mg-1
+685,"Leaf Mass Area, Leaf Carbon and Nitrogen Content, Barrow, Alaska",SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,2.14E-02,m2/g,Single,NA,,NA,21.36046073,mm2 mg-1
+730,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,103.5478548,SLA cm2/g,Single,NA,,NA,10.35478548,mm2 mg-1
+732,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,146.1,SLA cm2/g,Single,NA,,NA,14.61,mm2 mg-1
+747,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,126.3809524,SLA cm2/g,Single,NA,,NA,12.63809524,mm2 mg-1
+748,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,153.4285714,SLA cm2/g,Single,NA,,NA,15.34285714,mm2 mg-1
+749,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,176.5753425,SLA cm2/g,Single,NA,,NA,17.65753425,mm2 mg-1
+750,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,145.5434783,SLA cm2/g,Single,NA,,NA,14.55434783,mm2 mg-1
+751,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,116.5625,SLA cm2/g,Single,NA,,NA,11.65625,mm2 mg-1
+752,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,136.1403509,SLA cm2/g,Single,NA,,NA,13.61403509,mm2 mg-1
+753,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,162.3611111,SLA cm2/g,Single,NA,,NA,16.23611111,mm2 mg-1
+754,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,153.3707865,SLA cm2/g,Single,NA,,NA,15.33707865,mm2 mg-1
+755,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,89.41860462,SLA cm2/g,Single,NA,,NA,8.941860462,mm2 mg-1
+797,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,126.3809524,SLA cm2/g,Single,NA,,NA,12.63809524,mm2 mg-1
+798,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,153.4285714,SLA cm2/g,Single,NA,,NA,15.34285714,mm2 mg-1
+799,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,176.5753425,SLA cm2/g,Single,NA,,NA,17.65753425,mm2 mg-1
+800,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,145.5434783,SLA cm2/g,Single,NA,,NA,14.55434783,mm2 mg-1
+801,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,116.5625,SLA cm2/g,Single,NA,,NA,11.65625,mm2 mg-1
+802,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,136.1403509,SLA cm2/g,Single,NA,,NA,13.61403509,mm2 mg-1
+803,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,162.3611111,SLA cm2/g,Single,NA,,NA,16.23611111,mm2 mg-1
+804,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,153.3707865,SLA cm2/g,Single,NA,,NA,15.33707865,mm2 mg-1
+805,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,89.41860462,SLA cm2/g,Single,NA,,NA,8.941860462,mm2 mg-1
+812,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Carex aquatilis,SLA.unsure,SLA,146.529569,SLA cm2/g,Single,NA,,NA,14.6529569,mm2 mg-1
+5,Sheffield-Iran-Spain Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,"Specific leaf area (mm2 mg-1) measured without petiole, but compound leaves measured with rachis",10.56340289,mm2/mg,Mean,NA,,NA,10.56340289,mm2 mg-1
+6,Sheffield-Iran-Spain Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,"Specific leaf area (mm2 mg-1) measured without petiole, but compound leaves measured with rachis",13.03701294,mm2/mg,Mean,NA,,NA,13.03701294,mm2 mg-1
+15,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,12.38,mm2/mg,Best estimate,NA,,NA,12.38,mm2 mg-1
+16,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,12.31,mm2/mg,Mean,NA,,NA,12.31,mm2 mg-1
+17,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,13.62,mm2/mg,Maximum,NA,,NA,13.62,mm2 mg-1
+18,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,10.56,mm2/mg,Minimum,NA,,NA,10.56,mm2 mg-1
+19,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,12.38,mm2/mg,Median,NA,,NA,12.38,mm2 mg-1
+20,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,15.9,mm2/mg,Best estimate,NA,,NA,15.9,mm2 mg-1
+21,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,15.82,mm2/mg,Mean,NA,,NA,15.82,mm2 mg-1
+22,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,16.4,mm2/mg,Maximum,NA,,NA,16.4,mm2 mg-1
+23,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,15.29,mm2/mg,Minimum,NA,,NA,15.29,mm2 mg-1
+24,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,15.9,mm2/mg,Median,NA,,NA,15.9,mm2 mg-1
+30,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,18.3,mm2/mg,Best estimate,NA,,NA,18.3,mm2 mg-1
+31,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,18.3,mm2/mg,Mean,NA,,NA,18.3,mm2 mg-1
+32,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,15.5,mm2/mg,Best estimate,NA,,NA,15.5,mm2 mg-1
+33,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,15.5,mm2/mg,Mean,NA,,NA,15.5,mm2 mg-1
+34,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,23.5,mm2/mg,Best estimate,NA,,NA,23.5,mm2 mg-1
+35,The LEDA Traitbase,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA: petiole and rachis excluded,23.5,mm2/mg,Mean,NA,,NA,23.5,mm2 mg-1
+109,Leaf Biomechanics Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA of leaf lamina,71.51587302,g m-2,Single,NA,,NA,13.98290978,mm2 mg-1
+156,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,15.38998022,mm2 mg-1,Single,NA,,NA,15.38998022,mm2 mg-1
+157,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,19.44213242,mm2 mg-1,Single,NA,,NA,19.44213242,mm2 mg-1
+158,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,17.36301273,mm2 mg-1,Single,NA,,NA,17.36301273,mm2 mg-1
+159,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,14.32172394,mm2 mg-1,Single,NA,,NA,14.32172394,mm2 mg-1
+160,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,18.03791946,mm2 mg-1,Single,NA,,NA,18.03791946,mm2 mg-1
+161,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,18.07480916,mm2 mg-1,Single,NA,,NA,18.07480916,mm2 mg-1
+162,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,16.09895493,mm2 mg-1,Single,NA,,NA,16.09895493,mm2 mg-1
+163,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,17.92488394,mm2 mg-1,Single,NA,,NA,17.92488394,mm2 mg-1
+164,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,17.20429789,mm2 mg-1,Single,NA,,NA,17.20429789,mm2 mg-1
+165,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA mm2 mg-1,16.36306769,mm2 mg-1,Single,NA,,NA,16.36306769,mm2 mg-1
+712,The China Plant Trait Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA (m2/kg),24.87838283,m2/kg,Single,NA,,NA,24.87838283,mm2 mg-1
+713,The China Plant Trait Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA (m2/kg),13.25396538,m2/kg,Single,NA,,NA,13.25396538,mm2 mg-1
+714,The China Plant Trait Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA (m2/kg),12.45561623,m2/kg,Single,NA,,NA,12.45561623,mm2 mg-1
+715,The China Plant Trait Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA (m2/kg),11.68107093,m2/kg,Single,NA,,NA,11.68107093,mm2 mg-1
+716,The China Plant Trait Database,SLA: petiole  excluded,Phragmites australis,SLA.nopetiole,SLA (m2/kg),7.653745075,m2/kg,Single,NA,,NA,7.653745075,mm2 mg-1
+25,The LEDA Traitbase,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole and rachis included,12.24,mm2/mg,Best estimate,NA,,NA,12.24,mm2 mg-1
+26,The LEDA Traitbase,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole and rachis included,12.13,mm2/mg,Mean,NA,,NA,12.13,mm2 mg-1
+27,The LEDA Traitbase,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole and rachis included,15.71,mm2/mg,Maximum,NA,,NA,15.71,mm2 mg-1
+28,The LEDA Traitbase,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole and rachis included,8.33,mm2/mg,Minimum,NA,,NA,8.33,mm2 mg-1
+29,The LEDA Traitbase,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole and rachis included,12.24,mm2/mg,Median,NA,,NA,12.24,mm2 mg-1
+84,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,14.0181283,m2/kg,Single,NA,,NA,14.0181283,mm2 mg-1
+85,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,10.56186957,m2/kg,Single,NA,,NA,10.56186957,mm2 mg-1
+86,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,8.283219512,m2/kg,Single,NA,,NA,8.283219512,mm2 mg-1
+87,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,17.35310039,m2/kg,Single,NA,,NA,17.35310039,mm2 mg-1
+88,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,12.9390625,m2/kg,Single,NA,,NA,12.9390625,mm2 mg-1
+89,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,10.33664459,m2/kg,Single,NA,,NA,10.33664459,mm2 mg-1
+90,The Netherlands Plant Traits Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA,12.77706032,m2/kg,Single,NA,,NA,12.77706032,mm2 mg-1
+107,Leaf Biomechanics Database,SLA: petiole  included,Phragmites australis,SLA.petiole,Whole LMA,94.7,g m-2,Single,NA,,NA,10.55966209,mm2 mg-1
+108,Leaf Biomechanics Database,SLA: petiole  included,Phragmites australis,SLA.petiole,Whole LMA,76.70468726,g m-2,Single,NA,,NA,13.03701294,mm2 mg-1
+120,The VISTA Plant Trait Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole included,12.31,(m� kg-1),Single,NA,,NA,12.31,mm2 mg-1
+121,The VISTA Plant Trait Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole included,12.31,(m� kg-1),Single,NA,,NA,12.31,mm2 mg-1
+122,The VISTA Plant Trait Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole included,12.31,(m� kg-1),Single,NA,,NA,12.31,mm2 mg-1
+123,The VISTA Plant Trait Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole included,12.31,(m� kg-1),Single,NA,,NA,12.31,mm2 mg-1
+124,The VISTA Plant Trait Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole included,12.31,(m� kg-1),Single,NA,,NA,12.31,mm2 mg-1
+125,The VISTA Plant Trait Database,SLA: petiole  included,Phragmites australis,SLA.petiole,SLA: petiole included,12.31,(m� kg-1),Single,NA,,NA,12.31,mm2 mg-1
+91,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,LMA (g/m2),66.6,g/m2,Single,NA,,NA,15.01501502,mm2 mg-1
+93,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,LMA (g/m2),89.4,g/m2,Single,NA,,NA,11.18568233,mm2 mg-1
+94,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,LMA (g/m2),51.02,g/m2,Single,NA,,NA,19.6001568,mm2 mg-1
+95,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,LMA (g/m2),63,g/m2,Single,NA,,NA,15.87301587,mm2 mg-1
+110,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,183.3062063,cm2/g,Single,NA,,NA,18.33062063,mm2 mg-1
+111,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded (1),Phragmites australis,SLA.unsure,LMA,54.5535266,g/m2,Single,NA,,NA,18.33062063,mm2 mg-1
+112,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,235.2866293,cm2/g,Single,NA,,NA,23.52866293,mm2 mg-1
+113,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded (1),Phragmites australis,SLA.unsure,LMA,42.50135262,g/m2,Single,NA,,NA,23.52866293,mm2 mg-1
+726,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,183.3062063,SLA cm2/g,Single,NA,,NA,18.33062063,mm2 mg-1
+727,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,235.2866293,SLA cm2/g,Single,NA,,NA,23.52866293,mm2 mg-1
+731,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,105.5,SLA cm2/g,Single,NA,,NA,10.55,mm2 mg-1
+734,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,123.1,SLA cm2/g,Single,NA,,NA,12.31,mm2 mg-1
+735,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,123.1,SLA cm2/g,Single,NA,,NA,12.31,mm2 mg-1
+736,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,123.1,SLA cm2/g,Single,NA,,NA,12.31,mm2 mg-1
+737,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,123.1,SLA cm2/g,Single,NA,,NA,12.31,mm2 mg-1
+738,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,123.1,SLA cm2/g,Single,NA,,NA,12.31,mm2 mg-1
+739,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,123.1,SLA cm2/g,Single,NA,,NA,12.31,mm2 mg-1
+740,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,140.181283,SLA cm2/g,Single,NA,,NA,14.0181283,mm2 mg-1
+741,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,105.6186957,SLA cm2/g,Single,NA,,NA,10.56186957,mm2 mg-1
+742,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,82.83219512,SLA cm2/g,Single,NA,,NA,8.283219512,mm2 mg-1
+743,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,173.5310039,SLA cm2/g,Single,NA,,NA,17.35310039,mm2 mg-1
+744,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,129.390625,SLA cm2/g,Single,NA,,NA,12.9390625,mm2 mg-1
+745,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,103.3664459,SLA cm2/g,Single,NA,,NA,10.33664459,mm2 mg-1
+746,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,127.7706032,SLA cm2/g,Single,NA,,NA,12.77706032,mm2 mg-1
+786,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,153.8998022,SLA cm2/g,Single,NA,,NA,15.38998022,mm2 mg-1
+787,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,194.4213242,SLA cm2/g,Single,NA,,NA,19.44213242,mm2 mg-1
+788,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,173.6301273,SLA cm2/g,Single,NA,,NA,17.36301273,mm2 mg-1
+789,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,143.2172394,SLA cm2/g,Single,NA,,NA,14.32172394,mm2 mg-1
+790,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,180.3791946,SLA cm2/g,Single,NA,,NA,18.03791946,mm2 mg-1
+791,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,180.7480916,SLA cm2/g,Single,NA,,NA,18.07480916,mm2 mg-1
+792,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,160.9895493,SLA cm2/g,Single,NA,,NA,16.09895493,mm2 mg-1
+793,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,179.2488394,SLA cm2/g,Single,NA,,NA,17.92488394,mm2 mg-1
+794,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,172.0429789,SLA cm2/g,Single,NA,,NA,17.20429789,mm2 mg-1
+795,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,163.630677,SLA cm2/g,Single,NA,,NA,16.3630677,mm2 mg-1
+806,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,248.7838283,SLA cm2/g,Single,NA,,NA,24.87838283,mm2 mg-1
+807,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,132.5396538,SLA cm2/g,Single,NA,,NA,13.25396538,mm2 mg-1
+808,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,124.5561623,SLA cm2/g,Single,NA,,NA,12.45561623,mm2 mg-1
+809,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,116.8107093,SLA cm2/g,Single,NA,,NA,11.68107093,mm2 mg-1
+810,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,76.53745075,SLA cm2/g,Single,NA,,NA,7.653745075,mm2 mg-1
+813,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,134.96,SLA cm2/g,Single,NA,,NA,13.496,mm2 mg-1
+814,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,142.9592566,SLA cm2/g,Single,NA,,NA,14.29592566,mm2 mg-1
+815,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,139.8601399,SLA cm2/g,Single,NA,,NA,13.98601399,mm2 mg-1
+816,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,155.89,SLA cm2/g,Single,NA,,NA,15.589,mm2 mg-1
+818,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Phragmites australis,SLA.unsure,SLA,92.71898,SLA cm2/g,Single,NA,,NA,9.271898,mm2 mg-1
+38,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,7.7,mm2/mg,Best estimate,NA,,NA,7.7,mm2 mg-1
+39,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,7.63,mm2/mg,Mean,NA,,NA,7.63,mm2 mg-1
+40,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,7.93,mm2/mg,Maximum,NA,,NA,7.93,mm2 mg-1
+41,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,7.17,mm2/mg,Minimum,NA,,NA,7.17,mm2 mg-1
+42,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,7.7,mm2/mg,Median,NA,,NA,7.7,mm2 mg-1
+43,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,6.9,mm2/mg,Best estimate,NA,,NA,6.9,mm2 mg-1
+44,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,6.9,mm2/mg,Mean,NA,,NA,6.9,mm2 mg-1
+45,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,5.4,mm2/mg,Best estimate,NA,,NA,5.4,mm2 mg-1
+46,The LEDA Traitbase,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA: petiole and rachis excluded,5.4,mm2/mg,Mean,NA,,NA,5.4,mm2 mg-1
+146,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,8.323033087,mm2 mg-1,Single,NA,,NA,8.323033087,mm2 mg-1
+147,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,7.713393756,mm2 mg-1,Single,NA,,NA,7.713393756,mm2 mg-1
+148,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,8.524084042,mm2 mg-1,Single,NA,,NA,8.524084042,mm2 mg-1
+149,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,7.954038092,mm2 mg-1,Single,NA,,NA,7.954038092,mm2 mg-1
+150,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,7.7513187,mm2 mg-1,Single,NA,,NA,7.7513187,mm2 mg-1
+151,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,8.210736172,mm2 mg-1,Single,NA,,NA,8.210736172,mm2 mg-1
+152,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,8.6138093,mm2 mg-1,Single,NA,,NA,8.6138093,mm2 mg-1
+153,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,8.856164384,mm2 mg-1,Single,NA,,NA,8.856164384,mm2 mg-1
+154,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,7.723347416,mm2 mg-1,Single,NA,,NA,7.723347416,mm2 mg-1
+155,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha angustifolia,SLA.nopetiole,SLA mm2 mg-1,8.357701133,mm2 mg-1,Single,NA,,NA,8.357701133,mm2 mg-1
+36,The LEDA Traitbase,SLA: petiole  included,Typha angustifolia,SLA.petiole,SLA: petiole and rachis included,6.30768108,mm2/mg,Best estimate,NA,,NA,6.30768108,mm2 mg-1
+37,The LEDA Traitbase,SLA: petiole  included,Typha angustifolia,SLA.petiole,SLA: petiole and rachis included,6.30768108,mm2/mg,Mean,NA,,NA,6.30768108,mm2 mg-1
+96,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,LMA (g/m2),72.5,g/m2,Single,NA,,NA,13.79310345,mm2 mg-1
+776,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,83.23033087,SLA cm2/g,Single,NA,,NA,8.323033087,mm2 mg-1
+777,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,77.13393756,SLA cm2/g,Single,NA,,NA,7.713393756,mm2 mg-1
+778,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,85.24084042,SLA cm2/g,Single,NA,,NA,8.524084042,mm2 mg-1
+779,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,79.54038092,SLA cm2/g,Single,NA,,NA,7.954038092,mm2 mg-1
+780,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,77.513187,SLA cm2/g,Single,NA,,NA,7.7513187,mm2 mg-1
+781,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,82.10736172,SLA cm2/g,Single,NA,,NA,8.210736172,mm2 mg-1
+782,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,86.138093,SLA cm2/g,Single,NA,,NA,8.6138093,mm2 mg-1
+783,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,88.56164384,SLA cm2/g,Single,NA,,NA,8.856164384,mm2 mg-1
+784,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,77.23347416,SLA cm2/g,Single,NA,,NA,7.723347416,mm2 mg-1
+785,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha angustifolia,SLA.unsure,SLA,83.57701133,SLA cm2/g,Single,NA,,NA,8.357701133,mm2 mg-1
+47,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,9.37,mm2/mg,Best estimate,NA,,NA,9.37,mm2 mg-1
+48,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,9.58,mm2/mg,Mean,NA,,NA,9.58,mm2 mg-1
+49,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,12.38,mm2/mg,Maximum,NA,,NA,12.38,mm2 mg-1
+50,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,8.35,mm2/mg,Minimum,NA,,NA,8.35,mm2 mg-1
+51,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,9.37,mm2/mg,Median,NA,,NA,9.37,mm2 mg-1
+52,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,8.004847939,mm2/mg,Best estimate,NA,,NA,8.004847939,mm2 mg-1
+53,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,8.004847939,mm2/mg,Mean,NA,,NA,8.004847939,mm2 mg-1
+54,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,16.9,mm2/mg,Best estimate,NA,,NA,16.9,mm2 mg-1
+55,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,16.9,mm2/mg,Mean,NA,,NA,16.9,mm2 mg-1
+56,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,12.1,mm2/mg,Best estimate,NA,,NA,12.1,mm2 mg-1
+57,The LEDA Traitbase,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA: petiole and rachis excluded,12.1,mm2/mg,Mean,NA,,NA,12.1,mm2 mg-1
+136,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,12.24336614,mm2 mg-1,Single,NA,,NA,12.24336614,mm2 mg-1
+137,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,15.98597237,mm2 mg-1,Single,NA,,NA,15.98597237,mm2 mg-1
+138,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,11.60907042,mm2 mg-1,Single,NA,,NA,11.60907042,mm2 mg-1
+139,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,12.12196772,mm2 mg-1,Single,NA,,NA,12.12196772,mm2 mg-1
+140,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,12.73018307,mm2 mg-1,Single,NA,,NA,12.73018307,mm2 mg-1
+141,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,12.40039963,mm2 mg-1,Single,NA,,NA,12.40039963,mm2 mg-1
+142,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,11.18891139,mm2 mg-1,Single,NA,,NA,11.18891139,mm2 mg-1
+143,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,11.42332268,mm2 mg-1,Single,NA,,NA,11.42332268,mm2 mg-1
+144,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,11.72564805,mm2 mg-1,Single,NA,,NA,11.72564805,mm2 mg-1
+145,SLA and LDMC for Canadian Wetland Species,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA mm2 mg-1,13.95053403,mm2 mg-1,Single,NA,,NA,13.95053403,mm2 mg-1
+166,"Plant Traits for Grassland Species (Konza Prairie, Kansas, USA)",SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,leaf mass area,1.12E-02,g cm-2,Single,NA,,NA,8.906976744,mm2 mg-1
+182,Jasper Ridge leaf chemistry data,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA excluded,85.417,cm2 g-1,Single,NA,,NA,8.5417,mm2 mg-1
+183,Jasper Ridge leaf chemistry data,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA excluded,59.36,cm2 g-1,Single,NA,,NA,5.936,mm2 mg-1
+184,Jasper Ridge leaf chemistry data,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA excluded,80.556,cm2 g-1,Single,NA,,NA,8.0556,mm2 mg-1
+185,Jasper Ridge leaf chemistry data,SLA: petiole  excluded,Typha latifolia,SLA.nopetiole,SLA excluded,70.26,cm2 g-1,Single,NA,,NA,7.026,mm2 mg-1
+58,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,98.25327511,cm2/g,Single,NA,,NA,9.825327511,mm2 mg-1
+59,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,89.74358974,cm2/g,Single,NA,,NA,8.974358974,mm2 mg-1
+60,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,145.7399103,cm2/g,Single,NA,,NA,14.57399103,mm2 mg-1
+61,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,127.7372263,cm2/g,Single,NA,,NA,12.77372263,mm2 mg-1
+62,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,93.70314843,cm2/g,Single,NA,,NA,9.370314843,mm2 mg-1
+63,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,96.21451104,cm2/g,Single,NA,,NA,9.621451104,mm2 mg-1
+64,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,187.8612717,cm2/g,Single,NA,,NA,18.78612717,mm2 mg-1
+65,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,90.05145798,cm2/g,Single,NA,,NA,9.005145798,mm2 mg-1
+66,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,80.64516129,cm2/g,Single,NA,,NA,8.064516129,mm2 mg-1
+67,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,113.085622,cm2/g,Single,NA,,NA,11.3085622,mm2 mg-1
+68,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,192.3076923,cm2/g,Single,NA,,NA,19.23076923,mm2 mg-1
+69,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,114.1732283,cm2/g,Single,NA,,NA,11.41732283,mm2 mg-1
+70,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,82.41758242,cm2/g,Single,NA,,NA,8.241758242,mm2 mg-1
+71,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,132.3877069,cm2/g,Single,NA,,NA,13.23877069,mm2 mg-1
+72,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,89.4085282,cm2/g,Single,NA,,NA,8.94085282,mm2 mg-1
+73,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,114.0510949,cm2/g,Single,NA,,NA,11.40510949,mm2 mg-1
+74,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,92.30769231,cm2/g,Single,NA,,NA,9.230769231,mm2 mg-1
+75,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,120.0686106,cm2/g,Single,NA,,NA,12.00686106,mm2 mg-1
+76,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,65.27249683,cm2/g,Single,NA,,NA,6.527249683,mm2 mg-1
+77,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,95.71209801,cm2/g,Single,NA,,NA,9.571209801,mm2 mg-1
+78,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,89.48087432,cm2/g,Single,NA,,NA,8.948087432,mm2 mg-1
+79,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,152.8117359,cm2/g,Single,NA,,NA,15.28117359,mm2 mg-1
+80,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,113.2958801,cm2/g,Single,NA,,NA,11.32958801,mm2 mg-1
+81,Wetland Dunes Database,SLA: petiole  included,Typha latifolia,SLA.petiole,SLA,90.53156146,cm2/g,Single,NA,,NA,9.053156146,mm2 mg-1
+92,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,LMA (g/m2),150.831,g/m2,Single,NA,,NA,6.629936817,mm2 mg-1
+97,The Tansley Review LMA Database,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,LMA (g/m2),75.5,g/m2,Single,NA,,NA,13.24503311,mm2 mg-1
+114,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,80.04847939,cm2/g,Single,NA,,NA,8.004847939,mm2 mg-1
+115,GLOPNET - Global Plant Trait Network Database,SLA: undefined if petiole in- or excluded (1),Typha latifolia,SLA.unsure,LMA,124.9242968,g/m2,Single,NA,,NA,8.004847939,mm2 mg-1
+728,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,80.04847939,SLA cm2/g,Single,NA,,NA,8.004847939,mm2 mg-1
+733,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,97.01537514,SLA cm2/g,Single,NA,,NA,9.701537514,mm2 mg-1
+766,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,122.4336614,SLA cm2/g,Single,NA,,NA,12.24336614,mm2 mg-1
+767,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,159.8597237,SLA cm2/g,Single,NA,,NA,15.98597237,mm2 mg-1
+768,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,116.0907042,SLA cm2/g,Single,NA,,NA,11.60907042,mm2 mg-1
+769,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,121.2196772,SLA cm2/g,Single,NA,,NA,12.12196772,mm2 mg-1
+770,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,127.3018307,SLA cm2/g,Single,NA,,NA,12.73018307,mm2 mg-1
+771,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,124.0039963,SLA cm2/g,Single,NA,,NA,12.40039963,mm2 mg-1
+772,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,111.8891139,SLA cm2/g,Single,NA,,NA,11.18891139,mm2 mg-1
+773,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,114.2332268,SLA cm2/g,Single,NA,,NA,11.42332268,mm2 mg-1
+774,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,117.2564805,SLA cm2/g,Single,NA,,NA,11.72564805,mm2 mg-1
+775,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,139.5053403,SLA cm2/g,Single,NA,,NA,13.95053403,mm2 mg-1
+796,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,89.06976744,SLA cm2/g,Single,NA,,NA,8.906976744,mm2 mg-1
+817,The Global Leaf Traits,SLA: undefined if petiole in- or excluded,Typha latifolia,SLA.unsure,SLA,83.9,SLA cm2/g,Single,NA,,NA,8.39,mm2 mg-1
