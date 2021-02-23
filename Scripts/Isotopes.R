@@ -179,6 +179,14 @@ residents.isotopes %>% group_by(Species) %>%
           dC.length = length(DeltaC),
           dC.err = (dC.sd/(sqrt(dC.length))))
 
+#  Species       dN.avg dN.sd dN.length dN.err dC.avg dC.sd dC.length dC.err
+#1 Calamagrostis   2.40 1.53          9  0.508  -27.4 1.02          9  0.341
+#2 Carex           2.91 0.853        10  0.270  -28.3 0.849        10  0.268
+#3 Typha           1.93 0.802        10  0.254  -29.6 0.803        10  0.254
+
+
+
+
 residents.isotopes %>% group_by(Treatment) %>% 
   summarise(dN.avg = mean(DeltaN),
             dN.sd = sd(DeltaN),
@@ -189,7 +197,47 @@ residents.isotopes %>% group_by(Treatment) %>%
             dC.length = length(DeltaC),
             dC.err = (dC.sd/(sqrt(dC.length))))
 
+#Treatment      dN.avg dN.sd dN.length dN.err dC.avg dC.sd dC.length dC.err
+#<chr>           <dbl> <dbl>     <int>  <dbl>  <dbl> <dbl>     <int>  <dbl>
+#1 Competition      2.09 0.835        14  0.223  -29.0  1.18        14  0.316
+#2 No_competition   2.72 1.30         15  0.337  -28.0  1.14        15  0.294
 
+
+residents.isotopes %>% group_by(Species) %>% 
+  summarise(N.avg = mean(N),
+            N.sd = sd(N),
+            N.length = length(N),
+            N.err = (N.sd/(sqrt(N.length))),
+            C.avg = mean(C),
+            C.sd= sd(C),
+            C.length = length(C),
+            C.err = (C.sd/(sqrt(C.length))))
+
+#  Species       N.avg  N.sd N.length  N.err C.avg  C.sd C.length C.err
+#1 Calamagrostis 1.46  0.408        9 0.136   47.5 1.51         9 0.503
+#2 Carex         0.960 0.305       10 0.0965  46.1 0.862       10 0.273
+#3 Typha         1.84  0.581       10 0.184   48.4 1.33        10 0.420
+
+
+residents.isotopes %>% group_by(Species, Treatment) %>% 
+  summarise(N.avg = mean(N),
+            N.sd = sd(N),
+            N.length = length(N),
+            N.err = (N.sd/(sqrt(N.length))),
+            C.avg = mean(C),
+            C.sd= sd(C),
+            C.length = length(C),
+            C.err = (C.sd/(sqrt(C.length))))
+
+
+#Species       Treatment      N.avg  N.sd N.length  N.err C.avg  C.sd C.length C.err
+#<chr>         <chr>          <dbl> <dbl>    <int>  <dbl> <dbl> <dbl>    <int> <dbl>
+#1 Calamagrostis Competition    1.08  0.209        4 0.105   47.3 1.64         4 0.818
+#2 Calamagrostis No_competition 1.76  0.206        5 0.0920  47.7 1.57         5 0.701
+#3 Carex         Competition    0.838 0.225        5 0.101   46.0 0.348        5 0.156
+#4 Carex         No_competition 1.08  0.349        5 0.156   46.1 1.24         5 0.556
+#5 Typha         Competition    2.01  0.548        5 0.245   48.8 1.24         5 0.552
+#6 Typha         No_competition 1.67  0.625        5 0.280   47.9 1.37         5 0.614
 
 # phrag two-way anovas ----------------------------------------------------
 
@@ -274,6 +322,37 @@ phrag.isotopes %>% group_by(Neighbours, Treatment) %>%
 #4 Carex         No_competition  2.57 0.227        3 0.131   46.1 1.07         3 0.618
 #5 Typha         Competition     1.80 0.481        3 0.278   47.7 0.711        3 0.411
 #6 Typha         No_competition  2.54 0.584        3 0.337   46.7 1.43         3 0.827
+
+
+phrag.isotopes %>% 
+  summarise(N.avg = mean(N),
+            N.sd = sd(N),
+            N.length = length(N),
+            N.err = (N.sd/(sqrt(N.length))),
+            C.avg = mean(C),
+            C.sd= sd(C),
+            C.length = length(C),
+            C.err = (C.sd/(sqrt(C.length))))
+
+#   N.avg      N.sd N.length     N.err    C.avg      C.sd C.length     C.err
+#1 2.120056 0.4980093       18 0.1173819 46.93667 0.9453844       18 0.2228292
+
+
+phrag.isotopes %>% group_by(Treatment) %>% 
+  summarise(N.avg = mean(N),
+            N.sd = sd(N),
+            N.length = length(N),
+            N.err = (N.sd/(sqrt(N.length))),
+            C.avg = mean(C),
+            C.sd= sd(C),
+            C.length = length(C),
+            C.err = (C.sd/(sqrt(C.length))))
+
+
+#  Treatment      N.avg  N.sd N.length  N.err C.avg  C.sd C.length C.err
+#1 Competition     1.75 0.284        9 0.0947  47.4 0.748        9 0.249
+#2 No_competition  2.49 0.366        9 0.122   46.5 0.974        9 0.325
+
 
 
 phrag.isotopes  %>% group_by(Neighbours, Treatment) %>% 

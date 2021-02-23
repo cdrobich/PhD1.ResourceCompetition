@@ -17,6 +17,8 @@ ggplot(light.1500, aes(x=carbon)) +
                  color="black", fill="white")
 
 
+# All phytometers ------------------------------------------------------------------
+
 light.1500.res <- light.1500 %>% 
   filter(Species %in% c("Calamagrostis", "Carex", "Typha"))
 
@@ -56,6 +58,7 @@ trt <- HSD.test(test, "Treatment")
 #    carbon groups
 #No competition 17.62342      a
 #Competition    14.18218      b
+
 
 light.1500 %>% group_by(Species) %>% 
   summarise(C.avg = mean(carbon),
