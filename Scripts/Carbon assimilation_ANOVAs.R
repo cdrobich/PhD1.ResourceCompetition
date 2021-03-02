@@ -378,7 +378,8 @@ ciras.sum <- ciras.sum  %>%
 
 ciras.sum <- ciras.sum %>% #rename the factors
   mutate(Treatment = fct_recode(Treatment,
-                                  "No competition" = "No"))
+                                  "Without competition" = "No",
+                                "With competition" = "Competition"))
 
 
 ciras.res <- ciras.sum %>% 
@@ -454,7 +455,12 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
   scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25, 30)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
   guides(colour = "none") +
-  theme(legend.position = c(0.9, 0.2))
+  theme(legend.position = c(0.9, 0.2)) +
+  scale_shape_manual(name = "Treatment",
+                     labels = c("Competition",
+                                "Without competition"),
+                     values = c(16, 17))
+  
 
 plot.phr
 
@@ -558,7 +564,7 @@ carbon.phrag <- ggplot(light.1500.phrag1,
                geom = "pointrange", size = 1,
                colour = "black",
                position = position_dodge(0.8)) +
-  scale_y_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30))
+  scale_y_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) 
 
 
 # Phragmites, WUE
@@ -581,13 +587,14 @@ wue.phrag <- ggplot(light.1500.phrag1,
   labs(x = " ",
        y = expression(paste("Water Use Efficiency"," ", " (", "mmol CO"[2],  mol^-1, " ", "H"[2],"O)"))) +
   scale_colour_manual(values = c("#454ADE", "#440C53")) +
-  theme(legend.position = c(0.8,0.2)) +
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1,
                colour = "black",
                position = position_dodge(0.8)) +
-  ylim(0, 5)
+  ylim(0, 5) +
+  theme(legend.position = "none") 
+
 
 c.wue.phrag <- ggarrange(carbon.phrag, wue.phrag,
                          labels = c("E","F"))

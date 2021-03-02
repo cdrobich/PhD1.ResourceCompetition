@@ -23,7 +23,7 @@ devtools::install_github("mlysy/nicheROVER", ref = "master")
 ## for niche.size
 
 library(nicheROVER)
-
+citation("nicheROVER")
 
 # generate parameter draws from the 'default' posteriors of each fish
 nsamples <- 1000

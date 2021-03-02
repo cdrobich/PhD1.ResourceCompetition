@@ -416,11 +416,15 @@ write.csv(nutrient.summary, "Data/Nutrient_Isotope_sum.csv")
 
 
 # Figures -----------------------------------------------------------------
-unique(Isotopes$Species)
-colours = c("Calamagrostis" = "#084594", 
-            "Typha" = "#6e016b", 
-            "Carex" = "#9ecae1", 
-            "Phragmites" = "#fb6a4a")
+unique(Isotopes$Type)
+colours = c("Calamagrostis_Competition" = "#084594",
+            "Calamagrostis_Without" = "#084594",
+            "Typha_Without" = "#6e016b",
+            "Typha_Competition" = "#6e016b",
+            "Carex_Without" = "#9ecae1", 
+            "Carex_Competition" = "#9ecae1",
+            "Phragmites_Without" = "#fb6a4a",
+            "Phragmites_Competition" = "#fb6a4a")
 
 colnames(residents.isotopes)
 
@@ -432,18 +436,40 @@ centroids <- merge(centroids,se, by="Type")
 write.csv(centroids, "Data/isotope_isotopes.csv")
 
 isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN, 
-                                 shape = Type, colour = Species)) +
+                                 shape = Type, colour = Type)) +
   geom_point(size = 4, stroke = 1.5) +
   theme_classic(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA)) +
   ylim(-1, 6) +
   labs(x = expression(paste(delta^{13}, "C")),
        y = expression(paste(delta^{15}, "N"))) +
-  scale_shape_manual(values = c(0,15,1, 16,2, 17, 5,18)) +
-  scale_colour_manual(values = colours) +
-  theme(legend.position = "none") 
+  scale_shape_manual(name = "Species & Treatment",
+                     labels = c("Calamagrostis with competition",
+                                "Calamagrostis without competition",
+                                "Carex with competition",
+                                "Carex without competition",
+                                "Phragmites with competition",
+                                "Phragmites without competition",
+                                "Typha with competition",
+                                "Typha without competition"),
+                     values = c(0,15,1, 16,2, 17, 5,18)) +
+  scale_colour_manual(name = "Species & Treatment",
+                      labels = c("Calamagrostis with competition",
+                                 "Calamagrostis without competition",
+                                 "Carex with competition",
+                                 "Carex without competition",
+                                 "Phragmites with competition",
+                                 "Phragmites without competition",
+                                 "Typha with competition",
+                                 "Typha without competition"),
+                      values = colours) +
+  theme(legend.position = "none")
 
+  theme(legend.position = "right",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14)) 
 
+isotopes
 
 legend <- get_legend(isotopes)
 legends <- as_ggplot(legend)
@@ -453,14 +479,17 @@ iso.eror <- isotopes +
   geom_errorbar(data = centroids,
                 aes(ymin = DeltaN - se.y, ymax = DeltaN + se.y), 
                 width = 0.1, size = 1,
-                colour = "black")+
+                colour = "black",
+                show.legend = F)+
   geom_errorbarh(data = centroids, aes(xmin = DeltaC - se.x, xmax = DeltaC + se.x),
                  height = 0.1, size = 1,
-                 colour = "black") +
+                 colour = "black",
+                 show.legend = F) +
   geom_point(data = centroids, size = 6, stroke = 1.5,
-             colour = "black")
+             colour = "black",
+             show.legend = F) 
 
-iso.eror
+iso.eror 
   
 colnames(Isotopes)
 
@@ -471,7 +500,7 @@ cent.nut <- merge(cent,ser, by="Type")
 
 
 nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type, 
-                                 colour = Species)) +
+                                 colour = Type)) +
   geom_point(size = 5, stroke = 1.5) +
   theme_classic(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA),
@@ -491,7 +520,6 @@ nutrient.eror <- nutrient +
                  colour = "black") +
   geom_point(data = cent.nut, size = 6, stroke = 1.5,
              colour = "black")
-
 
 
 leaf.nutrient <- ggarrange(nutrient.eror,iso.eror, 
@@ -645,7 +673,7 @@ N.resident <- ggplot(iso.resident,
          aes(shape = Treatment, color = Treatment), 
          position = position_jitterdodge(jitter.width = 0.2,
                                          dodge.width = 0.8),
-         size = 3,
+         size = 4,
          alpha = 0.7)  +
   theme_classic() +
   theme(plot.title = element_text(size = 12),
@@ -672,7 +700,7 @@ C.resident <- ggplot(iso.resident,
     aes(shape = Treatment, color = Treatment), 
     position = position_jitterdodge(jitter.width = 0.2,
                                     dodge.width = 0.8),
-    size = 3,
+    size = 4,
     alpha = 0.7)  +
   theme_classic() +
   theme(plot.title = element_text(size = 12),
@@ -708,7 +736,7 @@ N.phrag <- ggplot(iso.phrag,
     aes(shape = Treatment, color = Treatment), 
     position = position_jitterdodge(jitter.width = 0.2,
                                     dodge.width = 0.8),
-    size = 3,
+    size = 5,
     alpha = 0.7)  +
   theme_classic() +
   theme(plot.title = element_text(size = 12),
@@ -720,13 +748,20 @@ N.phrag <- ggplot(iso.phrag,
         legend.position = c(0.6, 0.2)) +
   labs(x = " ",
        y = "Nitrogen (%)") +
-  scale_colour_manual(values = c("#454ADE", "#440C53")) +
+  scale_colour_manual(name = "Treatment",
+                      labels = c("With competition",
+                                 "Without competition"),
+                                 values = c("#454ADE", "#440C53")) +
+  scale_shape_manual(name = "Treatment",
+                      labels = c("With competition",
+                                 "Without competition"),
+                      values = c(16, 17)) +
   stat_summary(aes(shape = Treatment, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
                geom = "pointrange", size = 1,
                colour = "black",
                position = position_dodge(0.8)) +
-  ylim(0, 4)
+  ylim(0, 4) 
   
 
 
@@ -737,7 +772,7 @@ C.phrag <- ggplot(iso.phrag,
     aes(shape = Treatment, color = Treatment), 
     position = position_jitterdodge(jitter.width = 0.2,
                                     dodge.width = 0.8),
-    size = 3,
+    size = 5,
     alpha = 0.7)  +
   theme_classic() +
   theme(plot.title = element_text(size = 12),
@@ -798,3 +833,36 @@ ggsave("Figures/isotope_nutrients_scatter_jitter.jpeg",
        width = 13.8,
        height = 9.24,
        units = "in") #13.8 x 9.24 in
+
+
+
+# Patchwork  --------------------------------------------------------------
+
+library(patchwork)
+
+p1 <- nutrient.eror 
+p2 <- iso.eror
+l <- legends
+
+p3 <- C.resident <- C.resident + ggtitle("Resident species")
+p4 <- N.resident <- N.resident + ggtitle("Resident species")
+p5 <- C.phrag <- C.phrag + ggtitle("Phragmites with neighbours")
+p6 <- N.phrag <- N.phrag + ggtitle("Phragmites with neighbours")
+
+
+
+p2l <- p2 + inset_element(l, left = 0, bottom = 0.6, right = 0.4, top = 1, align_to = 'full')
+
+
+
+plot <- p1 + p3 + p4 + p2 + p5 + p6 +
+  plot_layout(widths = c(1, 0.5, 0.5))
+
+
+plot 
+
+ggsave("Figures/Isotope_Nutrients_patch.jpeg",plot,
+       dpi = 300)
+
+ggsave("Figures/Isotope_Nutrients_legend.jpeg", legends,
+       dpi = 300)
