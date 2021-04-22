@@ -8,6 +8,67 @@ Isotopes <- read.csv("Data/Isotopes.csv")
 colnames(Isotopes)
 
 
+# Summary of data ---------------------------------------------------------
+
+library(plotrix) # STerr
+
+library(EnvStats) # CV
+
+
+
+sum <- Isotopes %>% group_by(Species) %>% 
+  summarise(across(
+    .cols = where(is.numeric),
+    .fns = list(Mean = mean, SD = sd, SE = std.error, CV = cv), na.rm = TRUE,
+    .names = "{col}_{fn}"
+  ))
+
+sum <- sum %>% t %>% as.data.frame
+
+write.csv(sum, "Data/isotopes_leafnutrients_sum.csv")
+
+#Species     Calamagrostis       Carex  Phragmites       Typha
+
+#C_Mean           47.48411    46.05430    46.93667    48.37010
+#C_SD            1.5097954   0.8619747   0.9453844   1.3291585
+#C_SE            0.5032651   0.2725803   0.2228292   0.4203168
+#C_CV           0.03179580  0.01871649  0.02014170  0.02747893
+
+#N_Mean           1.458333    0.959800    2.120056    1.841300
+#N_SD            0.4079062   0.3052161   0.4980093   0.5814530
+#N_SE           0.13596875  0.09651779  0.11738191  0.18387158
+#N_CV            0.2797071   0.3179996   0.2349039   0.3157839
+
+#DeltaC_Mean     -27.45000   -28.29700   -26.57722   -29.63100
+#DeltaC_SD       1.0219956   0.8486074   0.7803454   0.8027100
+#DeltaC_SE       0.3406652   0.2683532   0.1839292   0.2538392
+#DeltaC_CV     -0.03723117 -0.02998930 -0.02936143 -0.02709021
+
+#DeltaN_Mean      2.398889    2.906000    4.040000    1.930000
+#DeltaN_SD       1.5251922   0.8528931   0.8298547   0.8017342
+#DeltaN_SE       0.5083974   0.2697085   0.1955986   0.2535306
+#DeltaN_CV       0.6357911   0.2934938   0.2054096   0.4154063
+
+
+
+
+sum2 <- Isotopes %>% group_by(Type) %>% 
+  summarise(across(
+    .cols = where(is.numeric),
+    .fns = list(Mean = mean, SD = sd, SE = std.error, CV = cv), na.rm = TRUE,
+    .names = "{col}_{fn}"
+  ))
+
+sum2 <- sum2 %>% t %>% as.data.frame
+
+
+write.csv(sum2, "Data/isotopes_leafnutrients_sum_treatments.csv")
+
+
+
+
+
+
 ## Delta C ANOVA
 
 target <- c("Carex", "Calamagrostis", "Typha")
@@ -416,6 +477,9 @@ write.csv(nutrient.summary, "Data/Nutrient_Isotope_sum.csv")
 
 
 # Figures -----------------------------------------------------------------
+
+library(patchwork)
+
 unique(Isotopes$Type)
 colours = c("Calamagrostis_Competition" = "#084594",
             "Calamagrostis_Without" = "#084594",
@@ -438,7 +502,7 @@ write.csv(centroids, "Data/isotope_isotopes.csv")
 isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN, 
                                  shape = Type, colour = Type)) +
   geom_point(size = 4, stroke = 1.5) +
-  theme_classic(base_size = 16) + 
+  theme_minimal(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA)) +
   ylim(-1, 6) +
   labs(x = expression(paste(delta^{13}, "C")),
@@ -463,30 +527,25 @@ isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN,
                                  "Typha with competition",
                                  "Typha without competition"),
                       values = colours) +
-  theme(legend.position = "none")
-
   theme(legend.position = "right",
         legend.title = element_blank(),
         legend.text = element_text(size = 14)) 
 
 isotopes
 
-legend <- get_legend(isotopes)
-legends <- as_ggplot(legend)
-
-
 iso.eror <- isotopes + 
   geom_errorbar(data = centroids,
-                aes(ymin = DeltaN - se.y, ymax = DeltaN + se.y), 
+                aes(ymin = DeltaN - se.y, ymax = DeltaN + se.y,
+                    colour = Type), 
                 width = 0.1, size = 1,
-                colour = "black",
                 show.legend = F)+
-  geom_errorbarh(data = centroids, aes(xmin = DeltaC - se.x, xmax = DeltaC + se.x),
+  geom_errorbarh(data = centroids, 
+                 aes(xmin = DeltaC - se.x, xmax = DeltaC + se.x,
+                     colour = Type),
                  height = 0.1, size = 1,
-                 colour = "black",
                  show.legend = F) +
-  geom_point(data = centroids, size = 6, stroke = 1.5,
-             colour = "black",
+  geom_point(data = centroids, aes(colour = Type),
+             size = 6, stroke = 1.5,
              show.legend = F) 
 
 iso.eror 
@@ -502,7 +561,7 @@ cent.nut <- merge(cent,ser, by="Type")
 nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type, 
                                  colour = Type)) +
   geom_point(size = 5, stroke = 1.5) +
-  theme_classic(base_size = 16) + 
+  theme_minimal(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA),
         legend.position = "none") +
   xlab("Total % Carbon") +
@@ -512,26 +571,27 @@ nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type,
 
 nutrient.eror <- nutrient +
   geom_errorbar(data = cent.nut,
-                aes(ymin = N - se.y, ymax = N + se.y), 
-                width = 0.1, size = 1,
-                colour = "black")+
-  geom_errorbarh(data = cent.nut, aes(xmin = C - se.x, xmax = C + se.x),
-                 height = 0.1, size = 1,
-                 colour = "black") +
-  geom_point(data = cent.nut, size = 6, stroke = 1.5,
-             colour = "black")
+                aes(ymin = N - se.y, ymax = N + se.y,
+                    colour = Type), 
+                width = 0.1, size = 1)+
+  geom_errorbarh(data = cent.nut, 
+                 aes(xmin = C - se.x, xmax = C + se.x,
+                     colour = Type),
+                 height = 0.1, size = 1) +
+  geom_point(data = cent.nut, aes(colour = Type),
+             size = 6, stroke = 1.5)
+
+nutrient.eror
+
+nutiso <- nutrient.eror + iso.eror +
+  plot_layout(ncol = 2) +
+  plot_annotation(tag_levels = 'A')
 
 
-leaf.nutrient <- ggarrange(nutrient.eror,iso.eror, 
-                           legends,
-          labels = c("A","B",""),
-          ncol = 3,
-          widths = c(1,1,0.5))
-
-leaf.nutrient
-
-ggsave("Figures/Plant_Nutrients.TIFF", leaf.nutrient,
-       dpi = 300) #13.9 x 6.6
+ggsave("Figures/Plant_Nutrients.TIFF", nutiso,
+       height = 6.67,
+       width = 15.5,
+       dpi = 300) #15.5 x 6.67
 
 
 Isotopes %>% 
