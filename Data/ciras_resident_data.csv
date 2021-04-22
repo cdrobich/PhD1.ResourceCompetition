@@ -1,0 +1,43 @@
+,X,spp_trt,Treatment,phy_trt,Neighbour,Phytometer,light,avg,sd,N,str
+1,1,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,0,-0.391666667,0.492479677,24,0.100526993
+2,2,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,50,0.5125,0.62087771,24,0.126736132
+3,3,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,100,1.795833333,0.74686543,24,0.152453268
+4,4,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,200,4.05,1.259399443,24,0.257073835
+5,5,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,500,6.741666667,2.086585867,24,0.425922557
+6,6,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,1000,7.983333333,2.365268009,24,0.482808311
+7,7,Calamagrostis_Phragmites_Competition,With competition,Calamagrostis_With competition,Phragmites,Calamagrostis,1500,8.666666667,2.487126274,24,0.507682525
+8,8,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,0,-0.557142857,0.435398012,21,0.095011636
+9,9,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,50,0.652380952,0.629776982,21,0.137428604
+10,10,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,100,2.266666667,0.854010148,21,0.186360293
+11,11,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,200,5,1.19540788,21,0.260859386
+12,12,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,500,9.719047619,2.258455013,21,0.492835288
+13,13,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,1000,12.13333333,2.898332854,21,0.632468081
+14,14,Calamagrostis_Phragmites_No competition,Without competition,Calamagrostis_Without competition,Phragmites,Calamagrostis,1500,13.18095238,3.14493546,21,0.686281181
+15,15,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,0,-0.793333333,0.533809311,15,0.137828972
+16,16,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,50,0.253333333,0.628906837,15,0.162383047
+17,17,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,100,1.74,0.827042925,15,0.213541565
+18,18,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,200,4.233333333,1.430617582,15,0.369383871
+19,19,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,500,7.066666667,3.18044621,15,0.82118768
+20,20,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,1000,8.793333333,3.959160565,15,1.022250862
+21,21,Carex_Phragmites_Competition,With competition,Carex_With competition,Phragmites,Carex,1500,9.146666667,4.428457756,15,1.143422876
+22,22,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,0,-0.984615385,0.781927271,13,0.216867605
+23,23,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,50,0.069230769,0.855749784,13,0.237342286
+24,24,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,100,1.615384615,0.665640235,13,0.184615385
+25,25,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,200,5.146153846,0.856947475,13,0.237674466
+26,26,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,500,10.16153846,1.329497688,13,0.368736314
+27,27,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,1000,13.33076923,1.944387057,13,0.539275941
+28,28,Carex_Phragmites_No competition,Without competition,Carex_Without competition,Phragmites,Carex,1500,14.85384615,3.406761753,13,0.944865706
+29,71,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,0,-0.575,1.348483997,12,0.389273799
+30,72,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,50,0.633333333,1.255050403,12,0.362301844
+31,73,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,100,2.566666667,1.179625005,12,0.340528407
+32,74,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,200,6.416666667,1.566602191,12,0.452239098
+33,75,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,500,13.25833333,3.056575128,12,0.882357237
+34,76,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,1000,17.175,4.004798258,12,1.156085676
+35,77,Typha_Phragmites_Competition,With competition,Typha_With competition,Phragmites,Typha,1500,17.63333333,4.419241674,12,1.275725185
+36,78,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,0,0.325,3.015151134,12,0.87039916
+37,79,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,50,1.55,2.738446806,12,0.7905215
+38,80,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,100,3.283333333,2.53693922,12,0.732351271
+39,81,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,200,6.975,2.790935001,12,0.805673537
+40,82,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,500,15.04166667,4.367328772,12,1.260739221
+41,83,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,1000,19.78333333,5.504516052,12,1.589016912
+42,84,Typha_Phragmites_No competition,Without competition,Typha_Without competition,Phragmites,Typha,1500,20.71666667,5.731862038,12,1.654646045

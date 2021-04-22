@@ -4,7 +4,7 @@
 library(car)
 library(agricolae)
 library(tidyverse)
-
+library(patchwork)
 
 # Load data ---------------------------------------------------------------
 
@@ -403,23 +403,29 @@ ciras.phrag <- ciras.phrag %>%
 ciras.phrag <- ciras.phrag  %>% 
   separate(neigh_trt, c(NA,"Treatment"), remove = FALSE) 
 
-
+write.csv(ciras.phrag, "Data/ciras_phrag_data.csv")
+write.csv(ciras.res, "Data/ciras_resident_data.csv")
 # Line plots --------------------------------------------------------------
+ciras.phrag <- read.csv("Data/ciras_phrag_data.csv")
+ciras.res <- read.csv("Data/ciras_resident_data.csv")
+
 
 # Resident species
+
 plot.res <- ggplot(ciras.res, aes(x = light, y = avg,
                                  group = phy_trt,
                                  shape = Treatment,
-                                 colour = Treatment)) +
+                                 fill = Treatment)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
   facet_wrap("Phytometer") +
-  geom_point(alpha = 0.7,
-             size = 3) +
+  geom_point(alpha = 0.9,
+             size = 4) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = "") + 
-  scale_colour_manual(values = c("#24908C", "#3A518B")) +
+  scale_fill_manual(values = c("#24908C", "#3A518B")) +
+  scale_shape_manual(values = c(21,24)) +
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
@@ -427,7 +433,9 @@ plot.res <- ggplot(ciras.res, aes(x = light, y = avg,
         strip.text = element_text(size=12)) +
   scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25, 30)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
-  theme(legend.position = "none")
+  theme(legend.position = c(0.9, 0.2),
+        legend.title = element_blank(),
+        legend.text = element_text(size = 11))
 
 plot.res
 
@@ -437,13 +445,14 @@ plot.res
 plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
                                     group = neigh_trt,
                                     shape = Treatment,
-                                    colour = Treatment)) +
+                                    fill = Treatment)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
   facet_wrap("phy_trt") +
-  geom_point(alpha = 0.7,
-             size = 3) +
-  scale_colour_manual(values = c("#454ADE", "#440C53")) +
+  geom_point(alpha = 0.9,
+             size = 4) +
+  scale_fill_manual(values = c("#454ADE", "#440C53")) +
+  scale_shape_manual(values = c(21,24)) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = expression(paste("Photosynthetically Active Radiation"," ", " (", "\u00B5mol  ",  s^-1, " ", m^-2, sep=")"))) + 
@@ -452,22 +461,23 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
         strip.text = element_text(size=12)) +
-  scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25, 30)) +
+  scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
-  guides(colour = "none") +
-  theme(legend.position = c(0.9, 0.2)) +
-  scale_shape_manual(name = "Treatment",
-                     labels = c("Competition",
-                                "Without competition"),
-                     values = c(16, 17))
-  
+  theme(legend.position = c(0.9, 0.2),
+        legend.title = element_blank(),
+        legend.text = element_text(size = 11))
 
+  
 plot.phr
 
 
-(carbon.assim.panel <- ggarrange(plot.res, plot.phr,
-                                 nrow = 2,
-                                 labels = c("A","B")))
+carbon.panel <- plot.res + plot.phr +
+  plot_layout(ncol = 1) +
+  plot_annotation(tag_levels = 'A')
+
+ggsave("Figures/carbon_assimilation_lineplot.tiff",
+       carbon.panel,
+       dpi = 300)
 
 
 # Jitter plots ------------------------------------------------------------

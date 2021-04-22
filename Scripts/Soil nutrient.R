@@ -134,6 +134,7 @@ write.csv(soils.log,"Data/soil_nutrients_logtransform.csv")
 
 
 # PCA ---------------------------------------------------------------------
+soils.log <- read.csv("Data/soil_nutrients_logtransform.csv")
 
 pca <- rda(soils.log, scale = TRUE) 
 head(summary(pca))
@@ -198,12 +199,13 @@ p <-
   pca.sites %>%
   ggplot()+
   geom_point(aes(x = PC1, y = PC2, 
-                 colour = Species,
-                 shape = Species), size = 5, stroke = 1.5) +
+                 fill = Species,
+                 shape = Species), 
+             size = 6, stroke = 1.5,
+             alpha = 0.8) +
     stat_ellipse(data = pca.sites,
                aes(x = PC1, y = PC2, 
-                   colour = Species, 
-                   linetype = Species),
+                   colour = Species),
                level = 0.9) +
   geom_segment(data = pca.spp, 
                aes(x = 0, xend = PC1, 
@@ -212,74 +214,26 @@ p <-
                              type="closed"), # can change to open 
                color = "black") + 
   geom_label_repel(data = pca.spp, 
-                 aes(x = PC1, y = PC2, label = labels),
-                 color="black",
-                 size = 6) +
-  #ylim(-2, 2.2) +
-  #xlim(-2, 2.2) +
+                 aes(x = PC1, y = PC2, label = labels1),
+                 color = "black",
+                 size = 7,
+                 force = 2) +
+  ylim(-2, 2.2) +
+  xlim(-2, 2.2) +
   theme_classic() +
-  scale_shape_manual(values = c(0, 1, 2, 5)) +
+  scale_shape_manual(values = c(22, 21, 24, 23)) +
+  scale_fill_manual(values = colours) +
   scale_colour_manual(values = colours) +
   geom_hline(yintercept=0, linetype="dotted") +
   geom_vline(xintercept=0, linetype="dotted") +
-  coord_fixed() +
-  labs(x = "PC1 (0.667)",
-       y = "PC2 (0.080)") +
-  theme(legend.position = c(0.95,0.9),
-        legend.background = element_rect(linetype = 2, 
-                                         size = 0.1, colour = 1))
-
+  labs(x = "PC1 (0.648)",
+       y = "PC2 (0.086)") +
+  theme(legend.title = element_blank(),
+        legend.text = element_text(size = 13))
 p
 
-?geom_mark_ellipses
 
 ggsave("Figures/soils_PCA_axis12.jpeg", p)
-
-
-p3 <-
-  pca.sites %>%
-  ggplot()+
-  geom_point(aes(x = PC1, y = PC3, 
-                 colour = Species,
-                 shape = Species), size = 5, stroke = 1.5) +
-  stat_ellipse(data = pca.sites,
-               aes(x = PC1, y = PC3, 
-                   colour = Species, 
-                   linetype = Species)) +
-  geom_segment(data = pca.spp, 
-               aes(x = 0, xend = PC1, 
-                   y = 0, yend = PC3), 
-               arrow = arrow(length = unit(0.35, "cm"), # adjust the arrow head size here
-                             type="closed"), # can change to open 
-               color = "black") + 
-  geom_text_repel(data = pca.spp, 
-  aes(x = PC1, y = PC3, label = labels),
-  color="black",
-  size = 6) +
-  #ylim(-2, 2) +
-  #xlim(-2, 2.2) +
-  theme_classic() +
-  scale_shape_manual(values = c(0, 1, 2, 5)) +
-  scale_colour_manual(values = c("#525252","#9ecae1",
-                                 "#fb6a4a","#6a51a3")) +
-  geom_hline(yintercept=0, linetype="dotted") +
-  geom_vline(xintercept=0, linetype="dotted") +
-  coord_fixed() +
-  labs(x = "PC1 (0.667)",
-       y = "PC3 (0.066)") 
-
-p3
-
-
-PCA <- ggarrange(p,p3,
-          common.legend = TRUE,
-          labels = "AUTO",
-          legend = "bottom",
-          align = c("hv"))
-
-
-ggsave("Figures/PCA_soil_axes.TIFF", PCA,
-       dpi = 300)
 
 
 
