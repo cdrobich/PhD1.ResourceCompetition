@@ -38,25 +38,34 @@ sum.res <- RCI.res %>%
 
 ##### Resident species ##############
 
-RCI.plot <- ggplot(sum, aes(x = Phytometer, y = average, colour = Year, shape = Year)) + 
-  geom_point(position = position_dodge(0.6),
+colours = c("Calamagrostis" = "#084594", 
+            "Typha" = "#6e016b", 
+            "Carex" = "#9ecae1", 
+            "Phragmites" = "#fb6a4a")
+
+shapes = c("Calamagrostis" = 22, 
+           "Typha" = 23, 
+           "Carex" = 21, 
+           "Phragmites" = 24)
+
+RCI.plot <- ggplot(RCI.res, 
+                   aes(x = Phytometer, y = RCI, 
+                       fill = Phytometer, shape = Phytometer)) + 
+  geom_jitter(aes(stroke = 1.5),
+              width = 0.15,
+              height = 0.15,
              size = 5) +
-  geom_errorbar(aes(ymin = average - SE, ymax = average + SE),
-                width = 0.3, position = position_dodge(0.6),
-                color = "black",
-                size = 1) +
   theme_classic() +
-  scale_colour_manual(values = c("#00441b", "#08519c")) +
   labs(x = " ",
        y = expression(paste("Relative Competition Index (RCI)"))) + 
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 16),
         axis.text.x = element_text(size = 14),
         axis.text.y = element_text(size = 15)) +
-  geom_hline(yintercept = 0, linetype = "dashed",
-             size = 1) +
   coord_flip() +
-  theme(axis.text.y = element_text(angle = 30))
+  scale_fill_manual(values = colours) +
+  scale_shape_manual(values = shapes) +
+  scale_y_continuous(breaks = c(-12, -10, -8, -6, -4, -2, 0, 2)) 
 
 ggsave("Figures/RCI_residents.jpeg")
 
@@ -104,35 +113,29 @@ sum.phr <- RCI.phrag %>%
 ph.sum <- ph.sum %>% 
   mutate(Year = fct_relevel(Year, "2017", "2016"))
 
-RCI.plot2 <- ggplot(ph.sum, aes(x = Phytometer, y = average, colour = Year, shape = Year)) + 
-  geom_point(position = position_dodge(0.6),
-             size = 5) +
-  geom_errorbar(aes(ymin = average - SE, ymax = average + SE),
-                width = 0.3, position = position_dodge(0.6),
-                color = "black",
-                size = 1) +
+RCI.plot2 <- ggplot(RCI.phrag, 
+                    aes(x = Neighbours, y = RCI, 
+                        fill = Phytometer, shape = Neighbours)) + 
+  geom_jitter(aes(stroke = 1.5),
+              width = 0.15,
+              height = 0.15,
+              size = 5) +
   theme_classic() +
-  scale_colour_manual(values = c("#00441b", "#08519c")) +
   labs(x = " ",
        y = expression(paste("Relative Competition Index (RCI)"))) + 
   theme(panel.border = element_rect(fill = NA)) +
   theme(text = element_text(size = 16),
         axis.text.x = element_text(size = 14),
         axis.text.y = element_text(size = 15)) +
-  geom_hline(yintercept = 0, linetype = "dashed",
-             size = 1) +
   coord_flip() +
-  theme(axis.text.y = element_text(angle = 30))
+  scale_fill_manual(values = colours) +
+  scale_shape_manual(values = shapes) +
+  scale_y_continuous(breaks = c(-12, -10, -8, -6, -4, -2, 0, 2)) 
 
-ggsave("Figures/RCI_phragmites.jpeg")
 
-
-
-RCI.panel <- ggarrange(RCI.plot, RCI.plot2,
-                       ncol = 2, common.legend = TRUE,
-                       legend = "bottom",
-                       labels = "AUTO",
-                       hjust = c(-13, -20), vjust = 1.75)
+RCI.panel <- RCI.plot + RCI.plot2 +
+  plot_layout(ncol = 1) +
+  plot_annotation(tag_levels = 'A')
 
 ggsave("Figures/RCI_panel.TIFF", RCI.panel,
        dpi = 150, units = "in")

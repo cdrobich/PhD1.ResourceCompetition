@@ -549,7 +549,46 @@ iso.eror <- isotopes +
              show.legend = F) 
 
 iso.eror 
-  
+
+
+## just delta C and treatments
+
+colour = c("Calamagrostis" = "#084594", 
+            "Typha" = "#6e016b", 
+            "Carex" = "#9ecae1", 
+            "Phragmites" = "#fb6a4a")
+
+#reorder
+Isotopes$Species <- factor(Isotopes$Species, 
+                           levels = c("Calamagrostis",
+                                      "Carex",
+                                      "Typha",
+                                      "Phragmites"))
+
+
+
+
+deltac.plot <- ggplot(Isotopes, aes(x = Species, y = DeltaC,
+                     shape = Treatment)) +
+  geom_jitter(aes(fill = Species),
+              position = position_dodge(0.5),
+              size = 5, stroke = 1.5) +
+  theme_minimal(base_size = 16) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = expression(paste(delta^{13}, "C"))) +
+  scale_shape_manual(name = " ",
+                     labels = c("With competition",
+                                "Without competition"),
+                     values = c(21,24)) +
+  scale_fill_manual(values = colour) +
+  theme(legend.position = "right",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14)) +
+  guides(fill = FALSE)
+
+
+
 colnames(Isotopes)
 
 cent <- aggregate(cbind(C,N)~Type,Isotopes,mean)
@@ -562,12 +601,33 @@ nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type,
                                  colour = Type)) +
   geom_point(size = 5, stroke = 1.5) +
   theme_minimal(base_size = 16) + 
-  theme(panel.border = element_rect(fill = NA),
-        legend.position = "none") +
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(legend.position = "right",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14)) +
   xlab("Total % Carbon") +
   ylab("Total % Nitrogen") +
-  scale_shape_manual(values = c(0,15,1, 16,2, 17, 5,18)) +
-  scale_colour_manual(values = colours) 
+  scale_shape_manual(name = "Species & Treatment",
+                     labels = c("Calamagrostis with competition",
+                                "Calamagrostis without competition",
+                                "Carex with competition",
+                                "Carex without competition",
+                                "Phragmites with competition",
+                                "Phragmites without competition",
+                                "Typha with competition",
+                                "Typha without competition"),
+                     values = c(0,15,1, 16,2, 17, 5,18)) +
+  scale_colour_manual(name = "Species & Treatment",
+                      labels = c("Calamagrostis with competition",
+                                 "Calamagrostis without competition",
+                                 "Carex with competition",
+                                 "Carex without competition",
+                                 "Phragmites with competition",
+                                 "Phragmites without competition",
+                                 "Typha with competition",
+                                 "Typha without competition"),
+                      values = colours)
+
 
 nutrient.eror <- nutrient +
   geom_errorbar(data = cent.nut,
@@ -583,14 +643,14 @@ nutrient.eror <- nutrient +
 
 nutrient.eror
 
-nutiso <- nutrient.eror + iso.eror +
-  plot_layout(ncol = 2) +
+nutiso <- deltac.plot + nutrient.eror +
+  plot_layout(ncol = 1) +
   plot_annotation(tag_levels = 'A')
+
+nutiso
 
 
 ggsave("Figures/Plant_Nutrients.TIFF", nutiso,
-       height = 6.67,
-       width = 15.5,
        dpi = 300) #15.5 x 6.67
 
 
