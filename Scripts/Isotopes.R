@@ -505,8 +505,8 @@ isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN,
   theme_minimal(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA)) +
   ylim(-1, 6) +
-  labs(x = expression(paste(delta^{13}, "C")),
-       y = expression(paste(delta^{15}, "N"))) +
+  labs(x = expression(paste(delta^{13}, "C  (\u2030)")),
+       y = expression(paste(delta^{15}, "N  (\u2030)"))) +
   scale_shape_manual(name = "Species & Treatment",
                      labels = c("Calamagrostis with competition",
                                 "Calamagrostis without competition",
@@ -527,9 +527,7 @@ isotopes <- ggplot(Isotopes, aes(x = DeltaC, y = DeltaN,
                                  "Typha with competition",
                                  "Typha without competition"),
                       values = colours) +
-  theme(legend.position = "right",
-        legend.title = element_blank(),
-        legend.text = element_text(size = 14)) 
+  theme(legend.position = "none") 
 
 isotopes
 
@@ -570,23 +568,78 @@ Isotopes$Species <- factor(Isotopes$Species,
 
 deltac.plot <- ggplot(Isotopes, aes(x = Species, y = DeltaC,
                      shape = Treatment)) +
+  geom_boxplot(aes(fill = Species),
+               alpha = 0.5, lwd = 1) + 
   geom_jitter(aes(fill = Species),
-              position = position_dodge(0.5),
+              position = position_dodge(0.75),
               size = 5, stroke = 1.5) +
   theme_minimal(base_size = 16) + 
   theme(panel.border = element_rect(fill = NA)) +
   labs(x = " ",
-       y = expression(paste(delta^{13}, "C"))) +
+       y = expression(paste(delta^{13}, "C  (\u2030)"))) +
   scale_shape_manual(name = " ",
                      labels = c("With competition",
                                 "Without competition"),
                      values = c(21,24)) +
   scale_fill_manual(values = colour) +
-  theme(legend.position = "right",
+  scale_colour_manual(values = colour) +
+  theme(legend.position = "none",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14)) +
+  guides(fill = FALSE) 
+
+
+# Isotope & treatment
+
+c.plot <- ggplot(Isotopes, aes(x = Species, y = C,
+                                    shape = Treatment)) +
+  geom_boxplot(aes(fill = Species),
+               alpha = 0.5, lwd = 1, show.legend = FALSE) +
+  geom_jitter(aes(fill = Species),
+              position = position_dodge(0.75),
+              size = 5, stroke = 1.5) +
+  theme_minimal(base_size = 16) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Total % Carbon") +
+  scale_shape_manual(name = " ",
+                     labels = c("With competition",
+                                "Without competition"),
+                     values = c(21,24)) +
+  scale_fill_manual(values = colour) +
+  scale_colour_manual(values = colour) +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14)) +
+  guides(fill = FALSE, colour = FALSE)
+
+n.plot <- ggplot(Isotopes, aes(x = Species, y = N,
+                               shape = Treatment)) +
+  geom_boxplot(aes(fill = Species),
+               alpha = 0.5, lwd = 1) +
+  geom_jitter(aes(fill = Species),
+              position = position_dodge(0.75),
+              size = 5, stroke = 1.5) +
+  theme_minimal(base_size = 16) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  labs(x = " ",
+       y = "Total % Nitrogen") +
+  scale_shape_manual(name = " ",
+                     labels = c("With competition",
+                                "Without competition"),
+                     values = c(21,24)) +
+  scale_fill_manual(values = colour) +
+  scale_colour_manual(values = colour) +
+  theme(legend.position = "none",
         legend.title = element_blank(),
         legend.text = element_text(size = 14)) +
   guides(fill = FALSE)
 
+revise.plot <- deltac.plot + c.plot + n.plot +
+  plot_annotation(tag_levels = "A")
+
+ggsave("Figures/Fig2_revised.TIFF", revise.plot,
+       dpi = 300) #15.5 x 6.67
 
 
 colnames(Isotopes)
@@ -626,7 +679,7 @@ nutrient <- ggplot(Isotopes, aes(x = C, y = N, shape = Type,
                                  "Phragmites without competition",
                                  "Typha with competition",
                                  "Typha without competition"),
-                      values = colours)
+                      values = colours) 
 
 
 nutrient.eror <- nutrient +
@@ -652,6 +705,16 @@ nutiso
 
 ggsave("Figures/Plant_Nutrients.TIFF", nutiso,
        dpi = 300) #15.5 x 6.67
+
+
+panl.thesis <- iso.eror + nutrient.eror +
+  plot_layout(ncol = 1) +
+  plot_annotation(tag_levels = 'A')
+
+panl.thesis
+
+
+
 
 
 Isotopes %>% 
@@ -929,16 +992,20 @@ ggsave("Figures/nutrient_panels.jpeg", CN.panel,
        units = "in")
 
 
-figures <- ggarrange(resident.CN.label, iso.eror, 
-          phrag.CN.label, legends,
-          labels = c("","E","",""),
-          vjust = 3,
-          hjust = -6)
+layout <- 
+  "AAACCDD
+  BBBEEFF
+"
+
+
+figures <- iso.eror + nutrient.eror + C.resident + 
+  N.resident + C.phrag + N.phrag +
+  plot_layout(design = layout) +
+  plot_annotation(tag_levels = "A")
+
+figures
 
 ggsave("Figures/panels_nutrient_good.jpeg",
-       width = 13.1,
-       height = 8.65,
-       units = "in",
        dpi = 300)
 
 

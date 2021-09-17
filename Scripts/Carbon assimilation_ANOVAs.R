@@ -269,7 +269,7 @@ res.hsd.wue.trt <- HSD.test(light.1500.WUE, "Treatment")
 res.hsd.wue.spp <- HSD.test(light.1500.WUE, "Species")
 
 #$means
-#WUE       std  r  Min  Max    Q25   Q50   Q75
+#                   WUE       std  r  Min  Max    Q25   Q50   Q75
 #Calamagrostis 2.050000 0.4434524 45 1.21 3.04 1.7900 2.030 2.410
 #Carex         2.123214 0.6456926 28 0.26 3.05 2.0400 2.225 2.520
 #Typha         2.381250 0.5543842 24 1.47 3.83 2.0075 2.195 2.725

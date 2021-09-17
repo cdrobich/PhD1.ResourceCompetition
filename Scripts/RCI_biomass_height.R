@@ -403,7 +403,7 @@ density <- ggplot(weights, aes(x = Competition,
               height = 1,
               size = 2.5,
               alpha = 0.7) +
-  facet_wrap("Species") + 
+  facet_wrap("Species", scales = "free") + 
   theme_classic(base_size = 12) +
   theme(legend.title=element_text(size=9), 
         legend.text=element_text(size=9)) +
@@ -418,8 +418,7 @@ density <- ggplot(weights, aes(x = Competition,
   theme(legend.position = "none") +
   stat_summary(aes(shape = Competition, size = 0.5),
                fun.data = "mean_se", fun.args = list(mult = 1), 
-               geom = "pointrange", size = 1) +
-  scale_y_continuous(breaks = c(0, 10, 20, 30, 40, 50, 60))
+               geom = "pointrange", size = 1)
 
 density
 
@@ -529,6 +528,7 @@ height7 <- na.omit(height7)
 str(height7)
 
 height7$height <- as.numeric(height7$height)
+height7$height[is.na(height7$height)] <- 0
 
 date <- height7$date
 dates <- dmy(date)
@@ -542,6 +542,26 @@ heights <- full_join(height6, height7)
 heights <- heights %>% #rename the factors
   mutate(Species = fct_recode(Species,
                               "Calamagrostis" = "Calamagrositis"))
+
+
+
+
+heights %>% group_by(Species) %>% 
+  summarize(average = mean(height),
+            std = sd(height),
+            n = length(height),
+            str = (std/sqrt(n)))
+#  Species        average   std     n   str
+#2 Calamagrostis     93.1  25.4   228  1.68
+#3 Carex             98.9  25.5   258  1.59
+#4 Phragmites       156.   58.1   378  2.99
+#5 Typha            186.   62.0   132  5.39
+
+
+
+
+
+
 
 
 heights <- heights %>% 

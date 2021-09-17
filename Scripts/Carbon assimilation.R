@@ -1,5 +1,6 @@
 library(tidyverse)
 library(ggpubr)
+library(patchwork)
 
 ciras.17 <- read.csv("Data/CIRAS_carbon_WUE_2017.csv")
 
@@ -23,16 +24,24 @@ str(ciras.17)
 
 ciras <- full_join(ciras.16, ciras.17)
 
+ciras <- ciras %>% unite("ID_yr", Site:Year, remove = FALSE)
+
+write.csv(ciras, "Data/CIRAS_sum_bothyears.csv")
+
+### Import data ####
+
+ciras <- read.csv("Data/CIRAS_sum_bothyears.csv")
+
 (sum <- ciras %>% group_by(spp_trt, light) %>% 
   summarise(avg = mean(carbon),
             sd = sd(carbon),
             N = length(carbon),
             str = (sd/(sqrt(N)))))
 
-write.csv(sum, "Data/CIRAS_summary.csv")
 
 
 ciras.sum <- read.csv("Data/CIRAS_summary.csv")
+
 colnames(ciras.sum)
 
 ciras.sum <- ciras.sum  %>% 
@@ -41,6 +50,17 @@ ciras.sum <- ciras.sum  %>%
   separate(spp_trt, c(NA, NA, "Treatment"), remove = FALSE)
 
 
+colours = c("Calamagrostis" = "#084594", 
+            "Typha" = "#6e016b", 
+            "Carex" = "#9ecae1", 
+            "Phragmites" = "#fb6a4a")
+
+shapes = c("Calamagrostis" = 22, 
+           "Typha" = 23, 
+           "Carex" = 21, 
+           "Phragmites" = 24)
+
+# Graph --------------------------------------------------------------------
 
 ggplot(ciras.sum, aes(x = light, y = avg, color = Phytometer,
                       shape = Treatment,
@@ -142,7 +162,56 @@ ggsave("Figures/pane_CIRAS.TIFF", panel,
 
 # size 17.8 x 6.74 in
 
-### facet wrap #####
+
+# Stomatal conductance ----------------------------------------------------
+ciras <- read.csv("Data/CIRAS_sum_bothyears.csv")
+str(ciras)
+
+
+(gs.sum <- ciras %>% group_by(spp_trt, light) %>% 
+    summarise(avg = mean(gs),
+              sd = sd(gs),
+              N = length(gs),
+              str = (sd/(sqrt(N)))))
+
+
+gs.sum <- gs.sum %>% 
+  separate(spp_trt, c("Phytometer", NA, NA), remove = FALSE) %>% 
+  separate(spp_trt, c(NA, "Neighbour", NA), remove = FALSE) %>% 
+  separate(spp_trt, c(NA, NA, "Treatment"), remove = FALSE) %>% 
+  drop_na()
+
+
+unique(gs.sum$Phytometer)
+
+stom.plot <- ggplot(gs.sum, aes(x = light, y = avg, 
+                   fill = Phytometer,
+                      shape = Treatment,
+                      group = spp_trt)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str), width = 0.1) +
+  facet_wrap(~Phytometer) +
+  geom_line() +
+  geom_point(size = 5) +
+  theme_classic() +
+  labs(y = "Stomatal Conductance",
+       x = expression(paste("Photosynthetically Active Radiation"," ", " (", "umol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  #scale_color_manual(values = c("#9ebcda","#8856a7")) +
+  theme(panel.border = element_rect(fill = NA)) +
+  scale_fill_manual(values = colours) +
+  scale_shape_manual(values = c(21,24)) +
+  theme(text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12)) +
+  ylim(0, 1000) +
+  guide
+
+ggsave("Figures/stomatal_conductance.jpeg",
+       stom.plot)
+
+
+
+
+### facet wrap & paper figure #####
 str(ciras.res)
 
 plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
@@ -153,7 +222,7 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
   geom_line() +
   facet_wrap("Phytometer") +
   geom_point(alpha = 0.7,
-             size = 3) +
+             size = 5) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
        x = "") + 
@@ -163,7 +232,7 @@ plot.res<- ggplot(ciras.res, aes(x = light, y = avg,
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
         strip.text = element_text(size=12)) +
-  scale_y_continuous(breaks = c(-5, 0, 5, 10, 15, 20, 25, 30)) +
+  scale_y_continuous(breaks = c(-15, -10, -5, 0, 5, 10, 15, 20,25,30)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
   theme(legend.position = "none")
 
@@ -187,7 +256,7 @@ plot.phr <- ggplot(ciras.phrag, aes(x = light, y = avg,
   geom_line() +
   facet_wrap("phy_trt") +
   geom_point(alpha = 0.7,
-             size = 3) +
+             size = 5) +
   scale_colour_manual(values = c("#454ADE", "#440C53")) +
   theme_classic() +
   labs(y = expression(paste("Carbon Assimilation"," ", " (", "\u00B5mol CO"[2],  s^-1, " ", m^-2, sep=")")),
@@ -210,6 +279,7 @@ plot.phr
           labels = c("A","B")))
 
 ggsave("Figures/Carbon_facet.jpeg", carbon.assim.panel)
+
 
 
 ######## Comparison at 1500 ########
@@ -665,4 +735,6 @@ qqline(resid(phr.typ1500))
 ## check out model 1 coefficients
 
 coef(phr.typ1500)
+
+
 

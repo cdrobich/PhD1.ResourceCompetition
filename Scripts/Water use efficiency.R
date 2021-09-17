@@ -7,6 +7,9 @@ ciras.16 <- read.csv("Data/CIRAS_2016.csv")
 
 ciras <- full_join(ciras.16, ciras.17)
 
+write.csv(ciras, "Data/CIRAS_WUE_bothyears.csv")
+
+ciras <- read.csv("Data/CIRAS_WUE_bothyears.csv")
 
 ciras <- ciras %>% 
   unite("spp_trt", Phytometer, Treatment, remove = FALSE)
@@ -47,60 +50,59 @@ WUE.res <- WUE.res %>%
   unite("phy_trt", Phytometer, Treatment, remove = FALSE)
 
 
+#  WUE figures --------------------------------------------------------------------
 
-plot.res<- ggplot(WUE.res, aes(x = light, y = avg,
-                                 group = phy_trt,
+res.WUE <- ggplot(WUE.res, aes(x = light, y = avg,
+                    group = phy_trt,
+                    shape = Treatment,
+                    colour = Treatment)) +
+  geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
+  geom_line() +
+  facet_wrap("Phytometer") +
+  geom_point(alpha = 0.7,
+             size = 5) +
+  scale_colour_manual(values = c("#24908C", "#3A518B")) +
+  theme_classic() +
+  labs(y = expression(paste("WUE"," ", " (", "CO"[2], " mmol ",  s^-1, " ", m^-2,"H"[2],"O", sep=")")),
+       x = expression(paste("Photosynthetically Active Radiation"," ", " (", "\u00B5mol  ",  s^-1, " ", m^-2, sep=")"))) + 
+  theme(panel.border = element_rect(fill = NA)) +
+  theme(text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        strip.text = element_text(size=12)) +
+  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
+  ylim(-1, 4) +
+  guides(colour = "none") +
+  theme(legend.position = c(0.9, 0.2))
+
+phr.WUE <- ggplot(WUE.phrag, aes(x = light, y = avg,
+                                 group = neigh_trt,
                                  shape = Treatment,
                                  colour = Treatment)) +
   geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
   geom_line() +
-  facet_wrap("Phytometer") +
-  geom_point(size = 5) +
-  theme_classic() +
-  labs(y = expression(paste("Water Use Efficiency")),
-       x = "") + 
-  scale_colour_manual(values = c("black", "grey")) +
-  theme(panel.border = element_rect(fill = NA)) +
-  theme(text = element_text(size = 14),
-        axis.text.x = element_text(size = 12),
-        axis.text.y = element_text(size = 16)) +
-  ylim(-1, 5) +
-  scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
-  theme(legend.position = "none")
-
-plot.res
-
-
-plot.phrag <- ggplot(WUE.phrag, aes(x = light, y = avg,
-                               group = neigh_trt,
-                               shape = Treatment,
-                               colour = Treatment)) +
-  geom_errorbar(aes(ymin = avg - str, ymax = avg + str)) +
-  geom_line() +
   facet_wrap("Neighbour") +
-  geom_point(size = 5) +
+  geom_point(alpha = 0.7,
+             size = 5) +
+  scale_colour_manual(values = c("#454ADE", "#440C53")) +
   theme_classic() +
-  labs(y = expression(paste("Water Use Efficiency")),
-       x = "") + 
-  scale_colour_manual(values = c("black", "grey")) +
+  labs(y = expression(paste("WUE"," ", " (", "CO"[2], " mmol ",  s^-1, " ", m^-2,"H"[2],"O", sep=")")),
+       x = expression(paste("Photosynthetically Active Radiation"," ", " (", "\u00B5mol  ",  s^-1, " ", m^-2, sep=")"))) + 
   theme(panel.border = element_rect(fill = NA)) +
-  theme(text = element_text(size = 14),
+  theme(text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
-        axis.text.y = element_text(size = 16)) +
-  ylim(-1, 5) +
+        axis.text.y = element_text(size = 12),
+        strip.text = element_text(size=12)) +
   scale_x_continuous(breaks=c(0, 200, 500, 1000, 1500)) +
-  theme(legend.position = c(0.9, 0.2)) 
+  ylim(-1, 4) +
+  guides(colour = "none") +
+  theme(legend.position = c(0.9, 0.2))
 
-plot.phrag
+wue.panel <- ggarrange(res.WUE, phr.WUE,
+          labels = "AUTO",
+          hjust = c(-5, -5),
+          vjust = 1.75,
+          ncol = 1,
+          nrow = 2)
 
-panel <- ggarrange(plot.res, plot.phrag,
-                   labels = "AUTO",
-                   hjust = c(-5, -5),
-                   vjust = 1.75,
-                   ncol = 1,
-                   nrow = 2)
-
-panel
-
-
-ggsave("Figures/panel_WUE.TIFF", panel, dpi = 300)
+ggsave("Figures/panel_WUE.TIFF", wue.panel, dpi = 300)
