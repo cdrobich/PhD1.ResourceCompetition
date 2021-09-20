@@ -112,6 +112,14 @@ write.csv(results, "Data/lrc_results.csv")
 
 lrc_data <- read.csv("Data/lrc_results_env.csv")
 
+lrc_data <- lrc_data %>% 
+  unite("type", Species,Neighbour, remove = FALSE)
+
+res <- c("Carex", "Calamagrostis", "Typha")
+resident <- lrc_data %>% filter(Species %in% res)
+phrag <- lrc_data %>% filter(Species == "Phragmites")
+
+
 sum.LCPT <- lrc_data %>% 
   group_by(Species, Treatment) %>% 
   summarise(median = median(LCPT, na.rm = TRUE),
@@ -223,48 +231,8 @@ library(car)
 library(agricolae)
 library(performance)
 
-lrc_data <- lrc_data %>% 
-  unite("type", Species,Neighbour, remove = FALSE)
 
-
-LSP_aov <- lm(LSP ~ type * Treatment, data = lrc_data, na.rm = TRUE)
-
-Anova(LSP_aov, type = 3)
-
-#Response: LSP
-#                   Sum Sq  Df F value Pr(>F)
-#(Intercept)    1.2181e+07   1  0.0015 0.9690
-#type           1.3365e+06   5  0.0000 1.0000
-#Treatment      9.3600e+03   1  0.0000 0.9991
-#type:Treatment 4.0479e+10   5  1.0095 0.4143
-#Residuals      1.1628e+12 145 
-
-check_model(LSP_aov)
-
-
-lrc_data <- lrc_data %>% mutate(logLCPT = log10(LCPT + 1))
-
-LCPT_aov <- lm(logLCPT ~ type * Treatment, data = lrc_data, na.rm = TRUE)
-
-Anova(LCPT_aov , type = 3)
-
-#Response: LCPT
-#               Sum Sq  Df F value  Pr(>F)   
-#(Intercept)     13334   1  9.9062 0.00200 **
-#type            14154   5  2.1030 0.06832 . 
-#Treatment           0   1  0.0002 0.98840   
-#type:Treatment  11954   5  1.7762 0.12130   
-#Residuals      195178 145 
-
-
-check_model(LCPT_aov)
-
-res <- c("Carex", "Calamagrostis", "Typha")
-resident <- lrc_data %>% filter(Species %in% res)
-phrag <- lrc_data %>% filter(Species == "Phragmites")
-
-
-LCPT_aovres <- lm(LCPT ~ type * Treatment, data = resident, na.rm = TRUE)
+LCPT_aovres <- lm(LCPT ~ Species * Treatment, data = resident, na.rm = TRUE)
 
 Anova(LCPT_aovres , type = 3)
 
@@ -277,7 +245,7 @@ Anova(LCPT_aovres , type = 3)
 #Residuals      104451 82
 
 
-LSP_aovres <- lm(LSP ~ type * Treatment, data = resident, na.rm = TRUE)
+LSP_aovres <- lm(LSP ~ Species * Treatment, data = resident, na.rm = TRUE)
 
 Anova(LSP_aovres , type = 3)
 
