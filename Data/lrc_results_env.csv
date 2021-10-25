@@ -1,19 +1,4 @@
 n,ID,Year,Species,Treatment,Neighbour,LCPT,LSP
-65,CAP1_2016,2016,Carex,Competition,Phragmites,-11.95830069,207.5315025
-77,CAP1_2017,2017,Carex,Competition,Phragmites,49.0134559,419.9834113
-70,CAP10_2016,2016,Carex,Competition,Phragmites,NA,NA
-78,CAP10_2017,2017,Carex,Competition,Phragmites,20.33935307,581.3114147
-67,CAP11_2016,2016,Carex,Competition,Phragmites,NA,NA
-80,CAP11_2017,2017,Carex,Competition,Phragmites,31.84697243,614.7918082
-48,CAP12_2016,2016,Carex,Competition,Phragmites,35.74596876,195.2898308
-81,CAP12_2017,2017,Carex,Competition,Phragmites,24.67317151,697.2662484
-84,CAP2_2017,2017,Carex,Competition,Phragmites,55.63018299,787.6893161
-86,CAP3_2017,2017,Carex,Competition,Phragmites,39.55852972,617.6630533
-66,CAP4_2016,2016,Carex,Competition,Phragmites,62.19760191,211.4202925
-88,CAP4_2017,2017,Carex,Competition,Phragmites,31.60484976,582.8244457
-90,CAP5_2017,2017,Carex,Competition,Phragmites,29.26937294,550.409685
-92,CAP6_2017,2017,Carex,Competition,Phragmites,4.881179251,386.9987619
-95,CAP9_2017,2017,Carex,Competition,Phragmites,13.57295925,577.3628682
 72,CCP1_2016,2016,Calamagrostis,Competition,Phragmites,-5.974398779,865.6033056
 97,CCP1_2017,2017,Calamagrostis,Competition,Phragmites,-23.23189156,346.0606257
 60,CCP10_2016,2016,Calamagrostis,Competition,Phragmites,25.07787623,366.6287087
@@ -38,6 +23,55 @@ n,ID,Year,Species,Treatment,Neighbour,LCPT,LSP
 58,CCP9_2016,2016,Calamagrostis,Competition,Phragmites,21.15390217,521.2450617
 119,CCP9_2017,2017,Calamagrostis,Competition,Phragmites,16.09916507,760.838833
 52,CPP6_2016,2016,Calamagrostis,Competition,Phragmites,33.73797149,541.768693
+61,CCP10CU_2016,2016,Calamagrostis,No competition,Phragmites,32.92204941,567.0794537
+99,CCP10CU_2017,2017,Calamagrostis,No competition,Phragmites,8.339284323,346.2372362
+63,CCP11CU_2016,2016,Calamagrostis,No competition,Phragmites,70.75660606,1647.823751
+101,CCP11CU_2017,2017,Calamagrostis,No competition,Phragmites,13.51605534,477.201699
+103,CCP12CU_2017,2017,Calamagrostis,No competition,Phragmites,7.262566521,546.3269702
+73,CCP1CU_2016,2016,Calamagrostis,No competition,Phragmites,44.11499179,1003.111894
+104,CCP1CU_2017,2017,Calamagrostis,No competition,Phragmites,0.317499564,714.9585939
+75,CCP2CU_2016,2016,Calamagrostis,No competition,Phragmites,9.882092895,365.9443984
+106,CCP2CU_2017,2017,Calamagrostis,No competition,Phragmites,1.73345407,650.0952214
+108,CCP3CU_2017,2017,Calamagrostis,No competition,Phragmites,9.342070623,622.6646056
+110,CCP4CU_2017,2017,Calamagrostis,No competition,Phragmites,2.803617223,524.6272609
+51,CCP5CU_2016,2016,Calamagrostis,No competition,Phragmites,32.23259409,904.4295682
+112,CCP5CU_2017,2017,Calamagrostis,No competition,Phragmites,NA,NA
+53,CCP6CU_2016,2016,Calamagrostis,No competition,Phragmites,34.96144241,694.2496073
+114,CCP6CU_2017,2017,Calamagrostis,No competition,Phragmites,16.58510507,605.9396823
+55,CCP7CU_2016,2016,Calamagrostis,No competition,Phragmites,34.84529665,646.2332499
+116,CCP7CU_2017,2017,Calamagrostis,No competition,Phragmites,22.94079177,584.7003821
+57,CCP8CU_2016,2016,Calamagrostis,No competition,Phragmites,30.53667166,744.6992596
+118,CCP8CU_2017,2017,Calamagrostis,No competition,Phragmites,NA,NA
+59,CCP9CU_2016,2016,Calamagrostis,No competition,Phragmites,45.13502465,894.8783273
+120,CCP9CU_2017,2017,Calamagrostis,No competition,Phragmites,32.74105434,430.5600621
+65,CAP1_2016,2016,Carex,Competition,Phragmites,-11.95830069,207.5315025
+77,CAP1_2017,2017,Carex,Competition,Phragmites,49.0134559,419.9834113
+70,CAP10_2016,2016,Carex,Competition,Phragmites,NA,NA
+78,CAP10_2017,2017,Carex,Competition,Phragmites,20.33935307,581.3114147
+67,CAP11_2016,2016,Carex,Competition,Phragmites,NA,NA
+80,CAP11_2017,2017,Carex,Competition,Phragmites,31.84697243,614.7918082
+48,CAP12_2016,2016,Carex,Competition,Phragmites,35.74596876,195.2898308
+81,CAP12_2017,2017,Carex,Competition,Phragmites,24.67317151,697.2662484
+84,CAP2_2017,2017,Carex,Competition,Phragmites,55.63018299,787.6893161
+86,CAP3_2017,2017,Carex,Competition,Phragmites,39.55852972,617.6630533
+66,CAP4_2016,2016,Carex,Competition,Phragmites,62.19760191,211.4202925
+88,CAP4_2017,2017,Carex,Competition,Phragmites,31.60484976,582.8244457
+90,CAP5_2017,2017,Carex,Competition,Phragmites,29.26937294,550.409685
+92,CAP6_2017,2017,Carex,Competition,Phragmites,4.881179251,386.9987619
+95,CAP9_2017,2017,Carex,Competition,Phragmites,13.57295925,577.3628682
+71,CAP10CU_2016,2016,Carex,No competition,Phragmites,45.5349966,875.1448995
+79,CAP10CU_2017,2017,Carex,No competition,Phragmites,35.19103503,689.8982562
+82,CAP12CU_2017,2017,Carex,No competition,Phragmites,21.47211016,651.8915607
+83,CAP1CU_2017,2017,Carex,No competition,Phragmites,65.18439889,861.97464
+85,CAP2CU_2017,2017,Carex,No competition,Phragmites,63.85687074,498.4426483
+87,CAP3CU_2017,2017,Carex,No competition,Phragmites,46.6642332,635.4675673
+89,CAP4CU_2017,2017,Carex,No competition,Phragmites,55.86722141,1048.816028
+91,CAP5CU_2017,2017,Carex,No competition,Phragmites,47.55390243,650.5034339
+68,CAP6CU_2016,2016,Carex,No competition,Phragmites,-9.247027397,500.2317372
+93,CAP6CU_2017,2017,Carex,No competition,Phragmites,40.85587054,805.4378642
+69,CAP7CU_2016,2016,Carex,No competition,Phragmites,-7.414076886,525.2209176
+94,CAP7CU_2017,2017,Carex,No competition,Phragmites,50.00693415,648.7667513
+96,CAP9CU_2017,2017,Carex,No competition,Phragmites,NA,NA
 32,PCA1_2016,2016,Phragmites,Competition,Carex,19.64950589,554.0201473
 121,PCA1_2017,2017,Phragmites,Competition,Carex,63.34969675,683.2757982
 34,PCA2_2016,2016,Phragmites,Competition,Carex,29.0666961,885.8210074
@@ -74,52 +108,6 @@ n,ID,Year,Species,Treatment,Neighbour,LCPT,LSP
 152,PTY5_2017,2017,Phragmites,Competition,Typha,13.64381256,1532.863637
 11,PTY6_2016,2016,Phragmites,Competition,Typha,-142.5399655,528.0933133
 153,PTY6_2017,2017,Phragmites,Competition,Typha,41.81864778,886.1920493
-26,TYP1_2016,2016,Typha,Competition,Phragmites,-43.62470236,705.3826853
-155,TYP1_2017,2017,Typha,Competition,Phragmites,62.65073493,476.6084901
-28,TYP2_2016,2016,Typha,Competition,Phragmites,38.00636782,655.3609546
-157,TYP2_2017,2017,Typha,Competition,Phragmites,47.3634621,386.7168173
-30,TYP3_2016,2016,Typha,Competition,Phragmites,45.28442663,652.8931063
-159,TYP3_2017,2017,Typha,Competition,Phragmites,45.33377667,593.1891002
-13,TYP4_2016,2016,Typha,Competition,Phragmites,NA,NA
-161,TYP4_2017,2017,Typha,Competition,Phragmites,40.19693252,564.3561143
-15,TYP5_2016,2016,Typha,Competition,Phragmites,15.30027345,550.567233
-163,TYP5_2017,2017,Typha,Competition,Phragmites,35.78376711,572.0268264
-17,TYP6_2016,2016,Typha,Competition,Phragmites,8.498562257,475.5240055
-165,TYP6_2017,2017,Typha,Competition,Phragmites,-19.38460163,486.0227849
-71,CAP10CU_2016,2016,Carex,No competition,Phragmites,45.5349966,875.1448995
-79,CAP10CU_2017,2017,Carex,No competition,Phragmites,35.19103503,689.8982562
-82,CAP12CU_2017,2017,Carex,No competition,Phragmites,21.47211016,651.8915607
-83,CAP1CU_2017,2017,Carex,No competition,Phragmites,65.18439889,861.97464
-85,CAP2CU_2017,2017,Carex,No competition,Phragmites,63.85687074,498.4426483
-87,CAP3CU_2017,2017,Carex,No competition,Phragmites,46.6642332,635.4675673
-89,CAP4CU_2017,2017,Carex,No competition,Phragmites,55.86722141,1048.816028
-91,CAP5CU_2017,2017,Carex,No competition,Phragmites,47.55390243,650.5034339
-68,CAP6CU_2016,2016,Carex,No competition,Phragmites,-9.247027397,500.2317372
-93,CAP6CU_2017,2017,Carex,No competition,Phragmites,40.85587054,805.4378642
-69,CAP7CU_2016,2016,Carex,No competition,Phragmites,-7.414076886,525.2209176
-94,CAP7CU_2017,2017,Carex,No competition,Phragmites,50.00693415,648.7667513
-96,CAP9CU_2017,2017,Carex,No competition,Phragmites,35.91931332,1123061.077
-61,CCP10CU_2016,2016,Calamagrostis,No competition,Phragmites,32.92204941,567.0794537
-99,CCP10CU_2017,2017,Calamagrostis,No competition,Phragmites,8.339284323,346.2372362
-63,CCP11CU_2016,2016,Calamagrostis,No competition,Phragmites,70.75660606,1647.823751
-101,CCP11CU_2017,2017,Calamagrostis,No competition,Phragmites,13.51605534,477.201699
-103,CCP12CU_2017,2017,Calamagrostis,No competition,Phragmites,7.262566521,546.3269702
-73,CCP1CU_2016,2016,Calamagrostis,No competition,Phragmites,44.11499179,1003.111894
-104,CCP1CU_2017,2017,Calamagrostis,No competition,Phragmites,0.317499564,714.9585939
-75,CCP2CU_2016,2016,Calamagrostis,No competition,Phragmites,9.882092895,365.9443984
-106,CCP2CU_2017,2017,Calamagrostis,No competition,Phragmites,1.73345407,650.0952214
-108,CCP3CU_2017,2017,Calamagrostis,No competition,Phragmites,9.342070623,622.6646056
-110,CCP4CU_2017,2017,Calamagrostis,No competition,Phragmites,2.803617223,524.6272609
-51,CCP5CU_2016,2016,Calamagrostis,No competition,Phragmites,32.23259409,904.4295682
-112,CCP5CU_2017,2017,Calamagrostis,No competition,Phragmites,NA,NA
-53,CCP6CU_2016,2016,Calamagrostis,No competition,Phragmites,34.96144241,694.2496073
-114,CCP6CU_2017,2017,Calamagrostis,No competition,Phragmites,16.58510507,605.9396823
-55,CCP7CU_2016,2016,Calamagrostis,No competition,Phragmites,34.84529665,646.2332499
-116,CCP7CU_2017,2017,Calamagrostis,No competition,Phragmites,22.94079177,584.7003821
-57,CCP8CU_2016,2016,Calamagrostis,No competition,Phragmites,30.53667166,744.6992596
-118,CCP8CU_2017,2017,Calamagrostis,No competition,Phragmites,NA,NA
-59,CCP9CU_2016,2016,Calamagrostis,No competition,Phragmites,45.13502465,894.8783273
-120,CCP9CU_2017,2017,Calamagrostis,No competition,Phragmites,32.74105434,430.5600621
 33,PCA1CU_2016,2016,Phragmites,No competition,Carex,19.23005059,969.8153928
 122,PCA1CU_2017,2017,Phragmites,No competition,Carex,76.11692429,811.9164738
 35,PCA2CU_2016,2016,Phragmites,No competition,Carex,15.13541048,747.962
@@ -153,6 +141,18 @@ n,ID,Year,Species,Treatment,Neighbour,LCPT,LSP
 10,PTY5CU_2016,2016,Phragmites,No competition,Typha,-6.533264349,1449.843106
 12,PTY6CU_2016,2016,Phragmites,No competition,Typha,-27.77632966,590.3680687
 154,PTY6CU_2017,2017,Phragmites,No competition,Typha,28.69943668,983.2837908
+26,TYP1_2016,2016,Typha,Competition,Phragmites,-43.62470236,705.3826853
+155,TYP1_2017,2017,Typha,Competition,Phragmites,62.65073493,476.6084901
+28,TYP2_2016,2016,Typha,Competition,Phragmites,38.00636782,655.3609546
+157,TYP2_2017,2017,Typha,Competition,Phragmites,47.3634621,386.7168173
+30,TYP3_2016,2016,Typha,Competition,Phragmites,45.28442663,652.8931063
+159,TYP3_2017,2017,Typha,Competition,Phragmites,45.33377667,593.1891002
+13,TYP4_2016,2016,Typha,Competition,Phragmites,NA,NA
+161,TYP4_2017,2017,Typha,Competition,Phragmites,40.19693252,564.3561143
+15,TYP5_2016,2016,Typha,Competition,Phragmites,15.30027345,550.567233
+163,TYP5_2017,2017,Typha,Competition,Phragmites,35.78376711,572.0268264
+17,TYP6_2016,2016,Typha,Competition,Phragmites,8.498562257,475.5240055
+165,TYP6_2017,2017,Typha,Competition,Phragmites,-19.38460163,486.0227849
 27,TYP1CU_2016,2016,Typha,No competition,Phragmites,-172.5351515,570.1043267
 156,TYP1CU_2017,2017,Typha,No competition,Phragmites,88.79592176,2020.443308
 29,TYP2CU_2016,2016,Typha,No competition,Phragmites,-145.9214726,552.3872289

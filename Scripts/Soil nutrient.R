@@ -226,8 +226,8 @@ p <-
   scale_colour_manual(values = colours) +
   geom_hline(yintercept=0, linetype="dotted") +
   geom_vline(xintercept=0, linetype="dotted") +
-  labs(x = "PC1 (0.648)",
-       y = "PC2 (0.086)") +
+  labs(x = "PC1 (64.8%)",
+       y = "PC2 (8.6%)") +
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 13))
 p

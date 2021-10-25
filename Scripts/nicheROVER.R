@@ -1,4 +1,6 @@
 citation("nicheROVER")
+citation("mvabund")
+library(mvabund)
 
 # for Niche Size
 
